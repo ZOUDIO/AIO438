@@ -1,0 +1,1489 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title "4x38W amp with DSP and BT"
+Date "2021-05-22"
+Rev "V0.1"
+Comp "ZOUDIO"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C11
+U 1 1 60AF2699
+P 4450 1700
+F 0 "C11" V 4400 1850 50  0000 C CNN
+F 1 "470n" V 4500 1850 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 1700 50  0001 C CNN
+F 3 "~" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L ZOUDIOsymbols:TAS5825M U1
+U 1 1 60AF269F
+P 3600 2800
+F 0 "U1" H 3100 4000 50  0000 C CNN
+F 1 "TAS5825M" H 3950 4000 50  0000 C CNN
+F 2 "ZOUDIOfootprints:TAS5825M" H 3600 2900 50  0001 C CNN
+F 3 "" H 3600 2900 50  0001 C CNN
+	1    3600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 60AF26A5
+P 4450 2200
+F 0 "C12" V 4400 2350 50  0000 C CNN
+F 1 "470n" V 4500 2350 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 2200 50  0001 C CNN
+F 3 "~" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 60AF26AB
+P 4450 2400
+F 0 "C13" V 4400 2550 50  0000 C CNN
+F 1 "470n" V 4500 2550 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 2400 50  0001 C CNN
+F 3 "~" H 4450 2400 50  0001 C CNN
+	1    4450 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 60AF26B1
+P 4450 2900
+F 0 "C14" V 4400 3050 50  0000 C CNN
+F 1 "470n" V 4500 3050 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 2900 50  0001 C CNN
+F 3 "~" H 4450 2900 50  0001 C CNN
+	1    4450 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 2200 4750 2200
+Wire Wire Line
+	4350 1850 4750 1850
+$Comp
+L power:GND #PWR0117
+U 1 1 60AF26B9
+P 4400 3950
+F 0 "#PWR0117" H 4400 3700 50  0001 C CNN
+F 1 "GND" H 4405 3777 50  0001 C CNN
+F 2 "" H 4400 3950 50  0001 C CNN
+F 3 "" H 4400 3950 50  0001 C CNN
+	1    4400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3950 4400 3900
+Wire Wire Line
+	4400 3900 4350 3900
+Wire Wire Line
+	4400 3900 4400 3800
+Wire Wire Line
+	4400 3800 4350 3800
+Connection ~ 4400 3900
+Wire Wire Line
+	4400 3800 4400 3700
+Wire Wire Line
+	4400 3700 4350 3700
+Connection ~ 4400 3800
+Wire Wire Line
+	4400 3700 4400 3600
+Wire Wire Line
+	4400 3600 4350 3600
+Connection ~ 4400 3700
+Wire Wire Line
+	4400 3600 4400 3500
+Wire Wire Line
+	4400 3500 4350 3500
+Connection ~ 4400 3600
+Wire Wire Line
+	4400 3500 4400 3400
+Wire Wire Line
+	4400 3400 4350 3400
+Connection ~ 4400 3500
+$Comp
+L Device:R_Small R7
+U 1 1 60AF26D0
+P 2700 3200
+F 0 "R7" V 2800 3200 50  0000 C CNN
+F 1 "1K" V 2900 3200 50  0000 C CNN
+F 2 "ZOUDIOfootprints:R0603" H 2700 3200 50  0001 C CNN
+F 3 "~" H 2700 3200 50  0001 C CNN
+	1    2700 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 60AF26D6
+P 2550 3200
+F 0 "#PWR0118" H 2550 2950 50  0001 C CNN
+F 1 "GND" V 2555 3072 50  0001 R CNN
+F 2 "" H 2550 3200 50  0001 C CNN
+F 3 "" H 2550 3200 50  0001 C CNN
+	1    2550 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 60AF26E1
+P 2700 2400
+F 0 "C10" V 2650 2500 50  0000 C CNN
+F 1 "1u" V 2750 2500 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 2700 2400 50  0001 C CNN
+F 3 "~" H 2700 2400 50  0001 C CNN
+	1    2700 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 60AF26E7
+P 2500 2500
+F 0 "C9" V 2450 2600 50  0000 C CNN
+F 1 "1u" V 2550 2600 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 2500 2500 50  0001 C CNN
+F 3 "~" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 60AF26ED
+P 2300 2600
+F 0 "C7" V 2250 2700 50  0000 C CNN
+F 1 "1u" V 2350 2700 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 2300 2600 50  0001 C CNN
+F 3 "~" H 2300 2600 50  0001 C CNN
+	1    2300 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2600 2400 2600
+Wire Wire Line
+	2850 2500 2600 2500
+Wire Wire Line
+	2850 2400 2800 2400
+Wire Wire Line
+	2150 2650 2150 2600
+Wire Wire Line
+	2150 2600 2200 2600
+Wire Wire Line
+	2400 2500 2150 2500
+Wire Wire Line
+	2150 2500 2150 2600
+Connection ~ 2150 2600
+Wire Wire Line
+	2600 2400 2150 2400
+Wire Wire Line
+	2150 2400 2150 2500
+Connection ~ 2150 2500
+Wire Wire Line
+	2850 2000 2800 2000
+Wire Wire Line
+	2800 2000 2800 1900
+Wire Wire Line
+	2800 1900 2850 1900
+Wire Wire Line
+	2800 1900 2800 1800
+Wire Wire Line
+	2800 1800 2850 1800
+Connection ~ 2800 1900
+Wire Wire Line
+	2800 1800 2800 1700
+Wire Wire Line
+	2800 1700 2850 1700
+Connection ~ 2800 1800
+Wire Wire Line
+	4400 3400 4400 3300
+Wire Wire Line
+	4400 3300 4350 3300
+Connection ~ 4400 3400
+$Comp
+L Device:C_Small C15
+U 1 1 60AF270C
+P 5400 2200
+F 0 "C15" H 5250 2200 50  0000 C CNN
+F 1 "470n" H 5250 2300 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5400 2200 50  0001 C CNN
+F 3 "~" H 5400 2200 50  0001 C CNN
+	1    5400 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 60AF2712
+P 5800 2200
+F 0 "C17" H 5650 2200 50  0000 C CNN
+F 1 "470n" H 5650 2300 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5800 2200 50  0001 C CNN
+F 3 "~" H 5800 2200 50  0001 C CNN
+	1    5800 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 60AF2718
+P 5400 2400
+F 0 "#PWR0119" H 5400 2150 50  0001 C CNN
+F 1 "GND" H 5405 2227 50  0001 C CNN
+F 2 "" H 5400 2400 50  0001 C CNN
+F 3 "" H 5400 2400 50  0001 C CNN
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2350 5800 2300
+$Comp
+L power:GND #PWR0120
+U 1 1 60AF271F
+P 2150 2650
+F 0 "#PWR0120" H 2150 2400 50  0001 C CNN
+F 1 "GND" V 2155 2522 50  0001 R CNN
+F 2 "" H 2150 2650 50  0001 C CNN
+F 3 "" H 2150 2650 50  0001 C CNN
+	1    2150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2550 4750 2550
+Wire Wire Line
+	4750 2400 4750 2550
+Wire Wire Line
+	4750 2400 4550 2400
+Wire Wire Line
+	4550 2900 4750 2900
+Wire Wire Line
+	4350 2750 4750 2750
+Wire Wire Line
+	4750 2200 4750 2050
+Wire Wire Line
+	4750 2050 4350 2050
+Wire Wire Line
+	4750 1850 4750 1700
+Wire Wire Line
+	4750 1700 4550 1700
+Wire Wire Line
+	4850 1850 4750 1850
+Connection ~ 4750 1850
+Wire Wire Line
+	4850 2050 4750 2050
+Connection ~ 4750 2050
+Wire Wire Line
+	4850 2550 4750 2550
+Connection ~ 4750 2550
+Wire Wire Line
+	5400 2100 5400 2050
+Wire Wire Line
+	5800 2100 5800 1850
+Wire Wire Line
+	5800 1850 6200 1850
+$Comp
+L Device:L L3
+U 1 1 60AF273C
+P 5000 2550
+F 0 "L3" V 5200 2550 50  0000 C CNN
+F 1 "10u" V 5100 2550 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 2550 50  0001 C CNN
+F 3 "~" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 60AF2742
+P 5000 2750
+F 0 "L4" V 4950 2750 50  0000 C CNN
+F 1 "10u" V 4850 2750 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 2750 50  0001 C CNN
+F 3 "~" H 5000 2750 50  0001 C CNN
+	1    5000 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 60AF2748
+P 5000 2050
+F 0 "L2" V 4950 2050 50  0000 C CNN
+F 1 "10u" V 4850 2050 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 2050 50  0001 C CNN
+F 3 "~" H 5000 2050 50  0001 C CNN
+	1    5000 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 60AF274E
+P 5000 1850
+F 0 "L1" V 5200 1850 50  0000 C CNN
+F 1 "10u" V 5100 1850 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 1850 50  0001 C CNN
+F 3 "~" H 5000 1850 50  0001 C CNN
+	1    5000 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 2300 5400 2350
+Wire Wire Line
+	5400 2050 6200 2050
+Wire Wire Line
+	5400 2350 5800 2350
+Connection ~ 5400 2350
+Wire Wire Line
+	5400 2350 5400 2400
+$Comp
+L Device:C_Small C16
+U 1 1 60AF2759
+P 5400 2900
+F 0 "C16" H 5250 2900 50  0000 C CNN
+F 1 "470n" H 5250 3000 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5400 2900 50  0001 C CNN
+F 3 "~" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 60AF275F
+P 5800 2900
+F 0 "C18" H 5650 2900 50  0000 C CNN
+F 1 "470n" H 5650 3000 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5800 2900 50  0001 C CNN
+F 3 "~" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 60AF2765
+P 5400 3100
+F 0 "#PWR0121" H 5400 2850 50  0001 C CNN
+F 1 "GND" H 5405 2927 50  0001 C CNN
+F 2 "" H 5400 3100 50  0001 C CNN
+F 3 "" H 5400 3100 50  0001 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3050 5800 3000
+Wire Wire Line
+	5400 2800 5400 2750
+Wire Wire Line
+	5800 2800 5800 2550
+Wire Wire Line
+	5800 2550 6200 2550
+Wire Wire Line
+	5400 3000 5400 3050
+Wire Wire Line
+	5400 2750 6200 2750
+Wire Wire Line
+	5400 3050 5800 3050
+Connection ~ 5400 3050
+Wire Wire Line
+	5400 3050 5400 3100
+NoConn ~ 2850 3300
+NoConn ~ 2850 3500
+Wire Wire Line
+	5400 2050 5150 2050
+Connection ~ 5400 2050
+Wire Wire Line
+	5150 1850 5800 1850
+Connection ~ 5800 1850
+Wire Wire Line
+	5400 2750 5150 2750
+Connection ~ 5400 2750
+Wire Wire Line
+	5150 2550 5800 2550
+Connection ~ 5800 2550
+Wire Wire Line
+	4850 2750 4750 2750
+Connection ~ 4750 2750
+Wire Wire Line
+	4750 2900 4750 2750
+$Comp
+L power:+3V3 #PWR0122
+U 1 1 60AF2782
+P 1550 2150
+F 0 "#PWR0122" H 1550 2000 50  0001 C CNN
+F 1 "+3V3" H 1550 2300 50  0000 C CNN
+F 2 "" H 1550 2150 50  0001 C CNN
+F 3 "" H 1550 2150 50  0001 C CNN
+	1    1550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 60AF2788
+P 1850 2350
+F 0 "C5" H 1700 2350 50  0000 C CNN
+F 1 "100n" H 1750 2450 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 1850 2350 50  0001 C CNN
+F 3 "~" H 1850 2350 50  0001 C CNN
+	1    1850 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR0123
+U 1 1 60AF278E
+P 1550 1350
+F 0 "#PWR0123" H 1550 1200 50  0001 C CNN
+F 1 "VDD" H 1567 1523 50  0000 C CNN
+F 2 "" H 1550 1350 50  0001 C CNN
+F 3 "" H 1550 1350 50  0001 C CNN
+	1    1550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 60AF2794
+P 2150 1550
+F 0 "C6" H 2000 1550 50  0000 C CNN
+F 1 "100n" H 2000 1650 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 2150 1550 50  0001 C CNN
+F 3 "~" H 2150 1550 50  0001 C CNN
+	1    2150 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 60AF279A
+P 2450 1550
+F 0 "C8" H 2300 1550 50  0000 C CNN
+F 1 "100n" H 2300 1650 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 2450 1550 50  0001 C CNN
+F 3 "~" H 2450 1550 50  0001 C CNN
+	1    2450 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 1400 2150 1450
+Wire Wire Line
+	2450 1400 2450 1450
+Wire Wire Line
+	2150 1650 2150 1700
+Wire Wire Line
+	2450 1650 2450 1700
+$Comp
+L Device:C_Small C2
+U 1 1 60AF27A4
+P 1550 1550
+F 0 "C2" H 1400 1550 50  0000 C CNN
+F 1 "1u" H 1400 1650 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 1550 1550 50  0001 C CNN
+F 3 "~" H 1550 1550 50  0001 C CNN
+	1    1550 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 60AF27AA
+P 1850 1550
+F 0 "C4" H 1700 1550 50  0000 C CNN
+F 1 "1u" H 1700 1650 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 1850 1550 50  0001 C CNN
+F 3 "~" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 1450 1850 1400
+Wire Wire Line
+	1850 1400 1550 1400
+Wire Wire Line
+	1550 1650 1550 1700
+Wire Wire Line
+	1850 1650 1850 1700
+Connection ~ 1550 1700
+Wire Wire Line
+	1550 1450 1550 1400
+Connection ~ 1850 1400
+$Comp
+L Device:C_Small C3
+U 1 1 60AF27B7
+P 1550 2350
+F 0 "C3" H 1400 2350 50  0000 C CNN
+F 1 "1u" H 1400 2450 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 1550 2350 50  0001 C CNN
+F 3 "~" H 1550 2350 50  0001 C CNN
+	1    1550 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 2200 1850 2250
+Wire Wire Line
+	1550 2200 1550 2250
+Connection ~ 1550 2200
+Wire Wire Line
+	1550 2200 1850 2200
+$Comp
+L power:GND #PWR0124
+U 1 1 60AF27C2
+P 1550 2550
+F 0 "#PWR0124" H 1550 2300 50  0001 C CNN
+F 1 "GND" V 1555 2422 50  0001 R CNN
+F 2 "" H 1550 2550 50  0001 C CNN
+F 3 "" H 1550 2550 50  0001 C CNN
+	1    1550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2450 1550 2500
+Wire Wire Line
+	1550 2500 1850 2500
+Wire Wire Line
+	1850 2500 1850 2450
+Connection ~ 1550 2500
+Wire Wire Line
+	1550 2500 1550 2550
+$Comp
+L power:GND #PWR0125
+U 1 1 60AF27CD
+P 1550 1750
+F 0 "#PWR0125" H 1550 1500 50  0001 C CNN
+F 1 "GND" V 1555 1622 50  0001 R CNN
+F 2 "" H 1550 1750 50  0001 C CNN
+F 3 "" H 1550 1750 50  0001 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1700
+Wire Wire Line
+	2800 1400 2450 1400
+Connection ~ 2450 1400
+Wire Wire Line
+	2850 2200 1850 2200
+Connection ~ 1850 2200
+Connection ~ 2150 1400
+Wire Wire Line
+	2150 1400 1850 1400
+Wire Wire Line
+	2150 1400 2450 1400
+Wire Wire Line
+	1550 1700 1850 1700
+Wire Wire Line
+	2450 1700 2150 1700
+Connection ~ 1850 1700
+Connection ~ 2150 1700
+Wire Wire Line
+	2150 1700 1850 1700
+Wire Wire Line
+	1550 1750 1550 1700
+Text HLabel 2850 2800 0    50   Input ~ 0
+I2S_LRCLK
+Text HLabel 2850 2900 0    50   Input ~ 0
+I2S_SCLK
+Text HLabel 2850 3000 0    50   Input ~ 0
+I2S_SDIN
+NoConn ~ 2850 3400
+Text HLabel 2850 3600 0    50   Input ~ 0
+AMP1_PDN
+Wire Wire Line
+	2850 3200 2800 3200
+Wire Wire Line
+	2550 3200 2600 3200
+Wire Wire Line
+	1550 2150 1550 2200
+Wire Wire Line
+	1550 1350 1550 1400
+Connection ~ 1550 1400
+Wire Wire Line
+	2800 1400 2800 1700
+Text Notes 2400 3250 2    50   ~ 0
+I2C address = 0x4D
+Wire Notes Line
+	1400 1100 1400 4150
+Wire Notes Line
+	1400 4150 6450 4150
+Wire Notes Line
+	6450 4150 6450 1100
+Wire Notes Line
+	6450 1100 1400 1100
+Text Notes 1400 1100 0    50   ~ 0
+Amplifier 1
+Text HLabel 2850 3900 0    50   Input ~ 0
+I2C_SCL
+Text HLabel 2850 3800 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F83A
+P 4450 5000
+AR Path="/60AAD6DF/60B2F83A" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F83A" Ref="C?"  Part="1" 
+F 0 "C?" V 4400 5150 50  0000 C CNN
+F 1 "470n" V 4500 5150 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 5000 50  0001 C CNN
+F 3 "~" H 4450 5000 50  0001 C CNN
+	1    4450 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L ZOUDIOsymbols:TAS5825M U?
+U 1 1 60B2F840
+P 3600 6100
+AR Path="/60AAD6DF/60B2F840" Ref="U?"  Part="1" 
+AR Path="/60AAE706/60B2F840" Ref="U?"  Part="1" 
+F 0 "U?" H 3100 7300 50  0000 C CNN
+F 1 "TAS5825M" H 3950 7300 50  0000 C CNN
+F 2 "ZOUDIOfootprints:TAS5825M" H 3600 6200 50  0001 C CNN
+F 3 "" H 3600 6200 50  0001 C CNN
+	1    3600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F846
+P 4450 5500
+AR Path="/60AAD6DF/60B2F846" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F846" Ref="C?"  Part="1" 
+F 0 "C?" V 4400 5650 50  0000 C CNN
+F 1 "470n" V 4500 5650 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 5500 50  0001 C CNN
+F 3 "~" H 4450 5500 50  0001 C CNN
+	1    4450 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F84C
+P 4450 5700
+AR Path="/60AAD6DF/60B2F84C" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F84C" Ref="C?"  Part="1" 
+F 0 "C?" V 4400 5850 50  0000 C CNN
+F 1 "470n" V 4500 5850 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 5700 50  0001 C CNN
+F 3 "~" H 4450 5700 50  0001 C CNN
+	1    4450 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F852
+P 4450 6200
+AR Path="/60AAD6DF/60B2F852" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F852" Ref="C?"  Part="1" 
+F 0 "C?" V 4400 6350 50  0000 C CNN
+F 1 "470n" V 4500 6350 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 4450 6200 50  0001 C CNN
+F 3 "~" H 4450 6200 50  0001 C CNN
+	1    4450 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 5500 4750 5500
+Wire Wire Line
+	4350 5150 4750 5150
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F85A
+P 4400 7250
+AR Path="/60AAD6DF/60B2F85A" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F85A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4400 7000 50  0001 C CNN
+F 1 "GND" H 4405 7077 50  0001 C CNN
+F 2 "" H 4400 7250 50  0001 C CNN
+F 3 "" H 4400 7250 50  0001 C CNN
+	1    4400 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 7250 4400 7200
+Wire Wire Line
+	4400 7200 4350 7200
+Wire Wire Line
+	4400 7200 4400 7100
+Wire Wire Line
+	4400 7100 4350 7100
+Connection ~ 4400 7200
+Wire Wire Line
+	4400 7100 4400 7000
+Wire Wire Line
+	4400 7000 4350 7000
+Connection ~ 4400 7100
+Wire Wire Line
+	4400 7000 4400 6900
+Wire Wire Line
+	4400 6900 4350 6900
+Connection ~ 4400 7000
+Wire Wire Line
+	4400 6900 4400 6800
+Wire Wire Line
+	4400 6800 4350 6800
+Connection ~ 4400 6900
+Wire Wire Line
+	4400 6800 4400 6700
+Wire Wire Line
+	4400 6700 4350 6700
+Connection ~ 4400 6800
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F871
+P 2550 6500
+AR Path="/60AAD6DF/60B2F871" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F871" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2550 6250 50  0001 C CNN
+F 1 "GND" V 2555 6372 50  0001 R CNN
+F 2 "" H 2550 6500 50  0001 C CNN
+F 3 "" H 2550 6500 50  0001 C CNN
+	1    2550 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F877
+P 2700 5700
+AR Path="/60AAD6DF/60B2F877" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F877" Ref="C?"  Part="1" 
+F 0 "C?" V 2650 5800 50  0000 C CNN
+F 1 "1u" V 2750 5800 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 2700 5700 50  0001 C CNN
+F 3 "~" H 2700 5700 50  0001 C CNN
+	1    2700 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F87D
+P 2500 5800
+AR Path="/60AAD6DF/60B2F87D" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F87D" Ref="C?"  Part="1" 
+F 0 "C?" V 2450 5900 50  0000 C CNN
+F 1 "1u" V 2550 5900 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 2500 5800 50  0001 C CNN
+F 3 "~" H 2500 5800 50  0001 C CNN
+	1    2500 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F883
+P 2300 5900
+AR Path="/60AAD6DF/60B2F883" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F883" Ref="C?"  Part="1" 
+F 0 "C?" V 2250 6000 50  0000 C CNN
+F 1 "1u" V 2350 6000 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 2300 5900 50  0001 C CNN
+F 3 "~" H 2300 5900 50  0001 C CNN
+	1    2300 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5900 2400 5900
+Wire Wire Line
+	2850 5800 2600 5800
+Wire Wire Line
+	2850 5700 2800 5700
+Wire Wire Line
+	2150 5950 2150 5900
+Wire Wire Line
+	2150 5900 2200 5900
+Wire Wire Line
+	2400 5800 2150 5800
+Wire Wire Line
+	2150 5800 2150 5900
+Connection ~ 2150 5900
+Wire Wire Line
+	2600 5700 2150 5700
+Wire Wire Line
+	2150 5700 2150 5800
+Connection ~ 2150 5800
+Wire Wire Line
+	2850 5300 2800 5300
+Wire Wire Line
+	2800 5300 2800 5200
+Wire Wire Line
+	2800 5200 2850 5200
+Wire Wire Line
+	2800 5200 2800 5100
+Wire Wire Line
+	2800 5100 2850 5100
+Connection ~ 2800 5200
+Wire Wire Line
+	2800 5100 2800 5000
+Wire Wire Line
+	2800 5000 2850 5000
+Connection ~ 2800 5100
+Wire Wire Line
+	4400 6700 4400 6600
+Wire Wire Line
+	4400 6600 4350 6600
+Connection ~ 4400 6700
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F8A0
+P 5400 5500
+AR Path="/60AAD6DF/60B2F8A0" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F8A0" Ref="C?"  Part="1" 
+F 0 "C?" H 5250 5500 50  0000 C CNN
+F 1 "470n" H 5250 5600 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5400 5500 50  0001 C CNN
+F 3 "~" H 5400 5500 50  0001 C CNN
+	1    5400 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F8A6
+P 5800 5500
+AR Path="/60AAD6DF/60B2F8A6" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F8A6" Ref="C?"  Part="1" 
+F 0 "C?" H 5650 5500 50  0000 C CNN
+F 1 "470n" H 5650 5600 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5800 5500 50  0001 C CNN
+F 3 "~" H 5800 5500 50  0001 C CNN
+	1    5800 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F8AC
+P 5400 5700
+AR Path="/60AAD6DF/60B2F8AC" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F8AC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5400 5450 50  0001 C CNN
+F 1 "GND" H 5405 5527 50  0001 C CNN
+F 2 "" H 5400 5700 50  0001 C CNN
+F 3 "" H 5400 5700 50  0001 C CNN
+	1    5400 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5650 5800 5600
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F8B3
+P 2150 5950
+AR Path="/60AAD6DF/60B2F8B3" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F8B3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 5700 50  0001 C CNN
+F 1 "GND" V 2155 5822 50  0001 R CNN
+F 2 "" H 2150 5950 50  0001 C CNN
+F 3 "" H 2150 5950 50  0001 C CNN
+	1    2150 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5850 4750 5850
+Wire Wire Line
+	4750 5700 4750 5850
+Wire Wire Line
+	4750 5700 4550 5700
+Wire Wire Line
+	4550 6200 4750 6200
+Wire Wire Line
+	4350 6050 4750 6050
+Wire Wire Line
+	4750 5500 4750 5350
+Wire Wire Line
+	4750 5350 4350 5350
+Wire Wire Line
+	4750 5150 4750 5000
+Wire Wire Line
+	4750 5000 4550 5000
+Wire Wire Line
+	4850 5150 4750 5150
+Connection ~ 4750 5150
+Wire Wire Line
+	4850 5350 4750 5350
+Connection ~ 4750 5350
+Wire Wire Line
+	4850 5850 4750 5850
+Connection ~ 4750 5850
+Wire Wire Line
+	5400 5400 5400 5350
+Wire Wire Line
+	5800 5400 5800 5150
+Wire Wire Line
+	5800 5150 6200 5150
+$Comp
+L Device:L L?
+U 1 1 60B2F8CB
+P 5000 5850
+AR Path="/60AAD6DF/60B2F8CB" Ref="L?"  Part="1" 
+AR Path="/60AAE706/60B2F8CB" Ref="L?"  Part="1" 
+F 0 "L?" V 5200 5850 50  0000 C CNN
+F 1 "10u" V 5100 5850 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 5850 50  0001 C CNN
+F 3 "~" H 5000 5850 50  0001 C CNN
+	1    5000 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 60B2F8D1
+P 5000 6050
+AR Path="/60AAD6DF/60B2F8D1" Ref="L?"  Part="1" 
+AR Path="/60AAE706/60B2F8D1" Ref="L?"  Part="1" 
+F 0 "L?" V 4950 6050 50  0000 C CNN
+F 1 "10u" V 4850 6050 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 6050 50  0001 C CNN
+F 3 "~" H 5000 6050 50  0001 C CNN
+	1    5000 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 60B2F8D7
+P 5000 5350
+AR Path="/60AAD6DF/60B2F8D7" Ref="L?"  Part="1" 
+AR Path="/60AAE706/60B2F8D7" Ref="L?"  Part="1" 
+F 0 "L?" V 4950 5350 50  0000 C CNN
+F 1 "10u" V 4850 5350 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 5350 50  0001 C CNN
+F 3 "~" H 5000 5350 50  0001 C CNN
+	1    5000 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 60B2F8DD
+P 5000 5150
+AR Path="/60AAD6DF/60B2F8DD" Ref="L?"  Part="1" 
+AR Path="/60AAE706/60B2F8DD" Ref="L?"  Part="1" 
+F 0 "L?" V 5200 5150 50  0000 C CNN
+F 1 "10u" V 5100 5150 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Murata_1274AS-H-100M" H 5000 5150 50  0001 C CNN
+F 3 "~" H 5000 5150 50  0001 C CNN
+	1    5000 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 5600 5400 5650
+Wire Wire Line
+	5400 5350 6200 5350
+Wire Wire Line
+	5400 5650 5800 5650
+Connection ~ 5400 5650
+Wire Wire Line
+	5400 5650 5400 5700
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F8E8
+P 5400 6200
+AR Path="/60AAD6DF/60B2F8E8" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F8E8" Ref="C?"  Part="1" 
+F 0 "C?" H 5250 6200 50  0000 C CNN
+F 1 "470n" H 5250 6300 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5400 6200 50  0001 C CNN
+F 3 "~" H 5400 6200 50  0001 C CNN
+	1    5400 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F8EE
+P 5800 6200
+AR Path="/60AAD6DF/60B2F8EE" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F8EE" Ref="C?"  Part="1" 
+F 0 "C?" H 5650 6200 50  0000 C CNN
+F 1 "470n" H 5650 6300 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 5800 6200 50  0001 C CNN
+F 3 "~" H 5800 6200 50  0001 C CNN
+	1    5800 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F8F4
+P 5400 6400
+AR Path="/60AAD6DF/60B2F8F4" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F8F4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5400 6150 50  0001 C CNN
+F 1 "GND" H 5405 6227 50  0001 C CNN
+F 2 "" H 5400 6400 50  0001 C CNN
+F 3 "" H 5400 6400 50  0001 C CNN
+	1    5400 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6350 5800 6300
+Wire Wire Line
+	5400 6100 5400 6050
+Wire Wire Line
+	5800 6100 5800 5850
+Wire Wire Line
+	5800 5850 6200 5850
+Wire Wire Line
+	5400 6300 5400 6350
+Wire Wire Line
+	5400 6050 6200 6050
+Wire Wire Line
+	5400 6350 5800 6350
+Connection ~ 5400 6350
+Wire Wire Line
+	5400 6350 5400 6400
+NoConn ~ 2850 6600
+NoConn ~ 2850 6800
+Wire Wire Line
+	5400 5350 5150 5350
+Connection ~ 5400 5350
+Wire Wire Line
+	5150 5150 5800 5150
+Connection ~ 5800 5150
+Wire Wire Line
+	5400 6050 5150 6050
+Connection ~ 5400 6050
+Wire Wire Line
+	5150 5850 5800 5850
+Connection ~ 5800 5850
+Wire Wire Line
+	4850 6050 4750 6050
+Connection ~ 4750 6050
+Wire Wire Line
+	4750 6200 4750 6050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60B2F910
+P 1550 5450
+AR Path="/60AAD6DF/60B2F910" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F910" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1550 5300 50  0001 C CNN
+F 1 "+3V3" H 1550 5600 50  0000 C CNN
+F 2 "" H 1550 5450 50  0001 C CNN
+F 3 "" H 1550 5450 50  0001 C CNN
+	1    1550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F916
+P 1850 5650
+AR Path="/60AAD6DF/60B2F916" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F916" Ref="C?"  Part="1" 
+F 0 "C?" H 1700 5650 50  0000 C CNN
+F 1 "100n" H 1750 5750 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 1850 5650 50  0001 C CNN
+F 3 "~" H 1850 5650 50  0001 C CNN
+	1    1850 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 60B2F91C
+P 1550 4650
+AR Path="/60AAD6DF/60B2F91C" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F91C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1550 4500 50  0001 C CNN
+F 1 "VDD" H 1567 4823 50  0000 C CNN
+F 2 "" H 1550 4650 50  0001 C CNN
+F 3 "" H 1550 4650 50  0001 C CNN
+	1    1550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F922
+P 2150 4850
+AR Path="/60AAD6DF/60B2F922" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F922" Ref="C?"  Part="1" 
+F 0 "C?" H 2000 4850 50  0000 C CNN
+F 1 "100n" H 2000 4950 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 2150 4850 50  0001 C CNN
+F 3 "~" H 2150 4850 50  0001 C CNN
+	1    2150 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F928
+P 2450 4850
+AR Path="/60AAD6DF/60B2F928" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F928" Ref="C?"  Part="1" 
+F 0 "C?" H 2300 4850 50  0000 C CNN
+F 1 "100n" H 2300 4950 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0603" H 2450 4850 50  0001 C CNN
+F 3 "~" H 2450 4850 50  0001 C CNN
+	1    2450 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 4700 2150 4750
+Wire Wire Line
+	2450 4700 2450 4750
+Wire Wire Line
+	2150 4950 2150 5000
+Wire Wire Line
+	2450 4950 2450 5000
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F932
+P 1550 4850
+AR Path="/60AAD6DF/60B2F932" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F932" Ref="C?"  Part="1" 
+F 0 "C?" H 1400 4850 50  0000 C CNN
+F 1 "1u" H 1400 4950 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 1550 4850 50  0001 C CNN
+F 3 "~" H 1550 4850 50  0001 C CNN
+	1    1550 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F938
+P 1850 4850
+AR Path="/60AAD6DF/60B2F938" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F938" Ref="C?"  Part="1" 
+F 0 "C?" H 1700 4850 50  0000 C CNN
+F 1 "1u" H 1700 4950 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 1850 4850 50  0001 C CNN
+F 3 "~" H 1850 4850 50  0001 C CNN
+	1    1850 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 4750 1850 4700
+Wire Wire Line
+	1850 4700 1550 4700
+Wire Wire Line
+	1550 4950 1550 5000
+Wire Wire Line
+	1850 4950 1850 5000
+Connection ~ 1550 5000
+Wire Wire Line
+	1550 4750 1550 4700
+Connection ~ 1850 4700
+$Comp
+L Device:C_Small C?
+U 1 1 60B2F945
+P 1550 5650
+AR Path="/60AAD6DF/60B2F945" Ref="C?"  Part="1" 
+AR Path="/60AAE706/60B2F945" Ref="C?"  Part="1" 
+F 0 "C?" H 1400 5650 50  0000 C CNN
+F 1 "1u" H 1400 5750 50  0000 C CNN
+F 2 "ZOUDIOfootprints:C0805" H 1550 5650 50  0001 C CNN
+F 3 "~" H 1550 5650 50  0001 C CNN
+	1    1550 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 5500 1850 5550
+Wire Wire Line
+	1550 5500 1550 5550
+Connection ~ 1550 5500
+Wire Wire Line
+	1550 5500 1850 5500
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F94F
+P 1550 5850
+AR Path="/60AAD6DF/60B2F94F" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F94F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1550 5600 50  0001 C CNN
+F 1 "GND" V 1555 5722 50  0001 R CNN
+F 2 "" H 1550 5850 50  0001 C CNN
+F 3 "" H 1550 5850 50  0001 C CNN
+	1    1550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5750 1550 5800
+Wire Wire Line
+	1550 5800 1850 5800
+Wire Wire Line
+	1850 5800 1850 5750
+Connection ~ 1550 5800
+Wire Wire Line
+	1550 5800 1550 5850
+$Comp
+L power:GND #PWR?
+U 1 1 60B2F95A
+P 1550 5050
+AR Path="/60AAD6DF/60B2F95A" Ref="#PWR?"  Part="1" 
+AR Path="/60AAE706/60B2F95A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1550 4800 50  0001 C CNN
+F 1 "GND" V 1555 4922 50  0001 R CNN
+F 2 "" H 1550 5050 50  0001 C CNN
+F 3 "" H 1550 5050 50  0001 C CNN
+	1    1550 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 5000
+Wire Wire Line
+	2800 4700 2450 4700
+Connection ~ 2450 4700
+Wire Wire Line
+	2850 5500 1850 5500
+Connection ~ 1850 5500
+Connection ~ 2150 4700
+Wire Wire Line
+	2150 4700 1850 4700
+Wire Wire Line
+	2150 4700 2450 4700
+Wire Wire Line
+	1550 5000 1850 5000
+Wire Wire Line
+	2450 5000 2150 5000
+Connection ~ 1850 5000
+Connection ~ 2150 5000
+Wire Wire Line
+	2150 5000 1850 5000
+Wire Wire Line
+	1550 5050 1550 5000
+Text HLabel 2850 6100 0    50   Input ~ 0
+I2S_LRCLK
+Text HLabel 2850 6200 0    50   Input ~ 0
+I2S_SCLK
+Text HLabel 2850 6300 0    50   Input ~ 0
+I2S_SDIN
+NoConn ~ 2850 6700
+Text HLabel 2850 6900 0    50   Input ~ 0
+AMP2_PDN
+Wire Wire Line
+	1550 5450 1550 5500
+Wire Wire Line
+	1550 4650 1550 4700
+Connection ~ 1550 4700
+Wire Wire Line
+	2800 4700 2800 5000
+Text Notes 2400 6550 2    50   ~ 0
+I2C address = 0x4C
+Wire Notes Line
+	1400 4400 1400 7450
+Wire Notes Line
+	1400 7450 6450 7450
+Wire Notes Line
+	6450 7450 6450 4400
+Wire Notes Line
+	6450 4400 1400 4400
+Text Notes 1400 4400 0    50   ~ 0
+Amplifier 2
+Wire Wire Line
+	2550 6500 2850 6500
+Text HLabel 2850 7200 0    50   Input ~ 0
+I2C_SCL
+Text HLabel 2850 7100 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L Connector_Generic:Conn_01x12 J?
+U 1 1 60B7534C
+P 8350 1750
+AR Path="/60B7534C" Ref="J?"  Part="1" 
+AR Path="/60B7AC16/60B7534C" Ref="J?"  Part="1" 
+AR Path="/60AAD6DF/60B7534C" Ref="J?"  Part="1" 
+F 0 "J?" H 8500 1750 50  0000 C CNN
+F 1 "5mm screwterminal 01x12" H 8950 1650 50  0000 C CNN
+F 2 "ZOUDIOfootprints:Multicomp_12P_5mm" H 8350 1750 50  0001 C CNN
+F 3 "~" H 8350 1750 50  0001 C CNN
+F 4 "Amp out / power in" H 8850 1550 50  0000 C CNN "Function"
+	1    8350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B75354
+P 8150 2050
+AR Path="/60B75354" Ref="#PWR?"  Part="1" 
+AR Path="/60B7AC16/60B75354" Ref="#PWR?"  Part="1" 
+AR Path="/60AAD6DF/60B75354" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8150 1800 50  0001 C CNN
+F 1 "GND" H 8155 1877 50  0001 C CNN
+F 2 "" H 8150 2050 50  0001 C CNN
+F 3 "" H 8150 2050 50  0001 C CNN
+	1    8150 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B7535A
+P 8150 2350
+AR Path="/60B7535A" Ref="#PWR?"  Part="1" 
+AR Path="/60B7AC16/60B7535A" Ref="#PWR?"  Part="1" 
+AR Path="/60AAD6DF/60B7535A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8150 2100 50  0001 C CNN
+F 1 "GND" H 8155 2177 50  0001 C CNN
+F 2 "" H 8150 2350 50  0001 C CNN
+F 3 "" H 8150 2350 50  0001 C CNN
+	1    8150 2350
+	0    1    1    0   
+$EndComp
+Text Label 8150 1950 2    50   ~ 0
+A+
+Text Label 8150 1850 2    50   ~ 0
+A-
+Text Label 8150 1750 2    50   ~ 0
+B-
+Text Label 8150 1650 2    50   ~ 0
+B+
+Text Label 8150 1550 2    50   ~ 0
+C+
+Text Label 8150 1450 2    50   ~ 0
+C-
+Text Label 8150 1350 2    50   ~ 0
+D-
+Text Label 8150 1250 2    50   ~ 0
+D+
+Text Label 6200 1850 0    50   ~ 0
+A+
+Text Label 6200 2050 0    50   ~ 0
+A-
+Text Label 6200 2550 0    50   ~ 0
+B-
+Text Label 6200 2750 0    50   ~ 0
+B+
+Text Label 6200 5150 0    50   ~ 0
+C+
+Text Label 6200 5350 0    50   ~ 0
+C-
+Text Label 6200 5850 0    50   ~ 0
+D-
+Text Label 6200 6050 0    50   ~ 0
+D+
+Text GLabel 8150 2150 0    50   Output ~ 0
+Vin
+Text GLabel 8150 2250 0    50   Output ~ 0
+Vin
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 60BFE299
+P 8500 3600
+AR Path="/60BFE299" Ref="J?"  Part="1" 
+AR Path="/60AAD6DF/60BFE299" Ref="J?"  Part="1" 
+F 0 "J?" H 8600 3700 50  0000 L CNN
+F 1 "JST-PH 01x03" H 8600 3600 50  0000 L CNN
+F 2 "ZOUDIOfootprints:PinSocket_1x03_P2.54mm_Vertical" H 8500 3600 50  0001 C CNN
+F 3 "~" H 8500 3600 50  0001 C CNN
+F 4 "I2S" H 8650 3500 50  0000 C CNN "Function"
+	1    8500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2700 8150 2700
+Connection ~ 8100 2700
+Wire Wire Line
+	8050 2700 8100 2700
+Wire Wire Line
+	8100 2800 8150 2800
+Wire Wire Line
+	8100 2700 8100 2800
+Connection ~ 8100 3000
+Wire Wire Line
+	8050 3000 8100 3000
+Wire Wire Line
+	8100 2900 8100 3000
+Wire Wire Line
+	8150 2900 8100 2900
+Wire Wire Line
+	8100 3000 8150 3000
+$Comp
+L power:GND #PWR?
+U 1 1 60C17FD9
+P 8050 2700
+AR Path="/60C17FD9" Ref="#PWR?"  Part="1" 
+AR Path="/60B7AC16/60C17FD9" Ref="#PWR?"  Part="1" 
+AR Path="/60AAD6DF/60C17FD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 2450 50  0001 C CNN
+F 1 "GND" H 8055 2527 50  0001 C CNN
+F 2 "" H 8050 2700 50  0001 C CNN
+F 3 "" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60C17FDF
+P 8350 2800
+AR Path="/60C17FDF" Ref="J?"  Part="1" 
+AR Path="/60B7AC16/60C17FDF" Ref="J?"  Part="1" 
+AR Path="/60AAD6DF/60C17FDF" Ref="J?"  Part="1" 
+F 0 "J?" H 8450 2850 50  0000 L CNN
+F 1 "JST-PH 01x04" H 8450 2750 50  0000 L CNN
+F 2 "ZOUDIOfootprints:JSTPH_4P" H 8350 2800 50  0001 C CNN
+F 3 "~" H 8350 2800 50  0001 C CNN
+F 4 "Sure BCPBx" H 8700 2650 50  0000 C CNN "Function"
+	1    8350 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 3000 0    50   Output ~ 0
+Vin
+Text HLabel 8300 3700 0    50   Input ~ 0
+I2S_LRCLK
+Text HLabel 8300 3600 0    50   Input ~ 0
+I2S_SCLK
+Text HLabel 8300 3500 0    50   Input ~ 0
+I2S_SDIN
+$Comp
+L power:VDD #PWR?
+U 1 1 60CBE8CF
+P 7100 1350
+AR Path="/60CBE8CF" Ref="#PWR?"  Part="1" 
+AR Path="/60AAD6DF/60CBE8CF" Ref="#PWR?"  Part="1" 
+AR Path="/60B7AC16/60CBE8CF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7100 1200 50  0001 C CNN
+F 1 "VDD" H 7117 1523 50  0000 C CNN
+F 2 "" H 7100 1350 50  0001 C CNN
+F 3 "" H 7100 1350 50  0001 C CNN
+	1    7100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CBE8D5
+P 7100 1550
+AR Path="/60CBE8D5" Ref="C?"  Part="1" 
+AR Path="/60AAD6DF/60CBE8D5" Ref="C?"  Part="1" 
+AR Path="/60B7AC16/60CBE8D5" Ref="C?"  Part="1" 
+F 0 "C?" H 7250 1600 50  0000 L CNN
+F 1 "910u" H 7215 1505 50  0000 L CNN
+F 2 "ZOUDIOfootprints:Cap_Rad_D10_P5" H 7138 1400 50  0001 C CNN
+F 3 "~" H 7100 1550 50  0001 C CNN
+	1    7100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CBE8DE
+P 7100 1750
+AR Path="/60CBE8DE" Ref="#PWR?"  Part="1" 
+AR Path="/60AAD6DF/60CBE8DE" Ref="#PWR?"  Part="1" 
+AR Path="/60B7AC16/60CBE8DE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7100 1500 50  0001 C CNN
+F 1 "GND" H 7105 1577 50  0001 C CNN
+F 2 "" H 7100 1750 50  0001 C CNN
+F 3 "" H 7100 1750 50  0001 C CNN
+	1    7100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1700 7100 1750
+Wire Wire Line
+	7100 1350 7100 1400
+Wire Notes Line
+	7800 1100 7800 3150
+Wire Notes Line
+	7800 3150 9550 3150
+Wire Notes Line
+	9550 3150 9550 1100
+Wire Notes Line
+	7800 1100 9550 1100
+Wire Notes Line
+	6700 1100 7550 1100
+Wire Notes Line
+	7550 1100 7550 1900
+Wire Notes Line
+	7550 1900 6700 1900
+Wire Notes Line
+	6700 1900 6700 1100
+Text Notes 6700 1100 0    50   ~ 0
+Shared bulk capacitor
+Text Notes 7800 1100 0    50   ~ 0
+Power connectors
+Wire Notes Line
+	7800 3400 9200 3400
+Wire Notes Line
+	9200 3400 9200 3800
+Wire Notes Line
+	9200 3800 7800 3800
+Wire Notes Line
+	7800 3800 7800 3400
+Text Notes 7800 3400 0    50   ~ 0
+I2S
+$EndSCHEMATC
