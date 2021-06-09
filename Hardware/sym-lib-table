@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name TPS2113A)(type Legacy)(uri C:/Users/jesse/Downloads/TPS2113A/TPS2113A.lib)(options "")(descr ""))
 )

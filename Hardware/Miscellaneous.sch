@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 9 9
 Title "4x38W amp with DSP and BT"
-Date "2021-05-22"
+Date "2021-06-08"
 Rev "V0.1"
 Comp "ZOUDIO"
 Comment1 ""
@@ -14,111 +14,91 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ZOUDIOsymbols:M3_bolt M?
-U 1 1 60AA1397
-P 5050 3000
-AR Path="/60AA1397" Ref="M?"  Part="1" 
-AR Path="/60AA037E/60AA1397" Ref="M1"  Part="1" 
-F 0 "M1" H 5178 3053 60  0000 L CNN
-F 1 "M3_hole" H 5178 2947 60  0000 L CNN
-F 2 "ZOUDIOfootprints:M3_hole" H 5250 3000 60  0001 C CNN
-F 3 "" H 5250 3000 60  0001 C CNN
-	1    5050 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L ZOUDIOsymbols:M3_bolt M?
-U 1 1 60AA139D
-P 5050 3400
-AR Path="/60AA139D" Ref="M?"  Part="1" 
-AR Path="/60AA037E/60AA139D" Ref="M2"  Part="1" 
-F 0 "M2" H 5178 3453 60  0000 L CNN
-F 1 "M3_hole" H 5178 3347 60  0000 L CNN
-F 2 "ZOUDIOfootprints:M3_hole" H 5250 3400 60  0001 C CNN
-F 3 "" H 5250 3400 60  0001 C CNN
-	1    5050 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L ZOUDIOsymbols:M3_bolt M?
-U 1 1 60AA13A3
-P 5050 3800
-AR Path="/60AA13A3" Ref="M?"  Part="1" 
-AR Path="/60AA037E/60AA13A3" Ref="M3"  Part="1" 
-F 0 "M3" H 5178 3853 60  0000 L CNN
-F 1 "M3_hole" H 5178 3747 60  0000 L CNN
-F 2 "ZOUDIOfootprints:M3_hole" H 5250 3800 60  0001 C CNN
-F 3 "" H 5250 3800 60  0001 C CNN
-	1    5050 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L ZOUDIOsymbols:M3_bolt M?
-U 1 1 60AA13A9
-P 5050 4200
-AR Path="/60AA13A9" Ref="M?"  Part="1" 
-AR Path="/60AA037E/60AA13A9" Ref="M4"  Part="1" 
-F 0 "M4" H 5178 4253 60  0000 L CNN
-F 1 "M3_hole" H 5178 4147 60  0000 L CNN
-F 2 "ZOUDIOfootprints:M3_hole" H 5250 4200 60  0001 C CNN
-F 3 "" H 5250 4200 60  0001 C CNN
-	1    5050 4200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:Fiducial FID1
 U 1 1 60AA180D
 P 6100 3000
 F 0 "FID1" H 6200 3050 50  0000 L CNN
-F 1 "Fiducial" H 6200 3000 50  0000 L CNN
-F 2 "" H 6100 3000 50  0001 C CNN
+F 1 "Fiducial" H 6200 2950 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 6100 3000 50  0001 C CNN
 F 3 "~" H 6100 3000 50  0001 C CNN
 	1    6100 3000
 	1    0    0    -1  
 $EndComp
 $Comp
+L Mechanical:MountingHole H1
+U 1 1 60CB6D75
+P 5100 3000
+F 0 "H1" H 5200 3050 50  0000 L CNN
+F 1 "MountingHole" H 5200 2950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5100 3000 50  0001 C CNN
+F 3 "~" H 5100 3000 50  0001 C CNN
+	1    5100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60CB7225
+P 5100 3250
+F 0 "H2" H 5200 3300 50  0000 L CNN
+F 1 "MountingHole" H 5200 3200 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5100 3250 50  0001 C CNN
+F 3 "~" H 5100 3250 50  0001 C CNN
+	1    5100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60CB73BB
+P 5100 3500
+F 0 "H3" H 5200 3550 50  0000 L CNN
+F 1 "MountingHole" H 5200 3450 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5100 3500 50  0001 C CNN
+F 3 "~" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60CB7656
+P 5100 3750
+F 0 "H4" H 5200 3800 50  0000 L CNN
+F 1 "MountingHole" H 5200 3700 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5100 3750 50  0001 C CNN
+F 3 "~" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 60CB7B57
+P 7450 3200
+F 0 "#LOGO1" H 7450 3475 50  0001 C CNN
+F 1 "ZOUDIO silkscreen logo" H 7450 2950 50  0000 C CNN
+F 2 "ZOUDIOfootprints:ZOUDIO25mm" H 7450 3200 50  0001 C CNN
+F 3 "~" H 7450 3200 50  0001 C CNN
+	1    7450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
 L Mechanical:Fiducial FID2
-U 1 1 60AA1B7E
-P 6100 3200
-F 0 "FID2" H 6200 3250 50  0000 L CNN
+U 1 1 60CD5903
+P 6100 3250
+F 0 "FID2" H 6200 3300 50  0000 L CNN
 F 1 "Fiducial" H 6200 3200 50  0000 L CNN
-F 2 "" H 6100 3200 50  0001 C CNN
-F 3 "~" H 6100 3200 50  0001 C CNN
-	1    6100 3200
+F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 6100 3250 50  0001 C CNN
+F 3 "~" H 6100 3250 50  0001 C CNN
+	1    6100 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:Fiducial FID3
-U 1 1 60AA224F
-P 6100 3400
-F 0 "FID3" H 6200 3450 50  0000 L CNN
-F 1 "Fiducial" H 6200 3400 50  0000 L CNN
-F 2 "" H 6100 3400 50  0001 C CNN
-F 3 "~" H 6100 3400 50  0001 C CNN
-	1    6100 3400
+U 1 1 60CD5AD1
+P 6100 3500
+F 0 "FID3" H 6200 3550 50  0000 L CNN
+F 1 "Fiducial" H 6200 3450 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 6100 3500 50  0001 C CNN
+F 3 "~" H 6100 3500 50  0001 C CNN
+	1    6100 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L ZOUDIOsymbols:ZOUDIO Logo?
-U 1 1 60AA3C63
-P 7700 3100
-AR Path="/60AA3C63" Ref="Logo?"  Part="1" 
-AR Path="/60AA037E/60AA3C63" Ref="Logo1"  Part="1" 
-F 0 "Logo1" H 7600 3100 50  0000 L CNN
-F 1 "ZOUDIO" H 7550 3000 50  0000 L CNN
-F 2 "ZOUDIOfootprints:ZOUDIO25mm" H 7700 3100 50  0001 C CNN
-F 3 "" H 7700 3100 50  0001 C CNN
-	1    7700 3100
-	1    0    0    -1  
-$EndComp
-Text Notes 7400 3000 0    50   ~ 0
-Silkscreen logo
-Wire Notes Line
-	7400 3000 8000 3000
-Wire Notes Line
-	8000 3000 8000 3300
-Wire Notes Line
-	8000 3300 7400 3300
-Wire Notes Line
-	7400 3300 7400 3000
 $EndSCHEMATC

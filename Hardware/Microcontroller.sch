@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 4 9
 Title "4x38W amp with DSP and BT"
-Date "2021-05-22"
+Date "2021-06-08"
 Rev "V0.1"
 Comp "ZOUDIO"
 Comment1 ""
@@ -13,23 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ZOUDIOsymbols:ATMEGA328PB U?
-U 1 1 5FD14D5C
-P 3550 4050
-AR Path="/5FD14D5C" Ref="U?"  Part="1" 
-AR Path="/5FCC1D27/5FD14D5C" Ref="U?"  Part="1" 
-AR Path="/5FBDE62F/5FD14D5C" Ref="U?"  Part="1" 
-AR Path="/60BB64C6/5FD14D5C" Ref="U5"  Part="1" 
-F 0 "U5" H 3400 4200 50  0000 C CNN
-F 1 "ATMEGA328PB" H 3450 4100 50  0000 C CNN
-F 2 "ZOUDIOfootprints:TQFP-32_7x7mm_Pitch0.8mm" H 3550 4050 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 3550 4050 50  0001 C CNN
-F 4 "Microchip" H 3550 4050 50  0001 C CNN "Manufacturer"
-F 5 "ATMEGA328PB-AUR" H 3550 4050 50  0001 C CNN "Partnumber"
-	1    3550 4050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5FD14D63
@@ -55,7 +38,7 @@ AR Path="/5FBDE62F/5FD14D69" Ref="C?"  Part="1"
 AR Path="/60BB64C6/5FD14D69" Ref="C49"  Part="1" 
 F 0 "C49" V 3950 2300 50  0000 C CNN
 F 1 "100n" V 3850 2300 50  0000 C CNN
-F 2 "ZOUDIOfootprints:C0603" H 3800 2450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3800 2450 50  0001 C CNN
 F 3 "~" H 3800 2450 50  0001 C CNN
 F 4 "Walsin" H 3800 2450 50  0001 C CNN "Manufacturer"
 F 5 "0603B104J500CT" H 3800 2450 50  0001 C CNN "Partnumber"
@@ -96,16 +79,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5FD14D7F
-P 3550 5650
+P 3550 5600
 AR Path="/5FD14D7F" Ref="#PWR?"  Part="1" 
 AR Path="/5FCC1D27/5FD14D7F" Ref="#PWR?"  Part="1" 
 AR Path="/5FBDE62F/5FD14D7F" Ref="#PWR?"  Part="1" 
 AR Path="/60BB64C6/5FD14D7F" Ref="#PWR0175"  Part="1" 
-F 0 "#PWR0175" H 3550 5400 50  0001 C CNN
-F 1 "GND" H 3555 5477 50  0001 C CNN
-F 2 "" H 3550 5650 50  0001 C CNN
-F 3 "" H 3550 5650 50  0001 C CNN
-	1    3550 5650
+F 0 "#PWR0175" H 3550 5350 50  0001 C CNN
+F 1 "GND" H 3555 5427 50  0001 C CNN
+F 2 "" H 3550 5600 50  0001 C CNN
+F 3 "" H 3550 5600 50  0001 C CNN
+	1    3550 5600
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2950 2850
@@ -118,16 +101,7 @@ Microcontroller
 Text Notes 6300 1950 0    50   ~ 0
 EEPROM (I2C ADDR=0x50)
 Wire Wire Line
-	3600 5550 3600 5600
-Wire Wire Line
-	3600 5600 3550 5600
-Wire Wire Line
-	3550 5600 3550 5650
-Wire Wire Line
-	3500 5550 3500 5600
-Wire Wire Line
-	3500 5600 3550 5600
-Connection ~ 3550 5600
+	3550 5550 3550 5600
 $Comp
 L ZOUDIOsymbols:EEPROM_TSSOP U?
 U 1 1 5FD14DC1
@@ -138,7 +112,7 @@ AR Path="/5FBDE62F/5FD14DC1" Ref="U?"  Part="1"
 AR Path="/60BB64C6/5FD14DC1" Ref="U6"  Part="1" 
 F 0 "U6" H 7050 2700 50  0000 C CNN
 F 1 "M24256 EEPROM" H 7050 2200 50  0000 C CNN
-F 2 "ZOUDIOfootprints:TSSOP-8_4.4x3mm_P0.65mm" H 7050 2600 50  0001 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 7050 2600 50  0001 C CNN
 F 3 "" H 7050 2600 50  0001 C CNN
 F 4 "ST" H 7050 2450 50  0001 C CNN "Manufacturer"
 F 5 "M24256-BRDW6TP" H 7050 2450 50  0001 C CNN "Partnumber"
@@ -223,7 +197,7 @@ AR Path="/5FBDE62F/5FD14DF2" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FD14DF2" Ref="R25"  Part="1" 
 F 0 "R25" H 4700 4050 50  0000 L CNN
 F 1 "10k" H 4700 3950 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 4650 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4650 4000 50  0001 C CNN
 F 3 "~" H 4650 4000 50  0001 C CNN
 F 4 "Uni-royal" H 4650 4000 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 4650 4000 50  0001 C CNN "Partnumber"
@@ -240,7 +214,7 @@ AR Path="/5FBDE62F/5FD14DF9" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FD14DF9" Ref="R29"  Part="1" 
 F 0 "R29" H 4950 4050 50  0000 L CNN
 F 1 "10k" H 4950 3950 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 4900 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 4000 50  0001 C CNN
 F 3 "~" H 4900 4000 50  0001 C CNN
 F 4 "Uni-royal" H 4900 4000 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 4900 4000 50  0001 C CNN "Partnumber"
@@ -279,11 +253,11 @@ AR Path="/5FD14E23" Ref="J?"  Part="1"
 AR Path="/5FCC1D27/5FD14E23" Ref="J?"  Part="1" 
 AR Path="/5FBDE62F/5FD14E23" Ref="J?"  Part="1" 
 AR Path="/60BB64C6/5FD14E23" Ref="J11"  Part="1" 
-F 0 "J11" H 7300 3350 50  0000 R CNN
-F 1 "PinHeader 02x03" H 7500 3250 50  0000 R CNN
+F 0 "J11" H 7200 3350 50  0000 C CNN
+F 1 "PinHeader 02x03" H 7200 3250 50  0000 C CNN
 F 2 "ZOUDIOfootprints:PinSocket_2x03_P2.54mm_Vertical" H 7150 3550 50  0001 C CNN
 F 3 "~" H 7150 3550 50  0001 C CNN
-F 4 "ISCP" H 7200 3150 50  0000 C CNN "Function"
+F 4 "ICSP" H 7200 3150 50  0000 C CNN "Function"
 F 5 "DNP" H 7200 3050 50  0000 C CNN "Config"
 	1    7150 3550
 	-1   0    0    -1  
@@ -344,8 +318,6 @@ Text HLabel 2950 4850 0    50   Output ~ 0
 PE3
 Text HLabel 4950 4250 2    50   Output ~ 0
 I2C_SCL
-Text HLabel 4150 3450 2    50   Output ~ 0
-PB6
 Text HLabel 4150 3950 2    50   Output ~ 0
 PC2
 Text HLabel 4150 4050 2    50   Input ~ 0
@@ -368,8 +340,6 @@ Text HLabel 4150 4850 2    50   Input ~ 0
 PD3
 Text HLabel 4150 3850 2    50   Output ~ 0
 PC1
-Text HLabel 4150 3550 2    50   Output ~ 0
-PB7
 $Comp
 L Device:R_Small R?
 U 1 1 5FC5D4B9
@@ -379,7 +349,7 @@ AR Path="/5FBDE62F/5FC5D4B9" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FC5D4B9" Ref="R28"  Part="1" 
 F 0 "R28" V 4700 3300 50  0000 L CNN
 F 1 "10k" V 4700 3500 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 4800 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3450 50  0001 C CNN
 F 3 "~" H 4800 3450 50  0001 C CNN
 F 4 "Uni-royal" H 4800 3450 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 4800 3450 50  0001 C CNN "Partnumber"
@@ -395,7 +365,7 @@ AR Path="/5FBDE62F/5FC675D5" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FC675D5" Ref="R27"  Part="1" 
 F 0 "R27" V 4700 3100 50  0000 L CNN
 F 1 "10k" V 4700 3300 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 4800 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3250 50  0001 C CNN
 F 3 "~" H 4800 3250 50  0001 C CNN
 F 4 "Uni-royal" H 4800 3250 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 4800 3250 50  0001 C CNN "Partnumber"
@@ -411,7 +381,7 @@ AR Path="/5FBDE62F/5FC6ADCE" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FC6ADCE" Ref="R26"  Part="1" 
 F 0 "R26" V 4700 2900 50  0000 L CNN
 F 1 "10k" V 4700 3100 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 4800 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3050 50  0001 C CNN
 F 3 "~" H 4800 3050 50  0001 C CNN
 F 4 "Uni-royal" H 4800 3050 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 4800 3050 50  0001 C CNN "Partnumber"
@@ -463,7 +433,7 @@ AR Path="/5FD81784/5FE10F8C" Ref="C?"  Part="1"
 AR Path="/60BB64C6/5FE10F8C" Ref="C50"  Part="1" 
 F 0 "C50" V 5500 4350 50  0000 C CNN
 F 1 "100n" V 5400 4350 50  0000 C CNN
-F 2 "ZOUDIOfootprints:C0603" H 5650 4350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 4350 50  0001 C CNN
 F 3 "~" H 5650 4350 50  0001 C CNN
 F 4 "Walsin" H 5650 4350 50  0001 C CNN "Manufacturer"
 F 5 "0603B104J500CT" H 5650 4350 50  0001 C CNN "Partnumber"
@@ -481,7 +451,7 @@ AR Path="/5FD81784/5FE10F93" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FE10F93" Ref="R30"  Part="1" 
 F 0 "R30" H 5300 4100 50  0000 L CNN
 F 1 "10k" H 5300 4200 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 5500 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 4150 50  0001 C CNN
 F 3 "~" H 5500 4150 50  0001 C CNN
 F 4 "Uni-royal" H 5500 4150 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 5500 4150 50  0001 C CNN "Partnumber"
@@ -567,7 +537,7 @@ AR Path="/5FBDE62F/5FC1F0FD" Ref="Q?"  Part="1"
 AR Path="/60BB64C6/5FC1F0FD" Ref="Q3"  Part="1" 
 F 0 "Q3" H 7100 4950 50  0000 L CNN
 F 1 "N-channel" H 6950 4850 50  0000 L CNN
-F 2 "ZOUDIOfootprints:SOT-23" V 7150 4550 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 7150 4550 50  0001 C CNN
 F 3 "" V 7150 4550 50  0001 C CNN
 F 4 "Diodes" H 7150 4700 50  0001 C CNN "Manufacturer"
 F 5 "DMN3404L-7" H 7150 4700 50  0001 C CNN "Partnumber"
@@ -597,7 +567,7 @@ AR Path="/5FBDE62F/5FC31722" Ref="R?"  Part="1"
 AR Path="/60BB64C6/5FC31722" Ref="R31"  Part="1" 
 F 0 "R31" H 7200 5200 50  0000 L CNN
 F 1 "10k" H 7200 5100 50  0000 L CNN
-F 2 "ZOUDIOfootprints:R0603" H 7150 5150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7150 5150 50  0001 C CNN
 F 3 "~" H 7150 5150 50  0001 C CNN
 F 4 "Uni-royal" H 7150 5150 50  0001 C CNN "Manufacturer"
 F 5 "0603WAF1002T5E" H 7150 5150 50  0001 C CNN "Partnumber"
@@ -703,4 +673,169 @@ Text HLabel 7700 4900 0    50   BiDi ~ 0
 I2C_SDA
 Text HLabel 7700 5000 0    50   Output ~ 0
 I2C_SCL
+Text Label 4150 3450 0    50   ~ 0
+XTAL1
+Text Label 4150 3550 0    50   ~ 0
+XTAL2
+Text Notes 8050 1950 0    50   ~ 0
+Crystal
+Wire Notes Line
+	8050 2800 8050 1950
+Wire Notes Line
+	9050 2800 8050 2800
+Wire Notes Line
+	9050 1950 9050 2800
+Wire Notes Line
+	8050 1950 9050 1950
+Connection ~ 8700 2350
+Wire Wire Line
+	8750 2350 8700 2350
+Wire Wire Line
+	8400 2350 8450 2350
+Connection ~ 8400 2350
+Wire Wire Line
+	8400 2350 8400 2400
+Wire Wire Line
+	8350 2350 8400 2350
+Wire Wire Line
+	8450 2050 8450 2100
+Wire Wire Line
+	8550 2050 8450 2050
+Wire Wire Line
+	8550 2250 8550 2050
+$Comp
+L power:GND #PWR?
+U 1 1 60AA5ABB
+P 8450 2100
+AR Path="/60AA5ABB" Ref="#PWR?"  Part="1" 
+AR Path="/5FCC1D27/60AA5ABB" Ref="#PWR?"  Part="1" 
+AR Path="/5FBDE62F/60AA5ABB" Ref="#PWR?"  Part="1" 
+AR Path="/60BB64C6/60AA5ABB" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 8450 1850 50  0001 C CNN
+F 1 "GND" H 8455 1927 50  0001 C CNN
+F 2 "" H 8450 2100 50  0001 C CNN
+F 3 "" H 8450 2100 50  0001 C CNN
+	1    8450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2650 8400 2600
+$Comp
+L power:GND #PWR?
+U 1 1 60AA4439
+P 8400 2650
+AR Path="/60AA4439" Ref="#PWR?"  Part="1" 
+AR Path="/5FCC1D27/60AA4439" Ref="#PWR?"  Part="1" 
+AR Path="/5FBDE62F/60AA4439" Ref="#PWR?"  Part="1" 
+AR Path="/60BB64C6/60AA4439" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 8400 2400 50  0001 C CNN
+F 1 "GND" H 8405 2477 50  0001 C CNN
+F 2 "" H 8400 2650 50  0001 C CNN
+F 3 "" H 8400 2650 50  0001 C CNN
+	1    8400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2650 8700 2600
+$Comp
+L power:GND #PWR?
+U 1 1 60AA2DCF
+P 8700 2650
+AR Path="/60AA2DCF" Ref="#PWR?"  Part="1" 
+AR Path="/5FCC1D27/60AA2DCF" Ref="#PWR?"  Part="1" 
+AR Path="/5FBDE62F/60AA2DCF" Ref="#PWR?"  Part="1" 
+AR Path="/60BB64C6/60AA2DCF" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 8700 2400 50  0001 C CNN
+F 1 "GND" H 8705 2477 50  0001 C CNN
+F 2 "" H 8700 2650 50  0001 C CNN
+F 3 "" H 8700 2650 50  0001 C CNN
+	1    8700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2500 8550 2450
+$Comp
+L power:GND #PWR?
+U 1 1 60AA15DB
+P 8550 2500
+AR Path="/60AA15DB" Ref="#PWR?"  Part="1" 
+AR Path="/5FCC1D27/60AA15DB" Ref="#PWR?"  Part="1" 
+AR Path="/5FBDE62F/60AA15DB" Ref="#PWR?"  Part="1" 
+AR Path="/60BB64C6/60AA15DB" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 8550 2250 50  0001 C CNN
+F 1 "GND" H 8555 2327 50  0001 C CNN
+F 2 "" H 8550 2500 50  0001 C CNN
+F 3 "" H 8550 2500 50  0001 C CNN
+	1    8550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2350 8650 2350
+Wire Wire Line
+	8700 2400 8700 2350
+$Comp
+L Device:C_Small C?
+U 1 1 60A9FA8C
+P 8700 2500
+AR Path="/60A9FA8C" Ref="C?"  Part="1" 
+AR Path="/5FCC1D27/60A9FA8C" Ref="C?"  Part="1" 
+AR Path="/5FBDE62F/60A9FA8C" Ref="C?"  Part="1" 
+AR Path="/60BB64C6/60A9FA8C" Ref="C52"  Part="1" 
+F 0 "C52" H 8850 2500 50  0000 C CNN
+F 1 "18p" H 8850 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8700 2500 50  0001 C CNN
+F 3 "~" H 8700 2500 50  0001 C CNN
+F 4 "Walsin" H 8700 2500 50  0001 C CNN "Manufacturer"
+F 5 "0603B104J500CT" H 8700 2500 50  0001 C CNN "Partnumber"
+	1    8700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60A9E556
+P 8400 2500
+AR Path="/60A9E556" Ref="C?"  Part="1" 
+AR Path="/5FCC1D27/60A9E556" Ref="C?"  Part="1" 
+AR Path="/5FBDE62F/60A9E556" Ref="C?"  Part="1" 
+AR Path="/60BB64C6/60A9E556" Ref="C42"  Part="1" 
+F 0 "C42" H 8250 2500 50  0000 C CNN
+F 1 "18p" H 8250 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8400 2500 50  0001 C CNN
+F 3 "~" H 8400 2500 50  0001 C CNN
+F 4 "Walsin" H 8400 2500 50  0001 C CNN "Manufacturer"
+F 5 "0603B104J500CT" H 8400 2500 50  0001 C CNN "Partnumber"
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND23_Small Y?
+U 1 1 60A9D68D
+P 8550 2350
+AR Path="/60A9D68D" Ref="Y?"  Part="1" 
+AR Path="/60E45FC0/60A9D68D" Ref="Y?"  Part="1" 
+AR Path="/60BB64C6/60A9D68D" Ref="Y2"  Part="1" 
+F 0 "Y2" H 8400 2100 50  0000 L CNN
+F 1 "8MHz" H 8300 2200 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3C-4Pin_5.0x3.2mm" H 8550 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8550 2350
+	-1   0    0    1   
+$EndComp
+Text Label 8750 2350 0    50   ~ 0
+XTAL2
+Text Label 8350 2350 2    50   ~ 0
+XTAL1
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU U12
+U 1 1 60C8ACB5
+P 3550 4050
+F 0 "U12" H 3450 4200 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 3450 4100 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3550 4050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 3550 4050 50  0001 C CNN
+	1    3550 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 3600 5600 0    50   ~ 0
+*Pin 21 is hidden
 $EndSCHEMATC
