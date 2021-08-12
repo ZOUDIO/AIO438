@@ -319,7 +319,7 @@ Text Label 4150 3200 0    50   ~ 0
 SPI_CLK0
 Text HLabel 4150 4600 2    50   Input ~ 0
 PD2
-Text HLabel 4150 4700 2    50   Input ~ 0
+Text HLabel 4150 4700 2    50   Output ~ 0
 PD3
 Text HLabel 4150 3700 2    50   Output ~ 0
 PC1
@@ -483,7 +483,7 @@ Text HLabel 5800 4200 2    50   Input ~ 0
 DTR
 Text HLabel 4150 5100 2    50   Input ~ 0
 PD7
-Text HLabel 2950 4600 0    50   Input ~ 0
+Text HLabel 2950 4600 0    50   Output ~ 0
 PE2
 Text Notes 4550 2700 0    50   ~ 0
 SPI pins multiplexed \nlike described in \nAVR042 4.1.1
