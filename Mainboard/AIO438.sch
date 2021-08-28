@@ -141,7 +141,7 @@ Wire Wire Line
 	6400 4100 6650 4100
 Wire Wire Line
 	6650 4200 6400 4200
-Text Notes 3350 1900 0    50   ~ 0
+Text Notes 3450 1950 0    50   ~ 0
 Todo:\nCheck pinout JSTs against AIO4CH
 Wire Wire Line
 	3350 3150 3450 3150
