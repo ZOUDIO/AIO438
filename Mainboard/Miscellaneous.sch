@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "4x38W amp with DSP and BT"
-Date "2021-06-08"
-Rev "0.1"
+Date "2021-11-08"
+Rev "0.2"
 Comp "ZOUDIO"
 Comment1 ""
 Comment2 ""
@@ -101,73 +101,6 @@ F 3 "~" H 4950 4500 50  0001 C CNN
 	1    4950 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 610586CC
-P 7300 3950
-AR Path="/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/5FCC1D27/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/5FBDE62F/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/5FD81784/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/5FCDB1AE/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/5FF9E05B/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/60A7E145/610586CC" Ref="#PWR?"  Part="1" 
-AR Path="/60AA037E/610586CC" Ref="#PWR0162"  Part="1" 
-F 0 "#PWR0162" H 7300 3800 50  0001 C CNN
-F 1 "+3V3" V 7300 4200 50  0000 C CNN
-F 2 "" H 7300 3950 50  0001 C CNN
-F 3 "" H 7300 3950 50  0001 C CNN
-	1    7300 3950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7350 3950 7300 3950
-$Comp
-L power:VDD #PWR?
-U 1 1 6105F88B
-P 7300 4400
-AR Path="/60B7AC16/6105F88B" Ref="#PWR?"  Part="1" 
-AR Path="/60AA037E/6105F88B" Ref="#PWR0173"  Part="1" 
-F 0 "#PWR0173" H 7300 4250 50  0001 C CNN
-F 1 "VDD" V 7300 4600 50  0000 C CNN
-F 2 "" H 7300 4400 50  0001 C CNN
-F 3 "" H 7300 4400 50  0001 C CNN
-	1    7300 4400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7350 4400 7300 4400
-Text GLabel 7300 4250 0    50   Input ~ 0
-5V_usb
-Wire Wire Line
-	7350 4250 7300 4250
-Wire Wire Line
-	7300 4100 7350 4100
-$Comp
-L power:+5V #PWR?
-U 1 1 6105F891
-P 7300 4100
-AR Path="/60A7E145/6105F891" Ref="#PWR?"  Part="1" 
-AR Path="/60E45FC0/6105F891" Ref="#PWR?"  Part="1" 
-AR Path="/60B7AC16/6105F891" Ref="#PWR?"  Part="1" 
-AR Path="/60AA037E/6105F891" Ref="#PWR0184"  Part="1" 
-F 0 "#PWR0184" H 7300 3950 50  0001 C CNN
-F 1 "+5V" V 7300 4300 50  0000 C CNN
-F 2 "" H 7300 4100 50  0001 C CNN
-F 3 "" H 7300 4100 50  0001 C CNN
-	1    7300 4100
-	0    -1   -1   0   
-$EndComp
-Wire Notes Line
-	6900 3850 7950 3850
-Wire Notes Line
-	7950 3850 7950 4500
-Wire Notes Line
-	7950 4500 6900 4500
-Wire Notes Line
-	6900 4500 6900 3850
-Text Notes 6900 3850 0    50   ~ 0
-ERC
 Wire Notes Line
 	3700 3850 4550 3850
 Wire Notes Line

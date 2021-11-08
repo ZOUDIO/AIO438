@@ -5,47 +5,14 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title "4x38W amp with DSP and BT"
-Date "2021-06-08"
-Rev "0.1"
+Date "2021-11-08"
+Rev "0.2"
 Comp "ZOUDIO"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:USB_B_Micro J?
-U 1 1 60E46AFB
-P 3050 3450
-AR Path="/60A7E145/60E46AFB" Ref="J?"  Part="1" 
-AR Path="/60E45FC0/60E46AFB" Ref="J8"  Part="1" 
-F 0 "J8" H 2750 3550 50  0000 C CNN
-F 1 "USB_B_Micro" H 2600 3450 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3200 3400 50  0001 C CNN
-F 3 "~" H 3200 3400 50  0001 C CNN
-F 4 "Hub input" H 2600 3350 50  0000 C CNN "Function"
-	1    3050 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60E46B1B
-P 3050 4200
-AR Path="/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD15AD6/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/5FBDE62F/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD81784/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/5FCDB1AE/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/5FF9E05B/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/60A7E145/60E46B1B" Ref="#PWR?"  Part="1" 
-AR Path="/60E45FC0/60E46B1B" Ref="#PWR0163"  Part="1" 
-F 0 "#PWR0163" H 3050 3950 50  0001 C CNN
-F 1 "GND" H 3055 4027 50  0001 C CNN
-F 2 "" H 3050 4200 50  0001 C CNN
-F 3 "" H 3050 4200 50  0001 C CNN
-	1    3050 4200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60E46B26
@@ -160,17 +127,16 @@ Text Label 8350 4100 0    50   ~ 0
 LED2
 Wire Wire Line
 	4400 4050 4350 4050
-NoConn ~ 3350 3650
 Wire Notes Line
-	2100 2450 6900 2450
+	1350 2450 3800 2450
 Wire Notes Line
 	6900 2450 6900 5500
 Wire Notes Line
-	6900 5500 2100 5500
+	3800 5500 1350 5500
 Wire Notes Line
-	2100 5500 2100 2450
-Text Notes 2100 2450 0    50   ~ 0
-USB hub controller
+	1350 5500 1350 2450
+Text Notes 4050 2450 0    50   ~ 0
+Hub controller
 $Comp
 L power:GND #PWR?
 U 1 1 60ACF3D2
@@ -283,10 +249,6 @@ Wire Wire Line
 	6350 4750 6300 4750
 Wire Wire Line
 	6350 4550 6300 4550
-Wire Wire Line
-	3350 3450 4800 3450
-Wire Wire Line
-	4800 3550 3350 3550
 Wire Notes Line
 	7150 4450 7750 4450
 Wire Notes Line
@@ -394,7 +356,7 @@ L Device:R_Small R21
 U 1 1 60C9D1DB
 P 7400 4750
 F 0 "R21" H 7550 4800 50  0000 C CNN
-F 1 "1k" H 7550 4700 50  0000 C CNN
+F 1 "10k" H 7550 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7400 4750 50  0001 C CNN
 F 3 "~" H 7400 4750 50  0001 C CNN
 	1    7400 4750
@@ -423,23 +385,6 @@ F 3 "" H 7400 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 5100 7400 5150
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 60CC4C2C
-P 2950 4000
-F 0 "FB1" H 3150 3950 50  0000 C CNN
-F 1 "120R" H 3150 4050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" V 2880 4000 50  0001 C CNN
-F 3 "~" H 2950 4000 50  0001 C CNN
-	1    2950 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2950 4100 2950 4150
-Wire Wire Line
-	2950 4150 3050 4150
-Wire Wire Line
-	3050 4150 3050 4200
 $Comp
 L Device:LED_Small D?
 U 1 1 60C62FEE
@@ -514,28 +459,17 @@ Text Label 7300 4100 0    50   ~ 0
 TESTJ
 Text Label 7800 4100 0    50   ~ 0
 LED1
-Text GLabel 3650 3250 2    50   Input ~ 0
-5V_usb
-Wire Wire Line
-	3650 3250 3600 3250
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 60C3D3DA
-P 3500 3250
-F 0 "F1" V 3300 3250 50  0000 C CNN
-F 1 "500mA" V 3400 3250 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 3550 3050 50  0001 L CNN
-F 3 "~" H 3500 3250 50  0001 C CNN
-	1    3500 3250
+P 2850 3250
+F 0 "F1" V 2650 3250 50  0000 C CNN
+F 1 "500mA" V 2750 3250 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 2900 3050 50  0001 L CNN
+F 3 "~" H 2850 3250 50  0001 C CNN
+	1    2850 3250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3400 3250 3350 3250
-Wire Wire Line
-	2950 3850 2950 3900
-Wire Wire Line
-	3050 3850 3050 4150
-Connection ~ 3050 4150
 Wire Wire Line
 	4700 3950 4700 4050
 Wire Wire Line
@@ -575,8 +509,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 8050 3450 50  0001 C CNN
 	1    8050 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7550 2850 0    50   Input ~ 0
-5V_usb
 $Comp
 L Device:C_Small C?
 U 1 1 6112F2AA
@@ -616,8 +548,6 @@ Wire Wire Line
 Wire Wire Line
 	7600 2850 7700 2850
 Connection ~ 7700 2850
-Wire Wire Line
-	7550 2850 7600 2850
 Connection ~ 7600 2850
 Wire Wire Line
 	8400 2900 8400 2850
@@ -657,8 +587,6 @@ Wire Wire Line
 	8050 3350 8050 3300
 Text HLabel 8450 2850 2    50   Output ~ 0
 3V3
-Text HLabel 5300 2950 0    50   Input ~ 0
-3V3
 Wire Wire Line
 	8450 2850 8400 2850
 Connection ~ 8400 2850
@@ -670,8 +598,6 @@ Wire Wire Line
 	5700 2950 5600 2950
 Wire Wire Line
 	5350 2950 5400 2950
-Text HLabel 4350 3250 0    50   Input ~ 0
-3V3
 $Comp
 L Device:R_Small R16
 U 1 1 61158367
@@ -685,10 +611,6 @@ F 3 "~" H 4500 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 3250 4400 3250
-Text HLabel 4350 3850 0    50   Input ~ 0
-3V3
-Text HLabel 4350 4250 0    50   Input ~ 0
-3V3
 Wire Notes Line
 	7150 2450 8750 2450
 Wire Notes Line
@@ -711,14 +633,209 @@ F 3 "" H 5400 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Plug_USB2.0 P1
-U 1 1 6161D587
-P 1550 3850
-F 0 "P1" H 1700 4750 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 1700 4650 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 1700 3850 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 3850 50  0001 C CNN
-	1    1550 3850
+L power:VBUS #PWR?
+U 1 1 6189C849
+P 3150 3200
+AR Path="/6189C849" Ref="#PWR?"  Part="1" 
+AR Path="/60E45FC0/6189C849" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3150 3050 50  0001 C CNN
+F 1 "VBUS" H 3150 3350 50  0000 C CNN
+F 2 "" H 3150 3200 50  0001 C CNN
+F 3 "" H 3150 3200 50  0001 C CNN
+	1    3150 3200
 	1    0    0    -1  
 $EndComp
+Text Label 2800 3850 0    50   ~ 0
+D-
+Text Label 2800 3950 0    50   ~ 0
+D+
+Wire Wire Line
+	1800 4800 1800 4750
+Wire Wire Line
+	3150 3250 3150 3200
+Wire Wire Line
+	2950 3250 3150 3250
+Wire Wire Line
+	2750 3250 2700 3250
+$Comp
+L Device:R_Small R?
+U 1 1 618F4AA0
+P 3150 3700
+F 0 "R?" H 3300 3750 50  0000 R CNN
+F 1 "5.1k" H 3400 3650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3150 3700 50  0001 C CNN
+F 3 "~" H 3150 3700 50  0001 C CNN
+	1    3150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 618F8DB4
+P 3500 3700
+F 0 "R?" H 3650 3750 50  0000 R CNN
+F 1 "5.1k" H 3750 3650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 3700 50  0001 C CNN
+F 3 "~" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618F8F56
+P 3150 3900
+AR Path="/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/5FD15AD6/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/5FBDE62F/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/5FD81784/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/5FCDB1AE/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/5FF9E05B/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/60A7E145/618F8F56" Ref="#PWR?"  Part="1" 
+AR Path="/60E45FC0/618F8F56" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3150 3650 50  0001 C CNN
+F 1 "GND" H 3155 3727 50  0001 C CNN
+F 2 "" H 3150 3900 50  0001 C CNN
+F 3 "" H 3150 3900 50  0001 C CNN
+	1    3150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3900 3150 3850
+Wire Wire Line
+	3150 3850 3500 3850
+Wire Wire Line
+	3500 3850 3500 3800
+Connection ~ 3150 3850
+Wire Wire Line
+	3150 3850 3150 3800
+Wire Wire Line
+	2700 3550 3150 3550
+Wire Wire Line
+	3150 3550 3150 3600
+Wire Wire Line
+	3500 3600 3500 3450
+Wire Wire Line
+	3500 3450 2700 3450
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 61907C13
+P 2100 3850
+F 0 "J?" H 2100 4750 50  0000 C CNN
+F 1 "USB-C" H 2100 4650 50  0000 C CNN
+F 2 "" H 2250 3850 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 3850 50  0001 C CNN
+	1    2100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3850 2750 3850
+Wire Wire Line
+	2750 3850 2750 3750
+Wire Wire Line
+	2750 3750 2700 3750
+Connection ~ 2750 3850
+Wire Wire Line
+	2750 3850 2700 3850
+Wire Wire Line
+	2700 3950 2750 3950
+Wire Wire Line
+	2750 3950 2750 4050
+Wire Wire Line
+	2750 4050 2700 4050
+Connection ~ 2750 3950
+Wire Wire Line
+	2750 3950 2800 3950
+Text Label 4800 3550 2    50   ~ 0
+D-
+Text Label 4800 3450 2    50   ~ 0
+D+
+$Comp
+L power:GND #PWR?
+U 1 1 60E46B1B
+P 2100 5100
+AR Path="/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5FD15AD6/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5FBDE62F/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5FD81784/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5FCDB1AE/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF9E05B/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/60A7E145/60E46B1B" Ref="#PWR?"  Part="1" 
+AR Path="/60E45FC0/60E46B1B" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 2100 4850 50  0001 C CNN
+F 1 "GND" H 2105 4927 50  0001 C CNN
+F 2 "" H 2100 5100 50  0001 C CNN
+F 3 "" H 2100 5100 50  0001 C CNN
+	1    2100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5050 2100 5100
+Wire Wire Line
+	2100 5050 2100 4750
+Connection ~ 2100 5050
+Wire Wire Line
+	1800 5050 2100 5050
+Wire Wire Line
+	1800 5000 1800 5050
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 60CC4C2C
+P 1800 4900
+F 0 "FB1" H 2000 4850 50  0000 C CNN
+F 1 "120R" H 2000 4950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 1730 4900 50  0001 C CNN
+F 3 "~" H 1800 4900 50  0001 C CNN
+	1    1800 4900
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2700 4350
+NoConn ~ 2700 4450
+Text Notes 1350 2450 0    50   ~ 0
+USB-C receptacle
+Wire Notes Line
+	3800 2450 3800 5500
+Wire Notes Line
+	6900 2450 4050 2450
+Wire Notes Line
+	4050 2450 4050 5500
+Wire Notes Line
+	4050 5500 6900 5500
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 619A208F
+P 3500 3200
+F 0 "#FLG?" H 3500 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 3350 50  0000 C CNN
+F 2 "" H 3500 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3200 3500 3250
+Wire Wire Line
+	3500 3250 3150 3250
+Connection ~ 3150 3250
+$Comp
+L power:VBUS #PWR?
+U 1 1 619A9475
+P 7550 2850
+AR Path="/619A9475" Ref="#PWR?"  Part="1" 
+AR Path="/60E45FC0/619A9475" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7550 2700 50  0001 C CNN
+F 1 "VBUS" V 7550 3050 50  0000 C CNN
+F 2 "" H 7550 2850 50  0001 C CNN
+F 3 "" H 7550 2850 50  0001 C CNN
+	1    7550 2850
+	0    -1   -1   0   
+$EndComp
+Text Label 4350 3250 2    50   ~ 0
+3V3
+Text Label 4350 3850 2    50   ~ 0
+3V3
+Text Label 4350 4250 2    50   ~ 0
+3V3
+Text Label 5300 2950 2    50   ~ 0
+3V3
+Wire Wire Line
+	7600 2850 7550 2850
 $EndSCHEMATC

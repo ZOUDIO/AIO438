@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "4x38W amp with DSP and BT"
-Date "2021-06-08"
-Rev "0.1"
+Date "2021-11-08"
+Rev "0.2"
 Comp "ZOUDIO"
 Comment1 ""
 Comment2 ""
