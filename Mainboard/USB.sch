@@ -710,4 +710,15 @@ F 3 "" H 5400 4200 50  0001 C CNN
 	1    5400 4150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_C_Plug_USB2.0 P1
+U 1 1 6161D587
+P 1550 3850
+F 0 "P1" H 1700 4750 50  0000 C CNN
+F 1 "USB_C_Plug_USB2.0" H 1700 4650 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 1700 3850 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 3850 50  0001 C CNN
+	1    1550 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
