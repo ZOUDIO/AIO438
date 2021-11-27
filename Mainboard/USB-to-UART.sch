@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 10 11
 Title "4x38W amp with DSP and BT"
-Date "2021-11-08"
+Date "2021-11-19"
 Rev "0.2"
 Comp "ZOUDIO"
 Comment1 ""
@@ -56,8 +56,8 @@ F 0 "C44" V 4900 3250 50  0000 C CNN
 F 1 "100n" V 5000 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4950 3100 50  0001 C CNN
 F 3 "~" H 4950 3100 50  0001 C CNN
-F 4 "Walsin" H 4950 3100 50  0001 C CNN "Manufacturer"
-F 5 "0603B104J500CT" H 4950 3100 50  0001 C CNN "Partnumber"
+F 4 "Murata" H 4950 3100 50  0001 C CNN "Manufacturer"
+F 5 "GCM188L81H104KA57D" H 4950 3100 50  0001 C CNN "Partnumber"
 	1    4950 3100
 	0    1    1    0   
 $EndComp
@@ -248,13 +248,9 @@ F 5 "0603WAF1002T5E" H 7800 3100 50  0001 C CNN "Partnumber"
 $EndComp
 Wire Wire Line
 	4650 3100 4700 3100
-Text HLabel 4650 3100 0    50   Input ~ 0
-VCC
 Connection ~ 4700 3100
 Wire Wire Line
 	6450 2950 6400 2950
-Text Label 6400 2950 2    50   ~ 0
-VCC
 Text Label 6400 3500 2    50   ~ 0
 UART_DTR
 Text Label 7100 3500 2    50   ~ 0
@@ -278,14 +274,18 @@ Wire Notes Line
 Wire Notes Line
 	8100 3800 5900 3800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0162
 U 1 1 61ADB0CE
 P 4800 4450
-F 0 "#PWR?" H 4800 4200 50  0001 C CNN
+F 0 "#PWR0162" H 4800 4200 50  0001 C CNN
 F 1 "GND" H 4800 4300 50  0000 C CNN
 F 2 "" H 4800 4450 50  0001 C CNN
 F 3 "" H 4800 4450 50  0001 C CNN
 	1    4800 4450
 	1    0    0    -1  
 $EndComp
+Text GLabel 4650 3100 0    50   Input ~ 0
+3V3_USB
+Text Label 6400 2950 2    50   ~ 0
+3V3_USB
 $EndSCHEMATC

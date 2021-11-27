@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 4 11
 Title "4x38W amp with DSP and BT"
-Date "2021-11-08"
+Date "2021-11-19"
 Rev "0.2"
 Comp "ZOUDIO"
 Comment1 ""
@@ -14,1556 +14,358 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C_Small C8
-U 1 1 60AF2699
-P 4550 1600
-F 0 "C8" V 4500 1750 50  0000 C CNN
-F 1 "470n" V 4600 1750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 1600 50  0001 C CNN
-F 3 "~" H 4550 1600 50  0001 C CNN
-	1    4550 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L ZOUDIO-symbols:TAS5825M U1
-U 1 1 60AF269F
-P 3700 2700
-F 0 "U1" H 3200 3900 50  0000 C CNN
-F 1 "TAS5825M" H 4050 3900 50  0000 C CNN
-F 2 "ZOUDIO-footprints:TAS5825M" H 3700 2800 50  0001 C CNN
-F 3 "" H 3700 2800 50  0001 C CNN
-	1    3700 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 60AF26A5
-P 4550 2100
-F 0 "C9" V 4500 2250 50  0000 C CNN
-F 1 "470n" V 4600 2250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 2100 50  0001 C CNN
-F 3 "~" H 4550 2100 50  0001 C CNN
-	1    4550 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 60AF26AB
-P 4550 2300
-F 0 "C10" V 4500 2450 50  0000 C CNN
-F 1 "470n" V 4600 2450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 2300 50  0001 C CNN
-F 3 "~" H 4550 2300 50  0001 C CNN
-	1    4550 2300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 60AF26B1
-P 4550 2800
-F 0 "C11" V 4500 2950 50  0000 C CNN
-F 1 "470n" V 4600 2950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 2800 50  0001 C CNN
-F 3 "~" H 4550 2800 50  0001 C CNN
-	1    4550 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 2100 4850 2100
-Wire Wire Line
-	4450 1750 4850 1750
-$Comp
-L power:GND #PWR0101
-U 1 1 60AF26B9
-P 4500 3850
-F 0 "#PWR0101" H 4500 3600 50  0001 C CNN
-F 1 "GND" H 4505 3677 50  0001 C CNN
-F 2 "" H 4500 3850 50  0001 C CNN
-F 3 "" H 4500 3850 50  0001 C CNN
-	1    4500 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 3850 4500 3800
-Wire Wire Line
-	4500 3800 4450 3800
-Wire Wire Line
-	4500 3800 4500 3700
-Wire Wire Line
-	4500 3700 4450 3700
-Connection ~ 4500 3800
-Wire Wire Line
-	4500 3700 4500 3600
-Wire Wire Line
-	4500 3600 4450 3600
-Connection ~ 4500 3700
-Wire Wire Line
-	4500 3600 4500 3500
-Wire Wire Line
-	4500 3500 4450 3500
-Connection ~ 4500 3600
-Wire Wire Line
-	4500 3500 4500 3400
-Wire Wire Line
-	4500 3400 4450 3400
-Connection ~ 4500 3500
-Wire Wire Line
-	4500 3400 4500 3300
-Wire Wire Line
-	4500 3300 4450 3300
-Connection ~ 4500 3400
-$Comp
-L Device:R_Small R7
-U 1 1 60AF26D0
-P 2800 3100
-F 0 "R7" V 2900 3100 50  0000 C CNN
-F 1 "1k" V 3000 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 3100 50  0001 C CNN
-F 3 "~" H 2800 3100 50  0001 C CNN
-	1    2800 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 60AF26D6
-P 2650 3100
-F 0 "#PWR0102" H 2650 2850 50  0001 C CNN
-F 1 "GND" V 2655 2972 50  0001 R CNN
-F 2 "" H 2650 3100 50  0001 C CNN
-F 3 "" H 2650 3100 50  0001 C CNN
-	1    2650 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 60AF26E1
-P 2800 2300
-F 0 "C7" V 2750 2400 50  0000 C CNN
-F 1 "1u" V 2850 2400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2800 2300 50  0001 C CNN
-F 3 "~" H 2800 2300 50  0001 C CNN
-	1    2800 2300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 60AF26E7
-P 2600 2400
-F 0 "C6" V 2550 2500 50  0000 C CNN
-F 1 "1u" V 2650 2500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2600 2400 50  0001 C CNN
-F 3 "~" H 2600 2400 50  0001 C CNN
-	1    2600 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 60AF26ED
-P 2400 2500
-F 0 "C5" V 2350 2600 50  0000 C CNN
-F 1 "1u" V 2450 2600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2400 2500 50  0001 C CNN
-F 3 "~" H 2400 2500 50  0001 C CNN
-	1    2400 2500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2950 2500 2500 2500
-Wire Wire Line
-	2950 2400 2700 2400
-Wire Wire Line
-	2950 2300 2900 2300
-Wire Wire Line
-	2250 2550 2250 2500
-Wire Wire Line
-	2250 2500 2300 2500
-Wire Wire Line
-	2500 2400 2250 2400
-Wire Wire Line
-	2250 2400 2250 2500
-Connection ~ 2250 2500
-Wire Wire Line
-	2700 2300 2250 2300
-Wire Wire Line
-	2250 2300 2250 2400
-Connection ~ 2250 2400
-Wire Wire Line
-	2950 1900 2900 1900
-Wire Wire Line
-	2900 1900 2900 1800
-Wire Wire Line
-	2900 1800 2950 1800
-Wire Wire Line
-	2900 1800 2900 1700
-Wire Wire Line
-	2900 1700 2950 1700
-Connection ~ 2900 1800
-Wire Wire Line
-	2900 1700 2900 1600
-Wire Wire Line
-	2900 1600 2950 1600
-Connection ~ 2900 1700
-Wire Wire Line
-	4500 3300 4500 3200
-Wire Wire Line
-	4500 3200 4450 3200
-Connection ~ 4500 3300
-$Comp
-L Device:C_Small C12
-U 1 1 60AF270C
-P 5500 2100
-F 0 "C12" H 5350 2100 50  0000 C CNN
-F 1 "680n" H 5350 2200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 2100 50  0001 C CNN
-F 3 "~" H 5500 2100 50  0001 C CNN
-	1    5500 2100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C14
-U 1 1 60AF2712
-P 5900 2100
-F 0 "C14" H 5750 2100 50  0000 C CNN
-F 1 "680n" H 5750 2200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5900 2100 50  0001 C CNN
-F 3 "~" H 5900 2100 50  0001 C CNN
-	1    5900 2100
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 60AF2718
-P 5500 2300
-F 0 "#PWR0103" H 5500 2050 50  0001 C CNN
-F 1 "GND" H 5505 2127 50  0001 C CNN
-F 2 "" H 5500 2300 50  0001 C CNN
-F 3 "" H 5500 2300 50  0001 C CNN
-	1    5500 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2250 5900 2200
-$Comp
-L power:GND #PWR0104
-U 1 1 60AF271F
-P 2250 2550
-F 0 "#PWR0104" H 2250 2300 50  0001 C CNN
-F 1 "GND" V 2255 2422 50  0001 R CNN
-F 2 "" H 2250 2550 50  0001 C CNN
-F 3 "" H 2250 2550 50  0001 C CNN
-	1    2250 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 2450 4850 2450
-Wire Wire Line
-	4850 2300 4850 2450
-Wire Wire Line
-	4850 2300 4650 2300
-Wire Wire Line
-	4650 2800 4850 2800
-Wire Wire Line
-	4450 2650 4850 2650
-Wire Wire Line
-	4850 2100 4850 1950
-Wire Wire Line
-	4850 1950 4450 1950
-Wire Wire Line
-	4850 1750 4850 1600
-Wire Wire Line
-	4850 1600 4650 1600
-Wire Wire Line
-	4950 1750 4850 1750
-Connection ~ 4850 1750
-Wire Wire Line
-	4950 1950 4850 1950
-Connection ~ 4850 1950
-Wire Wire Line
-	4950 2450 4850 2450
-Connection ~ 4850 2450
-Wire Wire Line
-	5500 2000 5500 1950
-Wire Wire Line
-	5900 2000 5900 1750
-Wire Wire Line
-	5900 1750 6300 1750
-$Comp
-L Device:L L4
-U 1 1 60AF273C
-P 5100 2450
-F 0 "L4" V 5300 2450 50  0000 C CNN
-F 1 "10u" V 5200 2450 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 2450 50  0001 C CNN
-F 3 "~" H 5100 2450 50  0001 C CNN
-	1    5100 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L5
-U 1 1 60AF2742
-P 5100 2650
-F 0 "L5" V 5050 2650 50  0000 C CNN
-F 1 "10u" V 4950 2650 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 2650 50  0001 C CNN
-F 3 "~" H 5100 2650 50  0001 C CNN
-	1    5100 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L3
-U 1 1 60AF2748
-P 5100 1950
-F 0 "L3" V 5050 1950 50  0000 C CNN
-F 1 "10u" V 4950 1950 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 1950 50  0001 C CNN
-F 3 "~" H 5100 1950 50  0001 C CNN
-	1    5100 1950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L2
-U 1 1 60AF274E
-P 5100 1750
-F 0 "L2" V 5300 1750 50  0000 C CNN
-F 1 "10u" V 5200 1750 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 1750 50  0001 C CNN
-F 3 "~" H 5100 1750 50  0001 C CNN
-	1    5100 1750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5500 2200 5500 2250
-Wire Wire Line
-	5500 1950 6300 1950
-Wire Wire Line
-	5500 2250 5900 2250
-Connection ~ 5500 2250
-Wire Wire Line
-	5500 2250 5500 2300
-$Comp
-L Device:C_Small C15
-U 1 1 60AF2759
-P 5500 2800
-F 0 "C15" H 5350 2800 50  0000 C CNN
-F 1 "680n" H 5350 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 2800 50  0001 C CNN
-F 3 "~" H 5500 2800 50  0001 C CNN
-	1    5500 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C32
-U 1 1 60AF275F
-P 5900 2800
-F 0 "C32" H 5750 2800 50  0000 C CNN
-F 1 "680n" H 5750 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5900 2800 50  0001 C CNN
-F 3 "~" H 5900 2800 50  0001 C CNN
-	1    5900 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 60AF2765
-P 5500 3000
-F 0 "#PWR0105" H 5500 2750 50  0001 C CNN
-F 1 "GND" H 5505 2827 50  0001 C CNN
-F 2 "" H 5500 3000 50  0001 C CNN
-F 3 "" H 5500 3000 50  0001 C CNN
-	1    5500 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2950 5900 2900
-Wire Wire Line
-	5500 2700 5500 2650
-Wire Wire Line
-	5900 2700 5900 2450
-Wire Wire Line
-	5900 2450 6300 2450
-Wire Wire Line
-	5500 2900 5500 2950
-Wire Wire Line
-	5500 2650 6300 2650
-Wire Wire Line
-	5500 2950 5900 2950
-Connection ~ 5500 2950
-Wire Wire Line
-	5500 2950 5500 3000
-NoConn ~ 2950 3200
-NoConn ~ 2950 3400
-Wire Wire Line
-	5500 1950 5250 1950
-Connection ~ 5500 1950
-Wire Wire Line
-	5250 1750 5900 1750
-Connection ~ 5900 1750
-Wire Wire Line
-	5500 2650 5250 2650
-Connection ~ 5500 2650
-Wire Wire Line
-	5250 2450 5900 2450
-Connection ~ 5900 2450
-Wire Wire Line
-	4950 2650 4850 2650
-Connection ~ 4850 2650
-Wire Wire Line
-	4850 2800 4850 2650
-$Comp
-L power:+3V3 #PWR0106
-U 1 1 60AF2782
-P 1650 2050
-F 0 "#PWR0106" H 1650 1900 50  0001 C CNN
-F 1 "+3V3" H 1650 2200 50  0000 C CNN
-F 2 "" H 1650 2050 50  0001 C CNN
-F 3 "" H 1650 2050 50  0001 C CNN
-	1    1650 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 60AF2788
-P 1950 2250
-F 0 "C4" H 1800 2250 50  0000 C CNN
-F 1 "100n" H 1850 2350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1950 2250 50  0001 C CNN
-F 3 "~" H 1950 2250 50  0001 C CNN
-	1    1950 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 60AF2794
-P 2250 1450
-F 0 "C2" H 2100 1450 50  0000 C CNN
-F 1 "100n" H 2100 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 1450 50  0001 C CNN
-F 3 "~" H 2250 1450 50  0001 C CNN
-	1    2250 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 60AF279A
-P 2550 1450
-F 0 "C3" H 2400 1450 50  0000 C CNN
-F 1 "100n" H 2400 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 1450 50  0001 C CNN
-F 3 "~" H 2550 1450 50  0001 C CNN
-	1    2550 1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2250 1300 2250 1350
-Wire Wire Line
-	2550 1300 2550 1350
-Wire Wire Line
-	2250 1550 2250 1600
-Wire Wire Line
-	2550 1550 2550 1600
-$Comp
-L Device:C_Small C40
-U 1 1 60AF27A4
-P 1650 1450
-F 0 "C40" H 1500 1450 50  0000 C CNN
-F 1 "22u" H 1500 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1650 1450 50  0001 C CNN
-F 3 "~" H 1650 1450 50  0001 C CNN
-	1    1650 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C52
-U 1 1 60AF27AA
-P 1950 1450
-F 0 "C52" H 1800 1450 50  0000 C CNN
-F 1 "22u" H 1800 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1950 1450 50  0001 C CNN
-F 3 "~" H 1950 1450 50  0001 C CNN
-	1    1950 1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 1350 1950 1300
-Wire Wire Line
-	1950 1300 1650 1300
-Wire Wire Line
-	1950 1550 1950 1600
-Connection ~ 1650 1600
-Wire Wire Line
-	1650 1350 1650 1300
-Connection ~ 1950 1300
-$Comp
-L Device:C_Small C57
-U 1 1 60AF27B7
-P 1650 2250
-F 0 "C57" H 1500 2250 50  0000 C CNN
-F 1 "4.7u" H 1500 2350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1650 2250 50  0001 C CNN
-F 3 "~" H 1650 2250 50  0001 C CNN
-	1    1650 2250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 2100 1950 2150
-Wire Wire Line
-	1650 2100 1650 2150
-Connection ~ 1650 2100
-Wire Wire Line
-	1650 2100 1950 2100
-$Comp
-L power:GND #PWR0108
-U 1 1 60AF27C2
-P 1650 2450
-F 0 "#PWR0108" H 1650 2200 50  0001 C CNN
-F 1 "GND" V 1655 2322 50  0001 R CNN
-F 2 "" H 1650 2450 50  0001 C CNN
-F 3 "" H 1650 2450 50  0001 C CNN
-	1    1650 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 2350 1650 2400
-Wire Wire Line
-	1650 2400 1950 2400
-Wire Wire Line
-	1950 2400 1950 2350
-Connection ~ 1650 2400
-Wire Wire Line
-	1650 2400 1650 2450
-Connection ~ 2900 1600
-Wire Wire Line
-	2900 1300 2550 1300
-Connection ~ 2550 1300
-Wire Wire Line
-	2950 2100 1950 2100
-Connection ~ 1950 2100
-Connection ~ 2250 1300
-Wire Wire Line
-	2250 1300 1950 1300
-Wire Wire Line
-	2250 1300 2550 1300
-Wire Wire Line
-	1650 1600 1950 1600
-Wire Wire Line
-	2550 1600 2250 1600
-Connection ~ 1950 1600
-Connection ~ 2250 1600
-Wire Wire Line
-	2250 1600 1950 1600
-Text HLabel 2950 2700 0    50   Input ~ 0
-I2S_LRCLK
-Text HLabel 2950 2800 0    50   Input ~ 0
-I2S_SCLK
-Text HLabel 2950 2900 0    50   Input ~ 0
-I2S_SDIN
-NoConn ~ 2950 3300
-Text HLabel 2950 3500 0    50   Input ~ 0
-AMP1_PDN
-Wire Wire Line
-	2950 3100 2900 3100
-Wire Wire Line
-	2650 3100 2700 3100
-Wire Wire Line
-	1650 2050 1650 2100
-Connection ~ 1650 1300
-Wire Wire Line
-	2900 1300 2900 1600
-Text Notes 2500 3150 2    50   ~ 0
-I2C address = 0x4D
-Wire Notes Line
-	900  1000 900  4050
-Wire Notes Line
-	900  4050 6550 4050
-Wire Notes Line
-	6550 4050 6550 1000
-Wire Notes Line
-	6550 1000 900  1000
-Text Notes 900  1000 0    50   ~ 0
-Amplifier 1
-Text HLabel 2950 3800 0    50   Input ~ 0
-I2C_SCL
-Text HLabel 2950 3700 0    50   Input ~ 0
-I2C_SDA
-$Comp
-L Device:C_Small C26
-U 1 1 60B2F83A
-P 4550 4900
-AR Path="/60AAD6DF/60B2F83A" Ref="C26"  Part="1" 
-AR Path="/60AAE706/60B2F83A" Ref="C?"  Part="1" 
-F 0 "C26" V 4500 5050 50  0000 C CNN
-F 1 "470n" V 4600 5050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 4900 50  0001 C CNN
-F 3 "~" H 4550 4900 50  0001 C CNN
-	1    4550 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L ZOUDIO-symbols:TAS5825M U2
-U 1 1 60B2F840
-P 3700 6000
-AR Path="/60AAD6DF/60B2F840" Ref="U2"  Part="1" 
-AR Path="/60AAE706/60B2F840" Ref="U?"  Part="1" 
-F 0 "U2" H 3200 7200 50  0000 C CNN
-F 1 "TAS5825M" H 4050 7200 50  0000 C CNN
-F 2 "ZOUDIO-footprints:TAS5825M" H 3700 6100 50  0001 C CNN
-F 3 "" H 3700 6100 50  0001 C CNN
-	1    3700 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C27
-U 1 1 60B2F846
-P 4550 5400
-AR Path="/60AAD6DF/60B2F846" Ref="C27"  Part="1" 
-AR Path="/60AAE706/60B2F846" Ref="C?"  Part="1" 
-F 0 "C27" V 4500 5550 50  0000 C CNN
-F 1 "470n" V 4600 5550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 5400 50  0001 C CNN
-F 3 "~" H 4550 5400 50  0001 C CNN
-	1    4550 5400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C29
-U 1 1 60B2F852
-P 4550 6100
-AR Path="/60AAD6DF/60B2F852" Ref="C29"  Part="1" 
-AR Path="/60AAE706/60B2F852" Ref="C?"  Part="1" 
-F 0 "C29" V 4500 6250 50  0000 C CNN
-F 1 "470n" V 4600 6250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 6100 50  0001 C CNN
-F 3 "~" H 4550 6100 50  0001 C CNN
-	1    4550 6100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 5400 4850 5400
-Wire Wire Line
-	4450 5050 4850 5050
-$Comp
-L power:GND #PWR0110
-U 1 1 60B2F85A
-P 4500 7150
-AR Path="/60AAD6DF/60B2F85A" Ref="#PWR0110"  Part="1" 
-AR Path="/60AAE706/60B2F85A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0110" H 4500 6900 50  0001 C CNN
-F 1 "GND" H 4505 6977 50  0001 C CNN
-F 2 "" H 4500 7150 50  0001 C CNN
-F 3 "" H 4500 7150 50  0001 C CNN
-	1    4500 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 7150 4500 7100
-Wire Wire Line
-	4500 7100 4450 7100
-Wire Wire Line
-	4500 7100 4500 7000
-Wire Wire Line
-	4500 7000 4450 7000
-Connection ~ 4500 7100
-Wire Wire Line
-	4500 7000 4500 6900
-Wire Wire Line
-	4500 6900 4450 6900
-Connection ~ 4500 7000
-Wire Wire Line
-	4500 6900 4500 6800
-Wire Wire Line
-	4500 6800 4450 6800
-Connection ~ 4500 6900
-Wire Wire Line
-	4500 6800 4500 6700
-Wire Wire Line
-	4500 6700 4450 6700
-Connection ~ 4500 6800
-Wire Wire Line
-	4500 6700 4500 6600
-Wire Wire Line
-	4500 6600 4450 6600
-Connection ~ 4500 6700
-$Comp
-L power:GND #PWR0111
-U 1 1 60B2F871
-P 2650 6400
-AR Path="/60AAD6DF/60B2F871" Ref="#PWR0111"  Part="1" 
-AR Path="/60AAE706/60B2F871" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0111" H 2650 6150 50  0001 C CNN
-F 1 "GND" V 2655 6272 50  0001 R CNN
-F 2 "" H 2650 6400 50  0001 C CNN
-F 3 "" H 2650 6400 50  0001 C CNN
-	1    2650 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C25
-U 1 1 60B2F877
-P 2800 5600
-AR Path="/60AAD6DF/60B2F877" Ref="C25"  Part="1" 
-AR Path="/60AAE706/60B2F877" Ref="C?"  Part="1" 
-F 0 "C25" V 2750 5700 50  0000 C CNN
-F 1 "1u" V 2850 5700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2800 5600 50  0001 C CNN
-F 3 "~" H 2800 5600 50  0001 C CNN
-	1    2800 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C24
-U 1 1 60B2F87D
-P 2600 5700
-AR Path="/60AAD6DF/60B2F87D" Ref="C24"  Part="1" 
-AR Path="/60AAE706/60B2F87D" Ref="C?"  Part="1" 
-F 0 "C24" V 2550 5800 50  0000 C CNN
-F 1 "1u" V 2650 5800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2600 5700 50  0001 C CNN
-F 3 "~" H 2600 5700 50  0001 C CNN
-	1    2600 5700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C20
-U 1 1 60B2F883
-P 2400 5800
-AR Path="/60AAD6DF/60B2F883" Ref="C20"  Part="1" 
-AR Path="/60AAE706/60B2F883" Ref="C?"  Part="1" 
-F 0 "C20" V 2350 5900 50  0000 C CNN
-F 1 "1u" V 2450 5900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2400 5800 50  0001 C CNN
-F 3 "~" H 2400 5800 50  0001 C CNN
-	1    2400 5800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2950 5800 2500 5800
-Wire Wire Line
-	2950 5700 2700 5700
-Wire Wire Line
-	2950 5600 2900 5600
-Wire Wire Line
-	2250 5850 2250 5800
-Wire Wire Line
-	2250 5800 2300 5800
-Wire Wire Line
-	2500 5700 2250 5700
-Wire Wire Line
-	2250 5700 2250 5800
-Connection ~ 2250 5800
-Wire Wire Line
-	2700 5600 2250 5600
-Wire Wire Line
-	2250 5600 2250 5700
-Connection ~ 2250 5700
-Wire Wire Line
-	2950 5200 2900 5200
-Wire Wire Line
-	2900 5200 2900 5100
-Wire Wire Line
-	2900 5100 2950 5100
-Wire Wire Line
-	2900 5100 2900 5000
-Wire Wire Line
-	2900 5000 2950 5000
-Connection ~ 2900 5100
-Wire Wire Line
-	2900 5000 2900 4900
-Wire Wire Line
-	2900 4900 2950 4900
-Connection ~ 2900 5000
-Wire Wire Line
-	4500 6600 4500 6500
-Wire Wire Line
-	4500 6500 4450 6500
-Connection ~ 4500 6600
-$Comp
-L Device:C_Small C30
-U 1 1 60B2F8A0
-P 5500 5400
-AR Path="/60AAD6DF/60B2F8A0" Ref="C30"  Part="1" 
-AR Path="/60AAE706/60B2F8A0" Ref="C?"  Part="1" 
-F 0 "C30" H 5350 5400 50  0000 C CNN
-F 1 "680n" H 5350 5500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 5400 50  0001 C CNN
-F 3 "~" H 5500 5400 50  0001 C CNN
-	1    5500 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C33
-U 1 1 60B2F8A6
-P 5900 5400
-AR Path="/60AAD6DF/60B2F8A6" Ref="C33"  Part="1" 
-AR Path="/60AAE706/60B2F8A6" Ref="C?"  Part="1" 
-F 0 "C33" H 5750 5400 50  0000 C CNN
-F 1 "680n" H 5750 5500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5900 5400 50  0001 C CNN
-F 3 "~" H 5900 5400 50  0001 C CNN
-	1    5900 5400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 60B2F8AC
-P 5500 5600
-AR Path="/60AAD6DF/60B2F8AC" Ref="#PWR0112"  Part="1" 
-AR Path="/60AAE706/60B2F8AC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0112" H 5500 5350 50  0001 C CNN
-F 1 "GND" H 5505 5427 50  0001 C CNN
-F 2 "" H 5500 5600 50  0001 C CNN
-F 3 "" H 5500 5600 50  0001 C CNN
-	1    5500 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 5550 5900 5500
-$Comp
-L power:GND #PWR0113
-U 1 1 60B2F8B3
-P 2250 5850
-AR Path="/60AAD6DF/60B2F8B3" Ref="#PWR0113"  Part="1" 
-AR Path="/60AAE706/60B2F8B3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0113" H 2250 5600 50  0001 C CNN
-F 1 "GND" V 2255 5722 50  0001 R CNN
-F 2 "" H 2250 5850 50  0001 C CNN
-F 3 "" H 2250 5850 50  0001 C CNN
-	1    2250 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 5750 4850 5750
-Wire Wire Line
-	4850 5600 4850 5750
-Wire Wire Line
-	4850 5600 4650 5600
-Wire Wire Line
-	4650 6100 4850 6100
-Wire Wire Line
-	4450 5950 4850 5950
-Wire Wire Line
-	4850 5400 4850 5250
-Wire Wire Line
-	4850 5250 4450 5250
-Wire Wire Line
-	4850 5050 4850 4900
-Wire Wire Line
-	4850 4900 4650 4900
-Wire Wire Line
-	4950 5050 4850 5050
-Connection ~ 4850 5050
-Wire Wire Line
-	4950 5250 4850 5250
-Connection ~ 4850 5250
-Wire Wire Line
-	4950 5750 4850 5750
-Connection ~ 4850 5750
-Wire Wire Line
-	5500 5300 5500 5250
-Wire Wire Line
-	5900 5300 5900 5050
-Wire Wire Line
-	5900 5050 6300 5050
-$Comp
-L Device:L L8
-U 1 1 60B2F8CB
-P 5100 5750
-AR Path="/60AAD6DF/60B2F8CB" Ref="L8"  Part="1" 
-AR Path="/60AAE706/60B2F8CB" Ref="L?"  Part="1" 
-F 0 "L8" V 5300 5750 50  0000 C CNN
-F 1 "10u" V 5200 5750 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 5750 50  0001 C CNN
-F 3 "~" H 5100 5750 50  0001 C CNN
-	1    5100 5750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L9
-U 1 1 60B2F8D1
-P 5100 5950
-AR Path="/60AAD6DF/60B2F8D1" Ref="L9"  Part="1" 
-AR Path="/60AAE706/60B2F8D1" Ref="L?"  Part="1" 
-F 0 "L9" V 5050 5950 50  0000 C CNN
-F 1 "10u" V 4950 5950 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 5950 50  0001 C CNN
-F 3 "~" H 5100 5950 50  0001 C CNN
-	1    5100 5950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L7
-U 1 1 60B2F8D7
-P 5100 5250
-AR Path="/60AAD6DF/60B2F8D7" Ref="L7"  Part="1" 
-AR Path="/60AAE706/60B2F8D7" Ref="L?"  Part="1" 
-F 0 "L7" V 5050 5250 50  0000 C CNN
-F 1 "10u" V 4950 5250 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 5250 50  0001 C CNN
-F 3 "~" H 5100 5250 50  0001 C CNN
-	1    5100 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L L6
-U 1 1 60B2F8DD
-P 5100 5050
-AR Path="/60AAD6DF/60B2F8DD" Ref="L6"  Part="1" 
-AR Path="/60AAE706/60B2F8DD" Ref="L?"  Part="1" 
-F 0 "L6" V 5300 5050 50  0000 C CNN
-F 1 "10u" V 5200 5050 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Murata_1274AS-H-100M" H 5100 5050 50  0001 C CNN
-F 3 "~" H 5100 5050 50  0001 C CNN
-	1    5100 5050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5500 5500 5500 5550
-Wire Wire Line
-	5500 5250 6300 5250
-Wire Wire Line
-	5500 5550 5900 5550
-Connection ~ 5500 5550
-Wire Wire Line
-	5500 5550 5500 5600
-$Comp
-L Device:C_Small C31
-U 1 1 60B2F8E8
-P 5500 6100
-AR Path="/60AAD6DF/60B2F8E8" Ref="C31"  Part="1" 
-AR Path="/60AAE706/60B2F8E8" Ref="C?"  Part="1" 
-F 0 "C31" H 5350 6100 50  0000 C CNN
-F 1 "680n" H 5350 6200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 6100 50  0001 C CNN
-F 3 "~" H 5500 6100 50  0001 C CNN
-	1    5500 6100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C43
-U 1 1 60B2F8EE
-P 5900 6100
-AR Path="/60AAD6DF/60B2F8EE" Ref="C43"  Part="1" 
-AR Path="/60AAE706/60B2F8EE" Ref="C?"  Part="1" 
-F 0 "C43" H 5750 6100 50  0000 C CNN
-F 1 "680n" H 5750 6200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5900 6100 50  0001 C CNN
-F 3 "~" H 5900 6100 50  0001 C CNN
-	1    5900 6100
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 60B2F8F4
-P 5500 6300
-AR Path="/60AAD6DF/60B2F8F4" Ref="#PWR0114"  Part="1" 
-AR Path="/60AAE706/60B2F8F4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0114" H 5500 6050 50  0001 C CNN
-F 1 "GND" H 5505 6127 50  0001 C CNN
-F 2 "" H 5500 6300 50  0001 C CNN
-F 3 "" H 5500 6300 50  0001 C CNN
-	1    5500 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 6250 5900 6200
-Wire Wire Line
-	5500 6000 5500 5950
-Wire Wire Line
-	5900 6000 5900 5750
-Wire Wire Line
-	5900 5750 6300 5750
-Wire Wire Line
-	5500 6200 5500 6250
-Wire Wire Line
-	5500 5950 6300 5950
-Wire Wire Line
-	5500 6250 5900 6250
-Connection ~ 5500 6250
-Wire Wire Line
-	5500 6250 5500 6300
-NoConn ~ 2950 6500
-NoConn ~ 2950 6700
-Wire Wire Line
-	5500 5250 5250 5250
-Connection ~ 5500 5250
-Wire Wire Line
-	5250 5050 5900 5050
-Connection ~ 5900 5050
-Wire Wire Line
-	5500 5950 5250 5950
-Connection ~ 5500 5950
-Wire Wire Line
-	5250 5750 5900 5750
-Connection ~ 5900 5750
-Wire Wire Line
-	4950 5950 4850 5950
-Connection ~ 4850 5950
-Wire Wire Line
-	4850 6100 4850 5950
-$Comp
-L power:+3V3 #PWR0115
-U 1 1 60B2F910
-P 1650 5350
-AR Path="/60AAD6DF/60B2F910" Ref="#PWR0115"  Part="1" 
-AR Path="/60AAE706/60B2F910" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0115" H 1650 5200 50  0001 C CNN
-F 1 "+3V3" H 1650 5500 50  0000 C CNN
-F 2 "" H 1650 5350 50  0001 C CNN
-F 3 "" H 1650 5350 50  0001 C CNN
-	1    1650 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C38
-U 1 1 60B2F916
-P 1950 5550
-AR Path="/60AAD6DF/60B2F916" Ref="C38"  Part="1" 
-AR Path="/60AAE706/60B2F916" Ref="C?"  Part="1" 
-F 0 "C38" H 1800 5550 50  0000 C CNN
-F 1 "100n" H 1850 5650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1950 5550 50  0001 C CNN
-F 3 "~" H 1950 5550 50  0001 C CNN
-	1    1950 5550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C18
-U 1 1 60B2F922
-P 2250 4750
-AR Path="/60AAD6DF/60B2F922" Ref="C18"  Part="1" 
-AR Path="/60AAE706/60B2F922" Ref="C?"  Part="1" 
-F 0 "C18" H 2100 4750 50  0000 C CNN
-F 1 "100n" H 2100 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 4750 50  0001 C CNN
-F 3 "~" H 2250 4750 50  0001 C CNN
-	1    2250 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C39
-U 1 1 60B2F928
-P 2550 4750
-AR Path="/60AAD6DF/60B2F928" Ref="C39"  Part="1" 
-AR Path="/60AAE706/60B2F928" Ref="C?"  Part="1" 
-F 0 "C39" H 2400 4750 50  0000 C CNN
-F 1 "100n" H 2400 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 4750 50  0001 C CNN
-F 3 "~" H 2550 4750 50  0001 C CNN
-	1    2550 4750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2250 4600 2250 4650
-Wire Wire Line
-	2550 4600 2550 4650
-Wire Wire Line
-	2250 4850 2250 4900
-Wire Wire Line
-	2550 4850 2550 4900
-$Comp
-L Device:C_Small C41
-U 1 1 60B2F932
-P 1650 4750
-AR Path="/60AAD6DF/60B2F932" Ref="C41"  Part="1" 
-AR Path="/60AAE706/60B2F932" Ref="C?"  Part="1" 
-F 0 "C41" H 1500 4750 50  0000 C CNN
-F 1 "22u" H 1500 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1650 4750 50  0001 C CNN
-F 3 "~" H 1650 4750 50  0001 C CNN
-	1    1650 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C53
-U 1 1 60B2F938
-P 1950 4750
-AR Path="/60AAD6DF/60B2F938" Ref="C53"  Part="1" 
-AR Path="/60AAE706/60B2F938" Ref="C?"  Part="1" 
-F 0 "C53" H 1800 4750 50  0000 C CNN
-F 1 "22u" H 1800 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1950 4750 50  0001 C CNN
-F 3 "~" H 1950 4750 50  0001 C CNN
-	1    1950 4750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 4650 1950 4600
-Wire Wire Line
-	1950 4600 1650 4600
-Wire Wire Line
-	1650 4850 1650 4900
-Wire Wire Line
-	1950 4850 1950 4900
-Connection ~ 1650 4900
-Wire Wire Line
-	1650 4650 1650 4600
-Connection ~ 1950 4600
-$Comp
-L Device:C_Small C19
-U 1 1 60B2F945
-P 1650 5550
-AR Path="/60AAD6DF/60B2F945" Ref="C19"  Part="1" 
-AR Path="/60AAE706/60B2F945" Ref="C?"  Part="1" 
-F 0 "C19" H 1500 5550 50  0000 C CNN
-F 1 "1u" H 1500 5650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1650 5550 50  0001 C CNN
-F 3 "~" H 1650 5550 50  0001 C CNN
-	1    1650 5550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 5400 1950 5450
-Wire Wire Line
-	1650 5400 1650 5450
-Connection ~ 1650 5400
-Wire Wire Line
-	1650 5400 1950 5400
-$Comp
-L power:GND #PWR0117
-U 1 1 60B2F94F
-P 1650 5750
-AR Path="/60AAD6DF/60B2F94F" Ref="#PWR0117"  Part="1" 
-AR Path="/60AAE706/60B2F94F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0117" H 1650 5500 50  0001 C CNN
-F 1 "GND" V 1655 5622 50  0001 R CNN
-F 2 "" H 1650 5750 50  0001 C CNN
-F 3 "" H 1650 5750 50  0001 C CNN
-	1    1650 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 5650 1650 5700
-Wire Wire Line
-	1650 5700 1950 5700
-Wire Wire Line
-	1950 5700 1950 5650
-Connection ~ 1650 5700
-Wire Wire Line
-	1650 5700 1650 5750
-Connection ~ 2900 4900
-Wire Wire Line
-	2900 4600 2550 4600
-Connection ~ 2550 4600
-Wire Wire Line
-	2950 5400 1950 5400
-Connection ~ 1950 5400
-Connection ~ 2250 4600
-Wire Wire Line
-	2250 4600 1950 4600
-Wire Wire Line
-	2250 4600 2550 4600
-Wire Wire Line
-	1650 4900 1950 4900
-Wire Wire Line
-	2550 4900 2250 4900
-Connection ~ 1950 4900
-Connection ~ 2250 4900
-Wire Wire Line
-	2250 4900 1950 4900
-Text HLabel 2950 6000 0    50   Input ~ 0
-I2S_LRCLK
-Text HLabel 2950 6100 0    50   Input ~ 0
-I2S_SCLK
-Text HLabel 2950 6200 0    50   Input ~ 0
-I2S_SDIN
-NoConn ~ 2950 6600
-Text HLabel 2950 6800 0    50   Input ~ 0
-AMP2_PDN
-Wire Wire Line
-	1650 5350 1650 5400
-Connection ~ 1650 4600
-Wire Wire Line
-	2900 4600 2900 4900
-Text Notes 2500 6450 2    50   ~ 0
-I2C address = 0x4C
-Wire Notes Line
-	900  4300 900  7350
-Wire Notes Line
-	900  7350 6550 7350
-Wire Notes Line
-	6550 7350 6550 4300
-Wire Notes Line
-	6550 4300 900  4300
-Text Notes 900  4300 0    50   ~ 0
-Amplifier 2
-Wire Wire Line
-	2650 6400 2950 6400
-Text HLabel 2950 7100 0    50   Input ~ 0
-I2C_SCL
-Text HLabel 2950 7000 0    50   Input ~ 0
-I2C_SDA
-Text Label 6300 1750 0    50   ~ 0
-A+
-Text Label 6300 1950 0    50   ~ 0
-A-
-Text Label 6300 2450 0    50   ~ 0
-B-
-Text Label 6300 2650 0    50   ~ 0
-B+
-Text Label 6300 5050 0    50   ~ 0
-C+
-Text Label 6300 5250 0    50   ~ 0
-C-
-Text Label 6300 5750 0    50   ~ 0
-D-
-Text Label 6300 5950 0    50   ~ 0
-D+
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 60BFE299
-P 8600 3500
-AR Path="/60BFE299" Ref="J?"  Part="1" 
-AR Path="/60AAD6DF/60BFE299" Ref="J1"  Part="1" 
-F 0 "J1" H 8700 3600 50  0000 L CNN
-F 1 "JST-PH 01x03" H 8700 3500 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 8600 3500 50  0001 C CNN
-F 3 "~" H 8600 3500 50  0001 C CNN
-F 4 "I2S" H 8750 3400 50  0000 C CNN "Function"
-	1    8600 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 2600 8250 2600
-Connection ~ 8200 2600
-Wire Wire Line
-	8150 2600 8200 2600
-Wire Wire Line
-	8200 2700 8250 2700
-Wire Wire Line
-	8200 2600 8200 2700
-Connection ~ 8200 2900
-Wire Wire Line
-	8150 2900 8200 2900
-Wire Wire Line
-	8200 2800 8200 2900
-Wire Wire Line
-	8250 2800 8200 2800
-Wire Wire Line
-	8200 2900 8250 2900
-$Comp
-L power:GND #PWR?
-U 1 1 60C17FD9
-P 8150 2600
-AR Path="/60C17FD9" Ref="#PWR?"  Part="1" 
-AR Path="/60B7AC16/60C17FD9" Ref="#PWR?"  Part="1" 
-AR Path="/60AAD6DF/60C17FD9" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 8150 2350 50  0001 C CNN
-F 1 "GND" H 8155 2427 50  0001 C CNN
-F 2 "" H 8150 2600 50  0001 C CNN
-F 3 "" H 8150 2600 50  0001 C CNN
-	1    8150 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 60C17FDF
-P 8450 2700
-AR Path="/60C17FDF" Ref="J?"  Part="1" 
-AR Path="/60B7AC16/60C17FDF" Ref="J?"  Part="1" 
-AR Path="/60AAD6DF/60C17FDF" Ref="J9"  Part="1" 
-F 0 "J9" H 8550 2750 50  0000 L CNN
-F 1 "JST-PH 01x04" H 8550 2650 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 8450 2700 50  0001 C CNN
-F 3 "~" H 8450 2700 50  0001 C CNN
-F 4 "Sure BCPBx" H 8800 2550 50  0000 C CNN "Function"
-	1    8450 2700
-	1    0    0    -1  
-$EndComp
-Text GLabel 8150 2900 0    50   Output ~ 0
-Vin
-Text HLabel 8400 3600 0    50   Input ~ 0
-I2S_LRCLK
-Text HLabel 8400 3500 0    50   Input ~ 0
-I2S_SCLK
-Text HLabel 8400 3400 0    50   Input ~ 0
-I2S_SDIN
-$Comp
 L power:VDD #PWR?
 U 1 1 60CBE8CF
-P 7200 1250
+P 5800 5300
 AR Path="/60CBE8CF" Ref="#PWR?"  Part="1" 
 AR Path="/60AAD6DF/60CBE8CF" Ref="#PWR0120"  Part="1" 
 AR Path="/60B7AC16/60CBE8CF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0120" H 7200 1100 50  0001 C CNN
-F 1 "VDD" H 7217 1423 50  0000 C CNN
-F 2 "" H 7200 1250 50  0001 C CNN
-F 3 "" H 7200 1250 50  0001 C CNN
-	1    7200 1250
+F 0 "#PWR0120" H 5800 5150 50  0001 C CNN
+F 1 "VDD" H 5800 5450 50  0000 C CNN
+F 2 "" H 5800 5300 50  0001 C CNN
+F 3 "" H 5800 5300 50  0001 C CNN
+	1    5800 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:CP C?
 U 1 1 60CBE8D5
-P 7200 1450
+P 5800 5500
 AR Path="/60CBE8D5" Ref="C?"  Part="1" 
 AR Path="/60AAD6DF/60CBE8D5" Ref="C1"  Part="1" 
 AR Path="/60B7AC16/60CBE8D5" Ref="C?"  Part="1" 
-F 0 "C1" H 7350 1500 50  0000 L CNN
-F 1 "820u" H 7315 1405 50  0000 L CNN
-F 2 "ZOUDIO-footprints:Cap_Rad_D10_P5_horizontal" H 7238 1300 50  0001 C CNN
-F 3 "~" H 7200 1450 50  0001 C CNN
-	1    7200 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60CBE8DE
-P 7200 1650
-AR Path="/60CBE8DE" Ref="#PWR?"  Part="1" 
-AR Path="/60AAD6DF/60CBE8DE" Ref="#PWR0121"  Part="1" 
-AR Path="/60B7AC16/60CBE8DE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0121" H 7200 1400 50  0001 C CNN
-F 1 "GND" H 7205 1477 50  0001 C CNN
-F 2 "" H 7200 1650 50  0001 C CNN
-F 3 "" H 7200 1650 50  0001 C CNN
-	1    7200 1650
+F 0 "C1" H 5900 5500 50  0000 L CNN
+F 1 "820u" H 5850 5400 50  0000 L CNN
+F 2 "ZOUDIO-footprints:Cap_Rad_D10_P5_horizontal" H 5838 5350 50  0001 C CNN
+F 3 "~" H 5800 5500 50  0001 C CNN
+	1    5800 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 1600 7200 1650
+	5800 5650 5800 5700
 Wire Wire Line
-	7200 1250 7200 1300
+	5800 5300 5800 5350
 Wire Notes Line
-	7900 1000 7900 3050
-Wire Notes Line
-	7900 3050 9650 3050
-Wire Notes Line
-	9650 3050 9650 1000
-Wire Notes Line
-	7900 1000 9650 1000
-Wire Notes Line
-	6800 1000 7650 1000
-Wire Notes Line
-	7650 1000 7650 1800
-Wire Notes Line
-	7650 1800 6800 1800
-Wire Notes Line
-	6800 1800 6800 1000
-Text Notes 6800 1000 0    50   ~ 0
+	6250 5050 6250 5950
+Text Notes 5400 5050 0    50   ~ 0
 Shared bulk capacitor
-Text Notes 7900 1000 0    50   ~ 0
-Power connectors
 Wire Notes Line
-	7900 3300 9300 3300
+	5400 5950 5400 5050
 Wire Notes Line
-	9300 3300 9300 3700
+	6250 5950 5400 5950
 Wire Notes Line
-	9300 3700 7900 3700
-Wire Notes Line
-	7900 3700 7900 3300
-Text Notes 7900 3300 0    50   ~ 0
-I2S
-Text GLabel 8250 2150 0    50   Output ~ 0
+	5400 5050 6250 5050
+Wire Wire Line
+	5350 2550 5400 2550
+Text HLabel 5350 2550 0    50   Input ~ 0
+AMP1_PDN
+Text HLabel 5350 3900 0    50   Input ~ 0
+AMP2_PDN
+Wire Wire Line
+	5400 3900 5350 3900
+Wire Wire Line
+	5350 3700 5400 3700
+$Comp
+L power:GND #PWR0101
+U 1 1 61F2EDC1
+P 5350 3700
+F 0 "#PWR0101" H 5350 3450 50  0001 C CNN
+F 1 "GND" V 5350 3500 50  0000 C CNN
+F 2 "" H 5350 3700 50  0001 C CNN
+F 3 "" H 5350 3700 50  0001 C CNN
+	1    5350 3700
+	0    1    1    0   
+$EndComp
+Text HLabel 4200 3250 0    50   Input ~ 0
+I2S_SDIN
+Text HLabel 4200 3150 0    50   Input ~ 0
+I2S_SCLK
+Text HLabel 4200 3050 0    50   Input ~ 0
+I2S_LRCLK
+Wire Wire Line
+	4300 4600 5400 4600
+Wire Wire Line
+	5400 3250 4300 3250
+Wire Wire Line
+	4400 4500 5400 4500
+Wire Wire Line
+	5400 3150 4400 3150
+Wire Wire Line
+	4500 4400 5400 4400
+Wire Wire Line
+	5400 3050 4500 3050
+Text HLabel 4200 2850 0    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 4200 2750 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	5400 2850 4700 2850
+Wire Wire Line
+	4800 2750 5400 2750
+$Comp
+L power:GND #PWR0102
+U 1 1 61E055F0
+P 5100 2350
+F 0 "#PWR0102" H 5100 2100 50  0001 C CNN
+F 1 "GND" V 5100 2150 50  0000 C CNN
+F 2 "" H 5100 2350 50  0001 C CNN
+F 3 "" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2350 5350 2350
+Text Notes 5650 2400 0    50   ~ 0
+0x4D
+Wire Wire Line
+	5100 2350 5150 2350
+$Comp
+L Device:R_Small R7
+U 1 1 61D7E4E4
+P 5250 2350
+F 0 "R7" V 5050 2350 50  0000 C CNN
+F 1 "1k" V 5150 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 2350 50  0001 C CNN
+F 3 "~" H 5250 2350 50  0001 C CNN
+	1    5250 2350
+	0    1    1    0   
+$EndComp
+$Sheet
+S 5400 3600 850  1100
+U 61D69C28
+F0 "Amplifier 2" 50
+F1 "Amplifier.sch" 50
+F2 "I2S_LRCLK" I L 5400 4400 50 
+F3 "I2S_SCLK" I L 5400 4500 50 
+F4 "I2S_SDIN" I L 5400 4600 50 
+F5 "PDN" I L 5400 3900 50 
+F6 "I2C_SCL" I L 5400 4100 50 
+F7 "ADR" I L 5400 3700 50 
+F8 "A+" O R 6250 3700 50 
+F9 "A-" O R 6250 3800 50 
+F10 "B-" O R 6250 3900 50 
+F11 "B+" O R 6250 4000 50 
+F12 "I2C_SDA" B L 5400 4200 50 
+$EndSheet
+Wire Wire Line
+	6250 2550 6550 2550
+Wire Wire Line
+	6550 2550 6550 3500
+Wire Wire Line
+	6250 2450 6650 2450
+Wire Wire Line
+	6650 2450 6650 3400
+Wire Wire Line
+	6250 2350 6750 2350
+Wire Wire Line
+	6750 2350 6750 3300
+Text Notes 5650 3750 0    50   ~ 0
+0x4C
+Wire Wire Line
+	7150 2900 7200 2900
+$Comp
+L power:GND #PWR0103
+U 1 1 621FAE3E
+P 7150 2900
+F 0 "#PWR0103" H 7150 2650 50  0001 C CNN
+F 1 "GND" V 7150 2700 50  0000 C CNN
+F 2 "" H 7150 2900 50  0001 C CNN
+F 3 "" H 7150 2900 50  0001 C CNN
+	1    7150 2900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7150 3200 7200 3200
+$Comp
+L power:GND #PWR0104
+U 1 1 621E8F9F
+P 7150 3200
+F 0 "#PWR0104" H 7150 2950 50  0001 C CNN
+F 1 "GND" V 7150 3000 50  0000 C CNN
+F 2 "" H 7150 3200 50  0001 C CNN
+F 3 "" H 7150 3200 50  0001 C CNN
+	1    7150 3200
+	0    1    -1   0   
+$EndComp
+Text GLabel 7200 3100 0    50   Output ~ 0
 Vin
-Text GLabel 8250 2050 0    50   Output ~ 0
+Text GLabel 7200 3000 0    50   Output ~ 0
 Vin
-Text Label 8250 1150 2    50   ~ 0
-D+
-Text Label 8250 1250 2    50   ~ 0
-D-
-Text Label 8250 1350 2    50   ~ 0
-C-
-Text Label 8250 1450 2    50   ~ 0
-C+
-Text Label 8250 1550 2    50   ~ 0
-B+
-Text Label 8250 1650 2    50   ~ 0
-B-
-Text Label 8250 1750 2    50   ~ 0
-A-
-Text Label 8250 1850 2    50   ~ 0
+Text Label 7200 3300 2    50   ~ 0
 A+
-$Comp
-L power:GND #PWR?
-U 1 1 60B7535A
-P 8250 2250
-AR Path="/60B7535A" Ref="#PWR?"  Part="1" 
-AR Path="/60B7AC16/60B7535A" Ref="#PWR?"  Part="1" 
-AR Path="/60AAD6DF/60B7535A" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 8250 2000 50  0001 C CNN
-F 1 "GND" H 8255 2077 50  0001 C CNN
-F 2 "" H 8250 2250 50  0001 C CNN
-F 3 "" H 8250 2250 50  0001 C CNN
-	1    8250 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60B75354
-P 8250 1950
-AR Path="/60B75354" Ref="#PWR?"  Part="1" 
-AR Path="/60B7AC16/60B75354" Ref="#PWR?"  Part="1" 
-AR Path="/60AAD6DF/60B75354" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 8250 1700 50  0001 C CNN
-F 1 "GND" H 8255 1777 50  0001 C CNN
-F 2 "" H 8250 1950 50  0001 C CNN
-F 3 "" H 8250 1950 50  0001 C CNN
-	1    8250 1950
-	0    1    1    0   
-$EndComp
+Text Label 7200 3400 2    50   ~ 0
+A-
+Text Label 7200 3500 2    50   ~ 0
+B-
+Text Label 7200 3600 2    50   ~ 0
+B+
+Text Label 7200 3700 2    50   ~ 0
+C+
+Text Label 7200 3800 2    50   ~ 0
+C-
+Text Label 7200 3900 2    50   ~ 0
+D-
+Text Label 7200 4000 2    50   ~ 0
+D+
+Wire Wire Line
+	6750 3300 7200 3300
+Wire Wire Line
+	6650 3400 7200 3400
+Wire Wire Line
+	6550 3500 7200 3500
+Wire Wire Line
+	7200 3600 6450 3600
 $Comp
 L Connector_Generic:Conn_01x12 J?
-U 1 1 60B7534C
-P 8450 1650
-AR Path="/60B7534C" Ref="J?"  Part="1" 
-AR Path="/60B7AC16/60B7534C" Ref="J?"  Part="1" 
-AR Path="/60AAD6DF/60B7534C" Ref="J4"  Part="1" 
-F 0 "J4" H 8600 1650 50  0000 C CNN
-F 1 "5mm screwterminal 01x12" H 9050 1550 50  0000 C CNN
-F 2 "ZOUDIO-footprints:Multicomp_12P_5mm" H 8450 1650 50  0001 C CNN
-F 3 "~" H 8450 1650 50  0001 C CNN
-F 4 "Amp out / power in" H 8950 1450 50  0000 C CNN "Function"
-	1    8450 1650
+U 1 1 61F9CEE5
+P 7400 3500
+AR Path="/61F9CEE5" Ref="J?"  Part="1" 
+AR Path="/60B7AC16/61F9CEE5" Ref="J?"  Part="1" 
+AR Path="/60AAD6DF/61F9CEE5" Ref="J4"  Part="1" 
+F 0 "J4" H 7600 3300 50  0000 C CNN
+F 1 "5mm screwterminal 01x12" H 8000 3400 50  0000 C CNN
+F 2 "ZOUDIO-footprints:Multicomp_12P_5mm" H 7400 3500 50  0001 C CNN
+F 3 "~" H 7400 3500 50  0001 C CNN
+F 4 "Amp out / power in" H 7900 3500 50  0000 C CNN "Function"
+	1    7400 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6250 3800 7200 3800
+Wire Wire Line
+	6250 3700 7200 3700
+Wire Wire Line
+	6250 3900 7200 3900
+Wire Wire Line
+	6250 4000 7200 4000
+Text GLabel 7100 2600 0    50   Output ~ 0
+Vin
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60C17FDF
+P 7400 2400
+AR Path="/60C17FDF" Ref="J?"  Part="1" 
+AR Path="/60B7AC16/60C17FDF" Ref="J?"  Part="1" 
+AR Path="/60AAD6DF/60C17FDF" Ref="J9"  Part="1" 
+F 0 "J9" H 7500 2450 50  0000 L CNN
+F 1 "JST-PH 01x04" H 7500 2350 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 7400 2400 50  0001 C CNN
+F 3 "~" H 7400 2400 50  0001 C CNN
+F 4 "Sure BCPBx" H 7750 2250 50  0000 C CNN "Function"
+	1    7400 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C28
-U 1 1 60C3AB9E
-P 4550 5600
-AR Path="/60AAD6DF/60C3AB9E" Ref="C28"  Part="1" 
-AR Path="/60AAE706/60C3AB9E" Ref="C?"  Part="1" 
-F 0 "C28" V 4500 5750 50  0000 C CNN
-F 1 "470n" V 4600 5750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 5600 50  0001 C CNN
-F 3 "~" H 4550 5600 50  0001 C CNN
-	1    4550 5600
+L power:GND #PWR?
+U 1 1 60C17FD9
+P 7100 2300
+AR Path="/60C17FD9" Ref="#PWR?"  Part="1" 
+AR Path="/60B7AC16/60C17FD9" Ref="#PWR?"  Part="1" 
+AR Path="/60AAD6DF/60C17FD9" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 7100 2050 50  0001 C CNN
+F 1 "GND" H 7105 2127 50  0001 C CNN
+F 2 "" H 7100 2300 50  0001 C CNN
+F 3 "" H 7100 2300 50  0001 C CNN
+	1    7100 2300
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	7150 2600 7200 2600
+Wire Wire Line
+	7200 2500 7150 2500
+Wire Wire Line
+	7150 2500 7150 2600
+Wire Wire Line
+	7100 2600 7150 2600
+Connection ~ 7150 2600
+Wire Wire Line
+	7150 2300 7150 2400
+Wire Wire Line
+	7150 2400 7200 2400
+Wire Wire Line
+	7100 2300 7150 2300
+Connection ~ 7150 2300
+Wire Wire Line
+	7150 2300 7200 2300
+Text Label 3000 3250 0    50   ~ 0
+I2S_LRCLK
+Text Label 3000 3150 0    50   ~ 0
+I2S_SCLK
+Text Label 3000 3050 0    50   ~ 0
+I2S_SDIN
 $Comp
-L power:VDD #PWR0107
-U 1 1 6109644E
-P 1050 1250
-F 0 "#PWR0107" H 1050 1100 50  0001 C CNN
-F 1 "VDD" H 1067 1423 50  0000 C CNN
-F 2 "" H 1050 1250 50  0001 C CNN
-F 3 "" H 1050 1250 50  0001 C CNN
-	1    1050 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C55
-U 1 1 610969D2
-P 1050 1450
-F 0 "C55" H 900 1450 50  0000 C CNN
-F 1 "22u" H 900 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1050 1450 50  0001 C CNN
-F 3 "~" H 1050 1450 50  0001 C CNN
-	1    1050 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C58
-U 1 1 610969DC
-P 1350 1450
-F 0 "C58" H 1200 1450 50  0000 C CNN
-F 1 "22u" H 1200 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 1450 50  0001 C CNN
-F 3 "~" H 1350 1450 50  0001 C CNN
-	1    1350 1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1350 1350 1350 1300
-Wire Wire Line
-	1350 1300 1050 1300
-Wire Wire Line
-	1050 1550 1050 1600
-Wire Wire Line
-	1350 1550 1350 1600
-Connection ~ 1050 1600
-Wire Wire Line
-	1050 1350 1050 1300
-Connection ~ 1350 1300
-$Comp
-L power:GND #PWR0109
-U 1 1 610969ED
-P 1050 1650
-F 0 "#PWR0109" H 1050 1400 50  0001 C CNN
-F 1 "GND" V 1055 1522 50  0001 R CNN
-F 2 "" H 1050 1650 50  0001 C CNN
-F 3 "" H 1050 1650 50  0001 C CNN
-	1    1050 1650
-	1    0    0    -1  
+L Connector_Generic:Conn_01x03 J?
+U 1 1 60BFE299
+P 2800 3150
+AR Path="/60BFE299" Ref="J?"  Part="1" 
+AR Path="/60AAD6DF/60BFE299" Ref="J1"  Part="1" 
+F 0 "J1" H 2900 3250 50  0000 L CNN
+F 1 "JST-PH 01x03" H 2900 3150 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 2800 3150 50  0001 C CNN
+F 3 "~" H 2800 3150 50  0001 C CNN
+F 4 "I2S" H 2950 3050 50  0000 C CNN "Function"
+	1    2800 3150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 1300 1350 1300
+	4300 3250 4300 4600
 Wire Wire Line
-	1050 1600 1350 1600
-Connection ~ 1350 1600
+	4400 3150 4400 4500
 Wire Wire Line
-	1650 1600 1350 1600
+	4500 3050 4500 4400
 Wire Wire Line
-	1050 1650 1050 1600
+	5400 4200 4700 4200
 Wire Wire Line
-	1050 1250 1050 1300
-Connection ~ 1050 1300
+	4800 4100 5400 4100
 Wire Wire Line
-	1650 1550 1650 1600
+	4800 2750 4800 4100
+Wire Wire Line
+	4700 2850 4700 4200
+Wire Wire Line
+	6450 2650 6250 2650
+Wire Wire Line
+	6450 3600 6450 2650
+$Sheet
+S 5400 2250 850  1100
+U 61DB323F
+F0 "Amplifier 1" 50
+F1 "Amplifier.sch" 50
+F2 "I2S_LRCLK" I L 5400 3050 50 
+F3 "I2S_SCLK" I L 5400 3150 50 
+F4 "I2S_SDIN" I L 5400 3250 50 
+F5 "PDN" I L 5400 2550 50 
+F6 "ADR" I L 5400 2350 50 
+F7 "A+" O R 6250 2350 50 
+F8 "A-" O R 6250 2450 50 
+F9 "B-" O R 6250 2550 50 
+F10 "B+" O R 6250 2650 50 
+F11 "I2C_SCL" I L 5400 2750 50 
+F12 "I2C_SDA" B L 5400 2850 50 
+$EndSheet
 $Comp
-L power:VDD #PWR0116
-U 1 1 610B08B3
-P 1050 4550
-F 0 "#PWR0116" H 1050 4400 50  0001 C CNN
-F 1 "VDD" H 1067 4723 50  0000 C CNN
-F 2 "" H 1050 4550 50  0001 C CNN
-F 3 "" H 1050 4550 50  0001 C CNN
-	1    1050 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C56
-U 1 1 610B0E5B
-P 1050 4750
-F 0 "C56" H 900 4750 50  0000 C CNN
-F 1 "22u" H 900 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1050 4750 50  0001 C CNN
-F 3 "~" H 1050 4750 50  0001 C CNN
-	1    1050 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C59
-U 1 1 610B0E65
-P 1350 4750
-F 0 "C59" H 1200 4750 50  0000 C CNN
-F 1 "22u" H 1200 4850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 4750 50  0001 C CNN
-F 3 "~" H 1350 4750 50  0001 C CNN
-	1    1350 4750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1350 4650 1350 4600
-Wire Wire Line
-	1350 4600 1050 4600
-Wire Wire Line
-	1050 4850 1050 4900
-Wire Wire Line
-	1350 4850 1350 4900
-Connection ~ 1050 4900
-Wire Wire Line
-	1050 4650 1050 4600
-Connection ~ 1350 4600
-$Comp
-L power:GND #PWR0118
-U 1 1 610B0E76
-P 1050 4950
-F 0 "#PWR0118" H 1050 4700 50  0001 C CNN
-F 1 "GND" V 1055 4822 50  0001 R CNN
-F 2 "" H 1050 4950 50  0001 C CNN
-F 3 "" H 1050 4950 50  0001 C CNN
-	1    1050 4950
-	1    0    0    -1  
+L power:GND #PWR04
+U 1 1 61A25AA8
+P 5800 5700
+F 0 "#PWR04" H 5800 5450 50  0001 C CNN
+F 1 "GND" H 5800 5550 50  0000 C CNN
+F 2 "" H 5800 5700 50  0001 C CNN
+F 3 "" H 5800 5700 50  0001 C CNN
+	1    5800 5700
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 4600 1350 4600
+	4200 3250 4300 3250
+Connection ~ 4300 3250
 Wire Wire Line
-	1050 4900 1350 4900
-Connection ~ 1350 4900
+	4400 3150 4200 3150
+Connection ~ 4400 3150
+Connection ~ 4500 3050
 Wire Wire Line
-	1650 4900 1350 4900
+	4200 3050 4500 3050
 Wire Wire Line
-	1050 4950 1050 4900
+	4200 2850 4700 2850
+Connection ~ 4700 2850
 Wire Wire Line
-	1050 4550 1050 4600
-Connection ~ 1050 4600
+	4800 2750 4200 2750
+Connection ~ 4800 2750
 $EndSCHEMATC
