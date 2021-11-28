@@ -355,8 +355,6 @@ LED2
 Text HLabel 2150 5750 0    50   Output ~ 0
 LED1
 NoConn ~ 5050 4500
-Wire Wire Line
-	2150 4200 2200 4200
 $Comp
 L Device:R_Small R?
 U 1 1 5FC950AC
@@ -415,9 +413,6 @@ Wire Wire Line
 	2150 5650 2200 5650
 Wire Wire Line
 	2200 5650 2200 5600
-Wire Wire Line
-	2200 4300 2200 4200
-Connection ~ 2200 4200
 $Comp
 L Device:R_Small R?
 U 1 1 5FE43E76
@@ -569,40 +564,6 @@ Text Label 3850 5100 3    50   ~ 0
 LED5
 Text Label 7250 3950 2    50   ~ 0
 LED5
-Wire Wire Line
-	2250 4300 2200 4300
-Wire Wire Line
-	2450 4300 3150 4300
-$Comp
-L Device:R_Small R31
-U 1 1 5FD0344A
-P 2350 4300
-F 0 "R31" V 2450 4150 50  0000 L CNN
-F 1 "0R" V 2450 4350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 4300 50  0001 C CNN
-F 3 "~" H 2350 4300 50  0001 C CNN
-F 4 "Uni-royal" H 2350 4300 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF0000T5E" H 2350 4300 50  0001 C CNN "Partnumber"
-	1    2350 4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2200 4200 2250 4200
-Wire Wire Line
-	2450 4200 3150 4200
-$Comp
-L Device:R_Small R30
-U 1 1 5FC19818
-P 2350 4200
-F 0 "R30" V 2250 4050 50  0000 L CNN
-F 1 "0R" V 2250 4250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 4200 50  0001 C CNN
-F 3 "~" H 2350 4200 50  0001 C CNN
-F 4 "Uni-royal" H 2350 4200 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF0000T5E" H 2350 4200 50  0001 C CNN "Partnumber"
-	1    2350 4200
-	0    1    1    0   
-$EndComp
 NoConn ~ 3950 3100
 Wire Wire Line
 	7700 3400 7700 3450
@@ -614,8 +575,6 @@ Wire Wire Line
 	7750 3750 7700 3750
 Wire Wire Line
 	7700 3750 7700 3650
-Text GLabel 2150 4200 0    50   Input ~ 0
-5V_USB
 Text HLabel 6050 3400 2    50   Input ~ 0
 MIC1_P
 Text HLabel 6050 3600 2    50   Input ~ 0
@@ -778,4 +737,45 @@ Wire Wire Line
 Wire Wire Line
 	4350 3050 4550 3050
 Connection ~ 4550 3050
+Text GLabel 2150 4200 0    50   Input ~ 0
+5V_USB
+Wire Wire Line
+	2450 4200 3150 4200
+$Comp
+L Device:R_Small R30
+U 1 1 5FC19818
+P 2350 4200
+F 0 "R30" V 2250 4050 50  0000 L CNN
+F 1 "0R" V 2250 4250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 4200 50  0001 C CNN
+F 3 "~" H 2350 4200 50  0001 C CNN
+F 4 "Uni-royal" H 2350 4200 50  0001 C CNN "Manufacturer"
+F 5 "0603WAF0000T5E" H 2350 4200 50  0001 C CNN "Partnumber"
+	1    2350 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 4300 3150 4300
+Wire Wire Line
+	2200 4200 2250 4200
+Wire Wire Line
+	2150 4200 2200 4200
+Connection ~ 2200 4200
+Wire Wire Line
+	2200 4300 2200 4200
+Wire Wire Line
+	2250 4300 2200 4300
+$Comp
+L Device:R_Small R31
+U 1 1 5FD0344A
+P 2350 4300
+F 0 "R31" V 2450 4150 50  0000 L CNN
+F 1 "0R" V 2450 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 4300 50  0001 C CNN
+F 3 "~" H 2350 4300 50  0001 C CNN
+F 4 "Uni-royal" H 2350 4300 50  0001 C CNN "Manufacturer"
+F 5 "0603WAF0000T5E" H 2350 4300 50  0001 C CNN "Partnumber"
+	1    2350 4300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

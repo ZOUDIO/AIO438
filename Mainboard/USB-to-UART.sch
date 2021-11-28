@@ -13,38 +13,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR?
-U 1 1 5FD85D4B
-P 5200 3100
-AR Path="/5FD85D4B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD15AD6/5FD85D4B" Ref="#PWR?"  Part="1" 
-AR Path="/5FBDE62F/5FD85D4B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD81784/5FD85D4B" Ref="#PWR?"  Part="1" 
-AR Path="/5FCDB1AE/5FD85D4B" Ref="#PWR?"  Part="1" 
-AR Path="/5FF9E05B/5FD85D4B" Ref="#PWR?"  Part="1" 
-AR Path="/60A7E145/5FD85D4B" Ref="#PWR0186"  Part="1" 
-F 0 "#PWR0186" H 5200 2850 50  0001 C CNN
-F 1 "GND" H 5205 2927 50  0001 C CNN
-F 2 "" H 5200 3100 50  0001 C CNN
-F 3 "" H 5200 3100 50  0001 C CNN
-	1    5200 3100
-	0    -1   -1   0   
-$EndComp
-Text HLabel 5200 4100 2    50   Output ~ 0
+Text HLabel 5150 3900 2    50   Output ~ 0
 UART_DTR
 Wire Notes Line
-	5650 4950 4000 4950
+	5650 5150 2600 5150
 Wire Notes Line
-	4000 4950 4000 2800
-Text HLabel 4400 3700 0    50   BiDi ~ 0
-UD+
-Text HLabel 4400 3800 0    50   BiDi ~ 0
-UD-
+	2600 5150 2600 2800
+Text HLabel 3950 4300 0    50   BiDi ~ 0
+D+
+Text HLabel 3950 4400 0    50   BiDi ~ 0
+D-
 $Comp
 L Device:C_Small C?
 U 1 1 5FD85D40
-P 4950 3100
+P 3100 4050
 AR Path="/5FD85D40" Ref="C?"  Part="1" 
 AR Path="/5FCC1D27/5FD85D40" Ref="C?"  Part="1" 
 AR Path="/5FBDE62F/5FD85D40" Ref="C?"  Part="1" 
@@ -52,57 +34,23 @@ AR Path="/5FD81784/5FD85D40" Ref="C?"  Part="1"
 AR Path="/5FCDB1AE/5FD85D40" Ref="C?"  Part="1" 
 AR Path="/5FF9E05B/5FD85D40" Ref="C?"  Part="1" 
 AR Path="/60A7E145/5FD85D40" Ref="C44"  Part="1" 
-F 0 "C44" V 4900 3250 50  0000 C CNN
-F 1 "100n" V 5000 3250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4950 3100 50  0001 C CNN
-F 3 "~" H 4950 3100 50  0001 C CNN
-F 4 "Murata" H 4950 3100 50  0001 C CNN "Manufacturer"
-F 5 "GCM188L81H104KA57D" H 4950 3100 50  0001 C CNN "Partnumber"
-	1    4950 3100
-	0    1    1    0   
+F 0 "C44" H 2950 4050 50  0000 C CNN
+F 1 "100n" H 2950 4150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 4050 50  0001 C CNN
+F 3 "~" H 3100 4050 50  0001 C CNN
+F 4 "Murata" H 3100 4050 50  0001 C CNN "Manufacturer"
+F 5 "GCM188L81H104KA57D" H 3100 4050 50  0001 C CNN "Partnumber"
+	1    3100 4050
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	5200 3100 5050 3100
-Wire Wire Line
-	4850 3100 4800 3100
-Wire Wire Line
-	4700 3200 4700 3100
-Wire Wire Line
-	4700 3100 4800 3100
-Connection ~ 4800 3100
-Wire Wire Line
-	4800 3100 4800 3200
-NoConn ~ 4400 3500
-NoConn ~ 5200 3700
-NoConn ~ 5200 3800
-NoConn ~ 5200 3900
-NoConn ~ 5200 4000
-NoConn ~ 5200 4200
-Wire Wire Line
-	4800 4400 4800 4450
-$Comp
-L Interface_USB:CH340C U9
-U 1 1 60B2C7AB
-P 4800 3800
-F 0 "U9" H 4550 4350 50  0000 C CNN
-F 1 "CH340B" H 5000 4350 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4850 3250 50  0001 L CNN
-F 3 "~" H 4450 4600 50  0001 C CNN
-	1    4800 3800
-	1    0    0    -1  
-$EndComp
-Text Notes 4050 4900 0    50   ~ 0
-Note:\nPincompatible with CH340C,\nwhich has no configurable VID/PID
-Text Notes 4000 2800 0    50   ~ 0
+Text Notes 2600 2800 0    50   ~ 0
 USB to UART converter
-Wire Notes Line
-	4000 2800 5650 2800
-Text HLabel 5200 3500 2    50   Input ~ 0
+Text HLabel 5150 3600 2    50   Input ~ 0
 UART_RX
-Text HLabel 5200 3400 2    50   Output ~ 0
+Text HLabel 5150 3700 2    50   Output ~ 0
 UART_TX
 Wire Notes Line
-	5650 2800 5650 4950
+	5650 2800 5650 5150
 Text Notes 5900 2800 0    50   ~ 0
 Status leds
 Wire Notes Line
@@ -247,9 +195,6 @@ F 5 "0603WAF1002T5E" H 7800 3100 50  0001 C CNN "Partnumber"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 3100 4700 3100
-Connection ~ 4700 3100
-Wire Wire Line
 	6450 2950 6400 2950
 Text Label 6400 3500 2    50   ~ 0
 UART_DTR
@@ -273,19 +218,135 @@ Wire Notes Line
 	8100 2800 8100 3800
 Wire Notes Line
 	8100 3800 5900 3800
-$Comp
-L power:GND #PWR0162
-U 1 1 61ADB0CE
-P 4800 4450
-F 0 "#PWR0162" H 4800 4200 50  0001 C CNN
-F 1 "GND" H 4800 4300 50  0000 C CNN
-F 2 "" H 4800 4450 50  0001 C CNN
-F 3 "" H 4800 4450 50  0001 C CNN
-	1    4800 4450
-	1    0    0    -1  
-$EndComp
-Text GLabel 4650 3100 0    50   Input ~ 0
-3V3_USB
 Text Label 6400 2950 2    50   ~ 0
 3V3_USB
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U9
+U 1 1 61A39051
+P 4550 3900
+F 0 "U9" H 4150 4700 50  0000 C CNN
+F 1 "CP2102N" H 4800 4700 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5000 3100 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4600 2850 50  0001 C CNN
+	1    4550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 61A3E5C2
+P 4600 4900
+F 0 "#PWR0162" H 4600 4650 50  0001 C CNN
+F 1 "GND" H 4600 4750 50  0000 C CNN
+F 2 "" H 4600 4900 50  0001 C CNN
+F 3 "" H 4600 4900 50  0001 C CNN
+	1    4600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4800 4550 4850
+Wire Wire Line
+	4550 4850 4600 4850
+Wire Wire Line
+	4650 4850 4650 4800
+Wire Wire Line
+	4600 4850 4600 4900
+Connection ~ 4600 4850
+Wire Wire Line
+	4600 4850 4650 4850
+Wire Wire Line
+	4450 3000 4450 2950
+Wire Wire Line
+	4550 2950 4550 3000
+Text GLabel 4400 2950 0    50   Input ~ 0
+3V3_USB
+Wire Wire Line
+	4400 2950 4450 2950
+Connection ~ 4450 2950
+Wire Wire Line
+	4450 2950 4550 2950
+Text GLabel 3650 3300 0    50   Input ~ 0
+3V3_USB
+$Comp
+L Device:R_Small R?
+U 1 1 61A416D4
+P 3800 3300
+AR Path="/5FBDE745/61A416D4" Ref="R?"  Part="1" 
+AR Path="/5FBDE62F/61A416D4" Ref="R?"  Part="1" 
+AR Path="/5FD81784/61A416D4" Ref="R?"  Part="1" 
+AR Path="/5FCDB1AE/61A416D4" Ref="R?"  Part="1" 
+AR Path="/5FF9E05B/61A416D4" Ref="R?"  Part="1" 
+AR Path="/60A7E145/61A416D4" Ref="R50"  Part="1" 
+F 0 "R50" V 4000 3250 50  0000 L CNN
+F 1 "1k" V 3900 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3800 3300 50  0001 C CNN
+F 3 "~" H 3800 3300 50  0001 C CNN
+F 4 "Uni-royal" H 3800 3300 50  0001 C CNN "Manufacturer"
+F 5 "0603WAF1002T5E" H 3800 3300 50  0001 C CNN "Partnumber"
+	1    3800 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3300 3700 3300
+Wire Wire Line
+	3900 3300 3950 3300
+Text GLabel 3650 4200 0    50   Input ~ 0
+3V3_USB
+$Comp
+L Device:R_Small R?
+U 1 1 61A46BEA
+P 3800 4200
+AR Path="/5FBDE745/61A46BEA" Ref="R?"  Part="1" 
+AR Path="/5FBDE62F/61A46BEA" Ref="R?"  Part="1" 
+AR Path="/5FD81784/61A46BEA" Ref="R?"  Part="1" 
+AR Path="/5FCDB1AE/61A46BEA" Ref="R?"  Part="1" 
+AR Path="/5FF9E05B/61A46BEA" Ref="R?"  Part="1" 
+AR Path="/60A7E145/61A46BEA" Ref="R51"  Part="1" 
+F 0 "R51" V 4000 4150 50  0000 L CNN
+F 1 "10k" V 3900 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3800 4200 50  0001 C CNN
+F 3 "~" H 3800 4200 50  0001 C CNN
+F 4 "Uni-royal" H 3800 4200 50  0001 C CNN "Manufacturer"
+F 5 "0603WAF1002T5E" H 3800 4200 50  0001 C CNN "Partnumber"
+	1    3800 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 4200 3650 4200
+Wire Wire Line
+	3900 4200 3950 4200
+Text GLabel 3050 3900 0    50   Input ~ 0
+3V3_USB
+Wire Wire Line
+	3050 3900 3100 3900
+Wire Wire Line
+	3100 3900 3100 3950
+Wire Wire Line
+	3100 3900 3950 3900
+Connection ~ 3100 3900
+$Comp
+L power:GND #PWR0175
+U 1 1 61A4CA6C
+P 3100 4200
+F 0 "#PWR0175" H 3100 3950 50  0001 C CNN
+F 1 "GND" H 3100 4050 50  0000 C CNN
+F 2 "" H 3100 4200 50  0001 C CNN
+F 3 "" H 3100 4200 50  0001 C CNN
+	1    3100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4150 3100 4200
+NoConn ~ 5150 3300
+NoConn ~ 5150 3400
+NoConn ~ 5150 3500
+NoConn ~ 5150 3800
+NoConn ~ 5150 4000
+NoConn ~ 5150 4200
+NoConn ~ 5150 4300
+NoConn ~ 5150 4400
+NoConn ~ 5150 4500
+Wire Notes Line
+	2600 2800 5650 2800
+NoConn ~ 3950 3600
+NoConn ~ 3950 3700
 $EndSCHEMATC

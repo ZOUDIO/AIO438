@@ -238,55 +238,6 @@ Wire Wire Line
 	6250 3900 7200 3900
 Wire Wire Line
 	6250 4000 7200 4000
-Text GLabel 7100 2600 0    50   Output ~ 0
-Vin
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 60C17FDF
-P 7400 2400
-AR Path="/60C17FDF" Ref="J?"  Part="1" 
-AR Path="/60B7AC16/60C17FDF" Ref="J?"  Part="1" 
-AR Path="/60AAD6DF/60C17FDF" Ref="J9"  Part="1" 
-F 0 "J9" H 7500 2450 50  0000 L CNN
-F 1 "JST-PH 01x04" H 7500 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 7400 2400 50  0001 C CNN
-F 3 "~" H 7400 2400 50  0001 C CNN
-F 4 "Sure BCPBx" H 7750 2250 50  0000 C CNN "Function"
-	1    7400 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60C17FD9
-P 7100 2300
-AR Path="/60C17FD9" Ref="#PWR?"  Part="1" 
-AR Path="/60B7AC16/60C17FD9" Ref="#PWR?"  Part="1" 
-AR Path="/60AAD6DF/60C17FD9" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 7100 2050 50  0001 C CNN
-F 1 "GND" H 7105 2127 50  0001 C CNN
-F 2 "" H 7100 2300 50  0001 C CNN
-F 3 "" H 7100 2300 50  0001 C CNN
-	1    7100 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7150 2600 7200 2600
-Wire Wire Line
-	7200 2500 7150 2500
-Wire Wire Line
-	7150 2500 7150 2600
-Wire Wire Line
-	7100 2600 7150 2600
-Connection ~ 7150 2600
-Wire Wire Line
-	7150 2300 7150 2400
-Wire Wire Line
-	7150 2400 7200 2400
-Wire Wire Line
-	7100 2300 7150 2300
-Connection ~ 7150 2300
-Wire Wire Line
-	7150 2300 7200 2300
 Text Label 3000 3250 0    50   ~ 0
 I2S_LRCLK
 Text Label 3000 3150 0    50   ~ 0

@@ -793,18 +793,16 @@ F 3 "" H 3550 5450 50  0001 C CNN
 	1    3550 5450
 	1    0    0    -1  
 $EndComp
-Text Label 7900 5050 2    50   ~ 0
+Text Label 7900 5350 2    50   ~ 0
 I2C_SCL
-Text Label 7900 4950 2    50   ~ 0
+Text Label 7900 5250 2    50   ~ 0
 I2C_SDA
 Wire Wire Line
 	7000 4750 7900 4750
-Text Label 7900 5250 2    50   ~ 0
+Text Label 7900 5050 2    50   ~ 0
 UART_RX
-Text Label 7900 5350 2    50   ~ 0
+Text Label 7900 4950 2    50   ~ 0
 UART_TX
-Text Label 7900 5150 2    50   ~ 0
-DTR
 $Comp
 L Device:C_Small C?
 U 1 1 61A55D1F
@@ -840,4 +838,6 @@ F 3 "" H 7750 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 2250 7750 2250
+Text Label 7900 5150 2    50   ~ 0
+RESET
 $EndSCHEMATC
