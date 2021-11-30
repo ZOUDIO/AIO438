@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 11
 Title "4x38W amp with DSP and BT"
-Date "2021-11-19"
-Rev "0.2"
+Date "2021-12-01"
+Rev "1.0"
 Comp "ZOUDIO"
 Comment1 ""
 Comment2 ""
@@ -692,7 +692,7 @@ U 1 1 61AD4D39
 P 4250 3500
 F 0 "U4" H 4250 4100 50  0000 C CNN
 F 1 "TPS62177DQC" H 4250 4000 50  0000 C CNN
-F 2 "Package_SON:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias" H 4400 3050 50  0001 L CNN
+F 2 "ZOUDIO-footprints:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm" H 4400 3050 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps62177.pdf" H 4250 4050 50  0001 C CNN
 	1    4250 3500
 	1    0    0    -1  

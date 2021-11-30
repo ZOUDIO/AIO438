@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 11
 Title "4x38W amp with DSP and BT"
-Date "2021-11-19"
-Rev "0.2"
+Date "2021-12-01"
+Rev "1.0"
 Comp "ZOUDIO"
 Comment1 ""
 Comment2 ""
@@ -36,19 +36,7 @@ Wire Wire Line
 	6700 4850 6750 4850
 Wire Wire Line
 	6700 5100 6700 5150
-Text Label 8300 4350 0    50   ~ 0
-I2C_SDA
-Text Label 8300 4450 0    50   ~ 0
-I2C_SCL
 NoConn ~ 7950 4850
-Text Label 7950 4550 0    50   ~ 0
-LED2
-Text Label 7950 4650 0    50   ~ 0
-DRV
-Wire Wire Line
-	8300 4450 8250 4450
-Text Label 10150 2750 0    50   ~ 0
-LED2
 Wire Wire Line
 	6300 3850 6250 3850
 Wire Notes Line
@@ -63,11 +51,6 @@ Text Notes 5700 2400 0    50   ~ 0
 Hub controller
 Wire Wire Line
 	6700 4550 6750 4550
-Wire Wire Line
-	8250 4450 7950 4450
-Connection ~ 8250 4450
-Text Label 8300 4550 0    50   ~ 0
-LED1
 Wire Wire Line
 	8100 3150 7950 3150
 Wire Wire Line
@@ -86,21 +69,15 @@ Wire Wire Line
 	8000 3550 8100 3550
 Wire Wire Line
 	6250 3650 6300 3650
-Wire Wire Line
-	8250 4450 8250 4550
-Wire Wire Line
-	8300 4550 8250 4550
-Wire Wire Line
-	8300 4350 8250 4350
 Wire Notes Line
-	8950 3100 9550 3100
+	8950 2400 9550 2400
 Wire Notes Line
-	9550 3100 9550 4050
+	9550 2400 9550 3350
 Wire Notes Line
-	9550 4050 8950 4050
+	9550 3350 8950 3350
 Wire Notes Line
-	8950 4050 8950 3100
-Text Notes 8950 3100 0    50   ~ 0
+	8950 3350 8950 2400
+Text Notes 8950 2400 0    50   ~ 0
 Hub active led
 Wire Wire Line
 	6200 4650 6200 4600
@@ -110,15 +87,6 @@ Wire Wire Line
 	6100 4500 6050 4500
 Wire Wire Line
 	6700 4350 6700 4550
-Text Label 8300 4250 0    50   ~ 0
-TESTJ
-Wire Wire Line
-	8300 4250 8250 4250
-Wire Wire Line
-	8250 4250 8250 4350
-Connection ~ 8250 4350
-Wire Wire Line
-	8250 4350 7950 4350
 $Comp
 L Device:C_Small C36
 U 1 1 60CBAE8D
@@ -135,99 +103,40 @@ Wire Wire Line
 Connection ~ 7300 2750
 Wire Wire Line
 	7300 2750 7300 2850
-Text Label 9150 3250 2    50   ~ 0
+Text Label 9150 2550 2    50   ~ 0
 DRV
 Wire Wire Line
-	9200 3250 9200 3300
+	9200 2550 9200 2600
 $Comp
 L Device:R_Small R21
 U 1 1 60C9D1DB
-P 9200 3400
-F 0 "R21" H 9350 3450 50  0000 C CNN
-F 1 "10k" H 9350 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 3400 50  0001 C CNN
-F 3 "~" H 9200 3400 50  0001 C CNN
-	1    9200 3400
+P 9200 2700
+F 0 "R21" H 9350 2750 50  0000 C CNN
+F 1 "10k" H 9350 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9200 2700 50  0001 C CNN
+F 3 "~" H 9200 2700 50  0001 C CNN
+	1    9200 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 3500 9200 3550
+	9200 2800 9200 2850
 Wire Wire Line
-	9200 3750 9200 3800
+	9200 3050 9200 3100
 $Comp
 L Device:LED_Small D?
 U 1 1 60C62FEE
-P 9200 3650
+P 9200 2950
 AR Path="/60BB5CE1/60C62FEE" Ref="D?"  Part="1" 
 AR Path="/60E45FC0/60C62FEE" Ref="D1"  Part="1" 
-F 0 "D1" V 9250 3500 50  0000 C CNN
-F 1 "Blue" V 9150 3500 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 9200 3650 50  0001 C CNN
-F 3 "~" V 9200 3650 50  0001 C CNN
-F 4 "Orient" H 9200 3650 50  0001 C CNN "Manufacturer"
-F 5 "ORH-B36G" H 9200 3650 50  0001 C CNN "Partnumber"
-	1    9200 3650
+F 0 "D1" V 9250 2800 50  0000 C CNN
+F 1 "Blue" V 9150 2800 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 9200 2950 50  0001 C CNN
+F 3 "~" V 9200 2950 50  0001 C CNN
+F 4 "Orient" H 9200 2950 50  0001 C CNN "Manufacturer"
+F 5 "ORH-B36G" H 9200 2950 50  0001 C CNN "Partnumber"
+	1    9200 2950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:TestPoint TP3
-U 1 1 60CCAB94
-P 10100 2650
-F 0 "TP3" H 10150 2800 50  0000 L CNN
-F 1 "TestPoint" H 10150 2700 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10300 2650 50  0001 C CNN
-F 3 "~" H 10300 2650 50  0001 C CNN
-	1    10100 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 2650 10100 2750
-Wire Wire Line
-	10100 2750 10150 2750
-Wire Notes Line
-	8950 2400 10550 2400
-Wire Notes Line
-	10550 2400 10550 2850
-Wire Notes Line
-	10550 2850 8950 2850
-Wire Notes Line
-	8950 2850 8950 2400
-Text Notes 9000 2400 0    50   ~ 0
-Testpoints
-$Comp
-L Connector:TestPoint TP1
-U 1 1 60D11389
-P 9050 2650
-F 0 "TP1" H 9100 2800 50  0000 L CNN
-F 1 "TestPoint" H 9100 2700 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9250 2650 50  0001 C CNN
-F 3 "~" H 9250 2650 50  0001 C CNN
-	1    9050 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 2750 9050 2750
-Wire Wire Line
-	9050 2750 9050 2650
-$Comp
-L Connector:TestPoint TP2
-U 1 1 60D11396
-P 9550 2650
-F 0 "TP2" H 9600 2800 50  0000 L CNN
-F 1 "TestPoint" H 9600 2700 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9750 2650 50  0001 C CNN
-F 3 "~" H 9750 2650 50  0001 C CNN
-	1    9550 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 2650 9550 2750
-Wire Wire Line
-	9550 2750 9600 2750
-Text Label 9100 2750 0    50   ~ 0
-TESTJ
-Text Label 9600 2750 0    50   ~ 0
-LED1
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 60C3D3DA
@@ -496,12 +405,12 @@ $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 619E6C77
-P 9200 3800
-F 0 "#PWR011" H 9200 3550 50  0001 C CNN
-F 1 "GND" H 9200 3650 50  0000 C CNN
-F 2 "" H 9200 3800 50  0001 C CNN
-F 3 "" H 9200 3800 50  0001 C CNN
-	1    9200 3800
+P 9200 3100
+F 0 "#PWR011" H 9200 2850 50  0001 C CNN
+F 1 "GND" H 9200 2950 50  0000 C CNN
+F 2 "" H 9200 3100 50  0001 C CNN
+F 3 "" H 9200 3100 50  0001 C CNN
+	1    9200 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -589,7 +498,7 @@ F 3 "" H 6350 4500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9150 3250 9200 3250
+	9150 2550 9200 2550
 $Comp
 L power:GND #PWR0142
 U 1 1 61AB35A3
@@ -778,4 +687,9 @@ $EndComp
 Wire Wire Line
 	1500 4600 1500 4650
 Connection ~ 1500 4600
+NoConn ~ 7950 4550
+NoConn ~ 7950 4450
+NoConn ~ 7950 4350
+Text Label 7950 4650 0    50   ~ 0
+DRV
 $EndSCHEMATC
