@@ -40,6 +40,8 @@ F 0 "R22" H 5600 2300 50  0000 L CNN
 F 1 "100k" H 5600 2200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 2250 50  0001 C CNN
 F 3 "~" H 5550 2250 50  0001 C CNN
+F 4 "Yageo" H 5550 2250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100KL" H 5550 2250 50  0001 C CNN "Partnumber"
 	1    5550 2250
 	1    0    0    -1  
 $EndComp
@@ -54,6 +56,8 @@ F 1 "JST-PH 01x02" H 5400 1950 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 5300 2000 50  0001 C CNN
 F 3 "~" H 5300 2000 50  0001 C CNN
 F 4 "TrueWirelessStereo switch" H 5400 1850 50  0000 L CNN "Function"
+F 5 "JST" H 5300 2000 50  0001 C CNN "Manufacturer"
+F 6 "B2B-PH-K-S(LF)(SN)" H 5300 2000 50  0001 C CNN "Partnumber"
 	1    5300 2000
 	-1   0    0    -1  
 $EndComp
@@ -112,6 +116,8 @@ F 1 "JST-PH 01x10" H 5400 4050 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B10B-PH-K_1x10_P2.00mm_Vertical" H 5300 4100 50  0001 C CNN
 F 3 "~" H 5300 4100 50  0001 C CNN
 F 4 "Main control" H 5400 3950 50  0000 L CNN "Function"
+F 5 "JST" H 5300 4100 50  0001 C CNN "Manufacturer"
+F 6 "B10B-PH-K-S(LF)(SN)" H 5300 4100 50  0001 C CNN "Partnumber"
 	1    5300 4100
 	-1   0    0    -1  
 $EndComp
@@ -125,6 +131,8 @@ F 0 "R24" V 5850 3700 50  0000 C CNN
 F 1 "1k" V 5750 3650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 3700 50  0001 C CNN
 F 3 "~" H 5650 3700 50  0001 C CNN
+F 4 "Yageo" H 5650 3700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 5650 3700 50  0001 C CNN "Partnumber"
 	1    5650 3700
 	0    -1   -1   0   
 $EndComp
@@ -185,6 +193,8 @@ F 1 "JST-PH 01x02" H 5400 2700 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 5300 2750 50  0001 C CNN
 F 3 "~" H 5300 2750 50  0001 C CNN
 F 4 "EQ switch" H 5400 2600 50  0000 L CNN "Function"
+F 5 "JST" H 5300 2750 50  0001 C CNN "Manufacturer"
+F 6 "B2B-PH-K-S(LF)(SN)" H 5300 2750 50  0001 C CNN "Partnumber"
 	1    5300 2750
 	-1   0    0    -1  
 $EndComp
@@ -211,6 +221,8 @@ F 0 "R23" H 5600 3050 50  0000 L CNN
 F 1 "100k" H 5600 2950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 3000 50  0001 C CNN
 F 3 "~" H 5550 3000 50  0001 C CNN
+F 4 "Yageo" H 5550 3000 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100KL" H 5550 3000 50  0001 C CNN "Partnumber"
 	1    5550 3000
 	1    0    0    -1  
 $EndComp
@@ -262,8 +274,8 @@ F 0 "R36" V 5950 5550 50  0000 L CNN
 F 1 "1k" V 5950 5750 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 5700 50  0001 C CNN
 F 3 "~" H 6050 5700 50  0001 C CNN
-F 4 "Uni-royal" H 6050 5700 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1001T5E" H 6050 5700 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 6050 5700 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 6050 5700 50  0001 C CNN "Partnumber"
 	1    6050 5700
 	0    1    1    0   
 $EndComp
@@ -277,8 +289,8 @@ F 0 "R39" H 6000 5800 50  0000 L CNN
 F 1 "1k" H 6050 5900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 5850 50  0001 C CNN
 F 3 "~" H 6200 5850 50  0001 C CNN
-F 4 "Uni-royal" H 6200 5850 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1001T5E" H 6200 5850 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 6200 5850 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 6200 5850 50  0001 C CNN "Partnumber"
 	1    6200 5850
 	-1   0    0    1   
 $EndComp
@@ -298,8 +310,8 @@ F 0 "R35" V 5950 4750 50  0000 L CNN
 F 1 "1k" V 5950 4950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 4900 50  0001 C CNN
 F 3 "~" H 6050 4900 50  0001 C CNN
-F 4 "Uni-royal" H 6050 4900 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1001T5E" H 6050 4900 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 6050 4900 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 6050 4900 50  0001 C CNN "Partnumber"
 	1    6050 4900
 	0    1    1    0   
 $EndComp
@@ -313,8 +325,8 @@ F 0 "R38" H 6000 5000 50  0000 L CNN
 F 1 "1k" H 6050 5100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 5050 50  0001 C CNN
 F 3 "~" H 6200 5050 50  0001 C CNN
-F 4 "Uni-royal" H 6200 5050 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1001T5E" H 6200 5050 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 6200 5050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 6200 5050 50  0001 C CNN "Partnumber"
 	1    6200 5050
 	-1   0    0    1   
 $EndComp
@@ -346,6 +358,8 @@ F 0 "R25" H 6000 4300 50  0000 L CNN
 F 1 "100k" H 5950 4400 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 4350 50  0001 C CNN
 F 3 "~" H 6200 4350 50  0001 C CNN
+F 4 "Yageo" H 6200 4350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100KL" H 6200 4350 50  0001 C CNN "Partnumber"
 	1    6200 4350
 	-1   0    0    1   
 $EndComp

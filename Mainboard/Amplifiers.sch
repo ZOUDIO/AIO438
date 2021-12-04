@@ -35,9 +35,11 @@ AR Path="/60CBE8D5" Ref="C?"  Part="1"
 AR Path="/60AAD6DF/60CBE8D5" Ref="C1"  Part="1" 
 AR Path="/60B7AC16/60CBE8D5" Ref="C?"  Part="1" 
 F 0 "C1" H 5900 5500 50  0000 L CNN
-F 1 "820u" H 5850 5400 50  0000 L CNN
+F 1 "1000u" H 5850 5400 50  0000 L CNN
 F 2 "ZOUDIO-footprints:Cap_Rad_D10_P5_horizontal" H 5838 5350 50  0001 C CNN
 F 3 "~" H 5800 5500 50  0001 C CNN
+F 4 "Nichicon" H 5800 5500 50  0001 C CNN "Manufacturer"
+F 5 "UHV1V102MHD" H 5800 5500 50  0001 C CNN "Partnumber"
 	1    5800 5500
 	1    0    0    -1  
 $EndComp
@@ -127,6 +129,8 @@ F 0 "R7" V 5050 2350 50  0000 C CNN
 F 1 "1k" V 5150 2350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 2350 50  0001 C CNN
 F 3 "~" H 5250 2350 50  0001 C CNN
+F 4 "Yageo" H 5250 2350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 5250 2350 50  0001 C CNN "Partnumber"
 	1    5250 2350
 	0    1    1    0   
 $EndComp
@@ -226,7 +230,9 @@ F 0 "J4" H 7600 3300 50  0000 C CNN
 F 1 "5mm screwterminal 01x12" H 8000 3400 50  0000 C CNN
 F 2 "ZOUDIO-footprints:Multicomp_12P_5mm" H 7400 3500 50  0001 C CNN
 F 3 "~" H 7400 3500 50  0001 C CNN
-F 4 "Amp out / power in" H 7900 3500 50  0000 C CNN "Function"
+F 4 "Power in / Amp out" H 7900 3500 50  0000 C CNN "Function"
+F 5 "Dibo" H 7400 3500 50  0001 C CNN "Manufacturer"
+F 6 "DB128V-5.0-12P" H 7400 3500 50  0001 C CNN "Partnumber"
 	1    7400 3500
 	1    0    0    1   
 $EndComp
@@ -255,6 +261,8 @@ F 1 "JST-PH 01x03" H 2900 3150 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 2800 3150 50  0001 C CNN
 F 3 "~" H 2800 3150 50  0001 C CNN
 F 4 "I2S" H 2950 3050 50  0000 C CNN "Function"
+F 5 "JST" H 2800 3150 50  0001 C CNN "Manufacturer"
+F 6 "B3B-PH-K-S(LF)(SN)" H 2800 3150 50  0001 C CNN "Partnumber"
 	1    2800 3150
 	-1   0    0    -1  
 $EndComp

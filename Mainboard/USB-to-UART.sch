@@ -83,8 +83,8 @@ F 0 "D3" V 6950 3350 50  0000 C CNN
 F 1 "Blue" V 6850 3350 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 6900 3500 50  0001 C CNN
 F 3 "~" V 6900 3500 50  0001 C CNN
-F 4 "Orient" H 6900 3500 50  0001 C CNN "Manufacturer"
-F 5 "ORH-B36G" H 6900 3500 50  0001 C CNN "Partnumber"
+F 4 "Wurth" H 6900 3500 50  0001 C CNN "Manufacturer"
+F 5 "150060BS75000" H 6900 3500 50  0001 C CNN "Partnumber"
 	1    6900 3500
 	0    -1   -1   0   
 $EndComp
@@ -102,8 +102,8 @@ F 0 "R26" H 6950 3300 50  0000 L CNN
 F 1 "10k" H 6950 3200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3250 50  0001 C CNN
 F 3 "~" H 6900 3250 50  0001 C CNN
-F 4 "Uni-royal" H 6900 3250 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1002T5E" H 6900 3250 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 6900 3250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 6900 3250 50  0001 C CNN "Partnumber"
 	1    6900 3250
 	1    0    0    -1  
 $EndComp
@@ -126,8 +126,8 @@ F 0 "D4" V 7650 3350 50  0000 C CNN
 F 1 "Blue" V 7550 3350 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 7600 3500 50  0001 C CNN
 F 3 "~" V 7600 3500 50  0001 C CNN
-F 4 "Orient" H 7600 3500 50  0001 C CNN "Manufacturer"
-F 5 "ORH-B36G" H 7600 3500 50  0001 C CNN "Partnumber"
+F 4 "Wurth" H 7600 3500 50  0001 C CNN "Manufacturer"
+F 5 "150060BS75000" H 7600 3500 50  0001 C CNN "Partnumber"
 	1    7600 3500
 	0    -1   -1   0   
 $EndComp
@@ -145,8 +145,8 @@ F 0 "R27" H 7650 3300 50  0000 L CNN
 F 1 "10k" H 7650 3200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 3250 50  0001 C CNN
 F 3 "~" H 7600 3250 50  0001 C CNN
-F 4 "Uni-royal" H 7600 3250 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1002T5E" H 7600 3250 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 7600 3250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 7600 3250 50  0001 C CNN "Partnumber"
 	1    7600 3250
 	1    0    0    -1  
 $EndComp
@@ -170,8 +170,8 @@ F 0 "D5" V 8300 3350 50  0000 C CNN
 F 1 "Blue" V 8200 3350 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 8250 3500 50  0001 C CNN
 F 3 "~" V 8250 3500 50  0001 C CNN
-F 4 "Orient" H 8250 3500 50  0001 C CNN "Manufacturer"
-F 5 "ORH-B36G" H 8250 3500 50  0001 C CNN "Partnumber"
+F 4 "Wurth" H 8250 3500 50  0001 C CNN "Manufacturer"
+F 5 "150060BS75000" H 8250 3500 50  0001 C CNN "Partnumber"
 	1    8250 3500
 	0    -1   -1   0   
 $EndComp
@@ -189,8 +189,8 @@ F 0 "R28" H 8300 3300 50  0000 L CNN
 F 1 "10k" H 8300 3200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8250 3250 50  0001 C CNN
 F 3 "~" H 8250 3250 50  0001 C CNN
-F 4 "Uni-royal" H 8250 3250 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1002T5E" H 8250 3250 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 8250 3250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 8250 3250 50  0001 C CNN "Partnumber"
 	1    8250 3250
 	1    0    0    -1  
 $EndComp
@@ -228,6 +228,8 @@ F 0 "U9" H 4600 4850 50  0000 C CNN
 F 1 "CP2102N" H 5250 4850 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5450 3250 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5050 3000 50  0001 C CNN
+F 4 "Silicon Labs" H 5000 4050 50  0001 C CNN "Manufacturer"
+F 5 "CP2102N-A02-GQFN24" H 5000 4050 50  0001 C CNN "Partnumber"
 	1    5000 4050
 	1    0    0    -1  
 $EndComp
@@ -280,8 +282,8 @@ F 0 "R50" V 4450 3400 50  0000 L CNN
 F 1 "1k" V 4350 3400 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4250 3450 50  0001 C CNN
 F 3 "~" H 4250 3450 50  0001 C CNN
-F 4 "Uni-royal" H 4250 3450 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1002T5E" H 4250 3450 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 4250 3450 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 4250 3450 50  0001 C CNN "Partnumber"
 	1    4250 3450
 	0    -1   -1   0   
 $EndComp
@@ -305,8 +307,8 @@ F 0 "R51" V 4450 4300 50  0000 L CNN
 F 1 "10k" V 4350 4300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4250 4350 50  0001 C CNN
 F 3 "~" H 4250 4350 50  0001 C CNN
-F 4 "Uni-royal" H 4250 4350 50  0001 C CNN "Manufacturer"
-F 5 "0603WAF1002T5E" H 4250 4350 50  0001 C CNN "Partnumber"
+F 4 "Yageo" H 4250 4350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 4250 4350 50  0001 C CNN "Partnumber"
 	1    4250 4350
 	0    -1   -1   0   
 $EndComp

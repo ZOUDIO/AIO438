@@ -21,6 +21,7 @@ F 0 "H1" H 4750 3650 50  0000 L CNN
 F 1 "Mounting hole" H 4750 3550 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4650 3600 50  0001 C CNN
 F 3 "~" H 4650 3600 50  0001 C CNN
+F 4 "dnp" H 4650 3600 50  0001 C CNN "Config"
 	1    4650 3600
 	1    0    0    -1  
 $EndComp
@@ -32,6 +33,7 @@ F 0 "H2" H 4750 3900 50  0000 L CNN
 F 1 "Mounting hole" H 4750 3800 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4650 3850 50  0001 C CNN
 F 3 "~" H 4650 3850 50  0001 C CNN
+F 4 "dnp" H 4650 3850 50  0001 C CNN "Config"
 	1    4650 3850
 	1    0    0    -1  
 $EndComp
@@ -43,6 +45,7 @@ F 0 "H3" H 4750 4150 50  0000 L CNN
 F 1 "Mounting hole" H 4750 4050 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4650 4100 50  0001 C CNN
 F 3 "~" H 4650 4100 50  0001 C CNN
+F 4 "dnp" H 4650 4100 50  0001 C CNN "Config"
 	1    4650 4100
 	1    0    0    -1  
 $EndComp
@@ -54,6 +57,7 @@ F 0 "H4" H 4750 4400 50  0000 L CNN
 F 1 "Mounting hole" H 4750 4300 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4650 4350 50  0001 C CNN
 F 3 "~" H 4650 4350 50  0001 C CNN
+F 4 "dnp" H 4650 4350 50  0001 C CNN "Config"
 	1    4650 4350
 	1    0    0    -1  
 $EndComp
@@ -107,6 +111,7 @@ F 0 "FID3" H 5850 4150 50  0000 L CNN
 F 1 "Fiducial" H 5850 4050 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 5750 4100 50  0001 C CNN
 F 3 "~" H 5750 4100 50  0001 C CNN
+F 4 "dnp" H 5750 4100 50  0001 C CNN "Config"
 	1    5750 4100
 	1    0    0    -1  
 $EndComp
@@ -118,6 +123,7 @@ F 0 "FID2" H 5850 3900 50  0000 L CNN
 F 1 "Fiducial" H 5850 3800 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 5750 3850 50  0001 C CNN
 F 3 "~" H 5750 3850 50  0001 C CNN
+F 4 "dnp" H 5750 3850 50  0001 C CNN "Config"
 	1    5750 3850
 	1    0    0    -1  
 $EndComp
@@ -129,6 +135,7 @@ F 0 "FID1" H 5850 3650 50  0000 L CNN
 F 1 "Fiducial" H 5850 3550 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.75mm_Dia_1.5mm_Outer" H 5750 3600 50  0001 C CNN
 F 3 "~" H 5750 3600 50  0001 C CNN
+F 4 "dnp" H 5750 3600 50  0001 C CNN "Config"
 	1    5750 3600
 	1    0    0    -1  
 $EndComp
