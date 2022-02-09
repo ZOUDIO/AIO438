@@ -1592,7 +1592,7 @@
     (property "Value" "PCB antenna" (id 1) (at 125.222 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Left" (id 2) (at 123.19 52.07 0)
+    (property "Footprint" "ZOUDIO-footprints:Texas_SWRA117D_2.4GHz_Left" (id 2) (at 123.19 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 123.19 52.07 0)

@@ -913,7 +913,7 @@
       (reference "#PWR0209") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060bb5ce1/00000000-0000-0000-0000-00005fc5b39a"
-      (reference "AE1") (unit 1) (value "PCB antenna") (footprint "RF_Antenna:Texas_SWRA117D_2.4GHz_Left")
+      (reference "AE1") (unit 1) (value "PCB antenna") (footprint "ZOUDIO-footprints:Texas_SWRA117D_2.4GHz_Left")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000060cbe8d5"
       (reference "C1") (unit 1) (value "1000u") (footprint "ZOUDIO-footprints:Cap_Rad_D10_P5_horizontal")
