@@ -1,4 +1,3 @@
-[submodule "kicad-libraries"]
-	path = kicad-libraries
-	url = https://github.com/ZOUDIO/kicad-libraries
-	branch = main
+[submodule "pcb/kicad_libraries"]
+	path = pcb/kicad_libraries
+	url = https://github.com/ZOUDIO/kicad_libraries.git
