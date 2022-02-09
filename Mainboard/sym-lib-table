@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ZOUDIO-symbols)(type Legacy)(uri ${KIPRJMOD}/../kicad-libraries/symbols/symbols.lib)(options "")(descr "ZOUDIO symbols"))
-)
