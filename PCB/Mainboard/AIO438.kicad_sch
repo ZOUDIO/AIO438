@@ -711,6 +711,9 @@
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061d9da8b"
       (reference "#PWR0118") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000060a7e145/d59a9b4b-12d2-4bcf-bbfa-a3da90f21a54"
+      (reference "#PWR0119") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000060cbe8cf"
       (reference "#PWR0120") (unit 1) (value "VDD") (footprint "")
     )
@@ -837,7 +840,7 @@
     (path "/00000000-0000-0000-0000-000060b7ac16/00000000-0000-0000-0000-000061c633a7"
       (reference "#PWR0161") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060a7e145/00000000-0000-0000-0000-000061a3e5c2"
+    (path "/00000000-0000-0000-0000-000060a7e145/a3f39232-d713-42e8-9c97-2bf31e3d7801"
       (reference "#PWR0162") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060bb64c6/00000000-0000-0000-0000-000061cdf06b"
@@ -876,9 +879,6 @@
     (path "/00000000-0000-0000-0000-000060bb64c6/00000000-0000-0000-0000-000061a5ed00"
       (reference "#PWR0174") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060a7e145/00000000-0000-0000-0000-000061a4ca6c"
-      (reference "#PWR0175") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060be11e8/00000000-0000-0000-0000-000060be65e7"
       (reference "#PWR0176") (unit 1) (value "+3V3") (footprint "")
     )
@@ -913,10 +913,10 @@
       (reference "#PWR0209") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060bb5ce1/00000000-0000-0000-0000-00005fc5b39a"
-      (reference "AE1") (unit 1) (value "PCB antenna") (footprint "ZOUDIO-footprints:Texas_SWRA117D_2.4GHz_Left")
+      (reference "AE1") (unit 1) (value "PCB antenna") (footprint "zoudio_footprints:Texas_SWRA117D_2.4GHz_Left")
     )
-    (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000060cbe8d5"
-      (reference "C1") (unit 1) (value "1000u") (footprint "ZOUDIO-footprints:Cap_Rad_D10_P5_horizontal")
+    (path "/00000000-0000-0000-0000-000060aad6df/cc6157a5-d307-4fdb-a1fe-50813296f485"
+      (reference "C1") (unit 1) (value "1000u") (footprint "zoudio_footprints:Cap_Rad_D10_P5_horizontal")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061d73cd2"
       (reference "C2") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -1150,7 +1150,7 @@
       (reference "J3") (unit 1) (value "PinHeader 02x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061f9cee5"
-      (reference "J4") (unit 1) (value "5mm screwterminal 01x12") (footprint "ZOUDIO-footprints:Multicomp_12P_5mm")
+      (reference "J4") (unit 1) (value "5mm screwterminal 01x12") (footprint "zoudio_footprints:Multicomp_12P_5mm")
     )
     (path "/00000000-0000-0000-0000-000060be11e8/00000000-0000-0000-0000-000060be6616"
       (reference "J5") (unit 1) (value "JST-PH 01x02") (footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
@@ -1174,34 +1174,34 @@
       (reference "L1") (unit 1) (value "10u") (footprint "Inductor_SMD:L_Bourns-SRN4018")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061d73c93"
-      (reference "L2") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L2") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061d73c8d"
-      (reference "L3") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L3") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061d73c81"
-      (reference "L4") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L4") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061d73c87"
-      (reference "L5") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L5") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061d69c28/00000000-0000-0000-0000-000061d73c93"
-      (reference "L6") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L6") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061d69c28/00000000-0000-0000-0000-000061d73c8d"
-      (reference "L7") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L7") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061d69c28/00000000-0000-0000-0000-000061d73c81"
-      (reference "L8") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L8") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061d69c28/00000000-0000-0000-0000-000061d73c87"
-      (reference "L9") (unit 1) (value "10u") (footprint "ZOUDIO-footprints:Murata_1274AS-H-100M")
+      (reference "L9") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aa037e/00000000-0000-0000-0000-000060cb7b57"
-      (reference "LOGO1") (unit 1) (value "ZOUDIO") (footprint "ZOUDIO-footprints:ZOUDIO25mm_mask")
+      (reference "LOGO1") (unit 1) (value "ZOUDIO") (footprint "zoudio_footprints:ZOUDIO25mm_mask")
     )
     (path "/00000000-0000-0000-0000-000060b7ac16/00000000-0000-0000-0000-000060b84da8"
-      (reference "Q1") (unit 1) (value "P-Channel") (footprint "ZOUDIO-footprints:SOIC8_mosfet")
+      (reference "Q1") (unit 1) (value "P-Channel") (footprint "zoudio_footprints:SOIC8_mosfet")
     )
     (path "/00000000-0000-0000-0000-000060bb64c6/00000000-0000-0000-0000-000061058f11"
       (reference "Q2") (unit 1) (value "N-channel") (footprint "Package_TO_SOT_SMD:SOT-23")
@@ -1332,10 +1332,10 @@
     (path "/00000000-0000-0000-0000-000060bb5ce1/00000000-0000-0000-0000-00006106f5f4"
       (reference "R42") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-0000619f01d1"
+    (path "/00000000-0000-0000-0000-000060e45fc0/49edcd9a-9724-46da-8f74-54896e474604"
       (reference "R43") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-0000619f102d"
+    (path "/00000000-0000-0000-0000-000060e45fc0/e7f254b6-0a6e-438c-899e-cbc6c811d44a"
       (reference "R44") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-00006105b5f2"
@@ -1344,10 +1344,10 @@
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-00006197acbc"
       (reference "R46") (unit 1) (value "5k1") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-0000619f128d"
+    (path "/00000000-0000-0000-0000-000060e45fc0/30c8b2a8-2c86-4967-9a38-34ea4f06d3ba"
       (reference "R47") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-0000619f1496"
+    (path "/00000000-0000-0000-0000-000060e45fc0/99b28b4e-07e4-43a8-baff-a2319aabbd39"
       (reference "R48") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-000061addd2b"
@@ -1369,22 +1369,22 @@
       (reference "R54") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061a2f14f"
-      (reference "U1") (unit 1) (value "TAS5825M") (footprint "ZOUDIO-footprints:TAS5825M")
+      (reference "U1") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:TAS5825M")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061d69c28/00000000-0000-0000-0000-000061a2f14f"
-      (reference "U2") (unit 1) (value "TAS5825M") (footprint "ZOUDIO-footprints:TAS5825M")
+      (reference "U2") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:TAS5825M")
     )
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-000062432dfe"
       (reference "U3") (unit 1) (value "AMS1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
     )
     (path "/00000000-0000-0000-0000-000060b7ac16/00000000-0000-0000-0000-000061ad4d39"
-      (reference "U4") (unit 1) (value "TPS62177") (footprint "ZOUDIO-footprints:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm")
+      (reference "U4") (unit 1) (value "TPS62177") (footprint "zoudio_footprints:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm")
     )
     (path "/00000000-0000-0000-0000-000060b7ac16/00000000-0000-0000-0000-000061c1f89e"
       (reference "U5") (unit 1) (value "TPS2111") (footprint "Package_SO:TSSOP-8_4.4x3mm_P0.65mm")
     )
-    (path "/00000000-0000-0000-0000-000060bb64c6/00000000-0000-0000-0000-000060c8acb5"
-      (reference "U6") (unit 1) (value "ATMEGA328PB-AU") (footprint "Package_QFP:TQFP-32_7x7mm_P0.8mm")
+    (path "/00000000-0000-0000-0000-000060bb64c6/dc5bf76e-9765-4b4c-abc6-6eac563db5f9"
+      (reference "U6") (unit 1) (value "ATmega328PB-AU") (footprint "Package_QFP:TQFP-32_7x7mm_P0.8mm")
     )
     (path "/00000000-0000-0000-0000-000060bb64c6/00000000-0000-0000-0000-00005fd14dc1"
       (reference "U7") (unit 1) (value "M24256 EEPROM") (footprint "Package_SO:TSSOP-8_4.4x3mm_P0.65mm")
@@ -1392,11 +1392,11 @@
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-0000610ab39b"
       (reference "U8") (unit 1) (value "FE1.1S") (footprint "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm")
     )
-    (path "/00000000-0000-0000-0000-000060a7e145/00000000-0000-0000-0000-000061a39051"
+    (path "/00000000-0000-0000-0000-000060a7e145/76b92047-fcde-43e9-8e02-594383a2bc1d"
       (reference "U9") (unit 1) (value "CP2102N") (footprint "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm")
     )
     (path "/00000000-0000-0000-0000-000060bb5ce1/00000000-0000-0000-0000-00005fc5af86"
-      (reference "U10") (unit 1) (value "BTM331") (footprint "ZOUDIO-footprints:BTM331")
+      (reference "U10") (unit 1) (value "BTM331") (footprint "zoudio_footprints:BTM331")
     )
     (path "/00000000-0000-0000-0000-000060bb64c6/00000000-0000-0000-0000-000060a9d68d"
       (reference "Y1") (unit 1) (value "8MHz") (footprint "Crystal:Crystal_SMD_Abracon_ABM3C-4Pin_5.0x3.2mm")

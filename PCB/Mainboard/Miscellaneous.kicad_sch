@@ -547,7 +547,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "ZOUDIO" (id 1) (at 172.72 101.6 0))
-    (property "Footprint" "ZOUDIO-footprints:ZOUDIO25mm_mask" (id 2) (at 172.72 95.25 0)
+    (property "Footprint" "zoudio_footprints:ZOUDIO25mm_mask" (id 2) (at 172.72 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 172.72 95.25 0)
