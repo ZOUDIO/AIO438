@@ -513,7 +513,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060be2ad2)
     (property "Reference" "R24" (id 0) (at 143.51 88.9 90))
-    (property "Value" "1k" (id 1) (at 144.78 91.44 90)
+    (property "Value" "100R" (id 1) (at 146.05 91.44 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 143.51 93.98 0)
