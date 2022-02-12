@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "zoudio_footprints")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/footprints.pretty")(options "")(descr "zoudio footprints"))
+)
