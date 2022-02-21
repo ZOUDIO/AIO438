@@ -525,7 +525,7 @@
     (property "Manufacturer" "Yageo" (id 4) (at 143.51 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Partnumber" "RC0603FR-071KL" (id 5) (at 143.51 93.98 0)
+    (property "Partnumber" "RC0603FR-07100RL" (id 5) (at 143.51 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55dff4ce-4875-4d65-9a8e-14a3f44f52c6))

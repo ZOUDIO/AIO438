@@ -1523,7 +1523,7 @@
     (property "Manufacturer" "Samsung" (id 4) (at 91.44 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Partnumber" "CL21A475KPFNNNE" (id 5) (at 91.44 95.25 0)
+    (property "Partnumber" "CL21A106KPFNNNG" (id 5) (at 91.44 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5796b327-a4ef-4bfc-9bac-09dd00e56552))
