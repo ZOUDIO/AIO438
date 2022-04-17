@@ -6,8 +6,8 @@
 
   (title_block
     (title "4x38W amp with DSP and BT")
-    (date "2022-02-12")
-    (rev "1.1")
+    (date "2022-04-17")
+    (rev "1.1.1")
     (company "ZOUDIO")
   )
 
@@ -486,7 +486,7 @@
       (symbol "BTM331_0_1"
         (rectangle (start -21.59 22.86) (end 21.59 -22.86)
           (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
+          (fill (type background))
         )
       )
       (symbol "BTM331_1_1"
@@ -1720,6 +1720,7 @@
     (property "Partnumber" "RC0603FR-070RL" (id 5) (at 69.85 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Config" "dnp" (id 6) (at 69.85 106.68 90))
     (pin "1" (uuid cec50e70-3c97-4aab-8520-4b4f492d04e9))
     (pin "2" (uuid 1f25c52a-ce25-441a-82e9-07bdef57b08c))
   )

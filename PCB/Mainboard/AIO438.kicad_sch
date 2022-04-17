@@ -6,8 +6,8 @@
 
   (title_block
     (title "4x38W amp with DSP and BT")
-    (date "2022-02-12")
-    (rev "1.1")
+    (date "2022-04-17")
+    (rev "1.1.1")
     (company "ZOUDIO")
   )
 
@@ -1150,7 +1150,7 @@
       (reference "J7") (unit 1) (value "JST-PH 01x08") (footprint "Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-000061907c13"
-      (reference "J8") (unit 1) (value "USB-C") (footprint "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G")
+      (reference "J8") (unit 1) (value "USB-C") (footprint "zoudio_footprints:USB_C_Receptacle_Palconn_UTC16-G_pin_in_paste")
     )
     (path "/00000000-0000-0000-0000-000060bb5ce1/00000000-0000-0000-0000-000061a95f3b"
       (reference "J10") (unit 1) (value "U.FL") (footprint "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical")
@@ -1366,10 +1366,10 @@
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061a2f14f"
-      (reference "U1") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:TAS5825M")
+      (reference "U1") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061d69c28/00000000-0000-0000-0000-000061a2f14f"
-      (reference "U2") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:TAS5825M")
+      (reference "U2") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias")
     )
     (path "/00000000-0000-0000-0000-000060e45fc0/00000000-0000-0000-0000-000062432dfe"
       (reference "U3") (unit 1) (value "AMS1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
