@@ -6,8 +6,8 @@
 
   (title_block
     (title "4x38W amp with DSP and BT")
-    (date "2022-04-17")
-    (rev "1.1.1")
+    (date "2022-04-29")
+    (rev "1.1.2")
     (company "ZOUDIO")
   )
 
@@ -1186,7 +1186,7 @@
       (reference "L9") (unit 1) (value "10u") (footprint "zoudio_footprints:Murata_1274AS-H-100M")
     )
     (path "/00000000-0000-0000-0000-000060aa037e/00000000-0000-0000-0000-000060cb7b57"
-      (reference "LOGO1") (unit 1) (value "ZOUDIO") (footprint "zoudio_footprints:ZOUDIO25mm_mask")
+      (reference "LOGO1") (unit 1) (value "ZOUDIO") (footprint "zoudio_footprints:ZOUDIO25mm")
     )
     (path "/00000000-0000-0000-0000-000060b7ac16/00000000-0000-0000-0000-000060b84da8"
       (reference "Q1") (unit 1) (value "P-Channel") (footprint "zoudio_footprints:SOIC8_mosfet")
@@ -1364,6 +1364,12 @@
     )
     (path "/00000000-0000-0000-0000-000060bb64c6/fa014d6e-f6aa-4fba-aacb-14cc26eb9152"
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000060e45fc0/bd110c1c-2fda-49df-a076-66f50dadb989"
+      (reference "TP2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000060b7ac16/88682a4f-e1c3-48c8-886f-0d0cc2b4cb01"
+      (reference "TP3") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
     )
     (path "/00000000-0000-0000-0000-000060aad6df/00000000-0000-0000-0000-000061db323f/00000000-0000-0000-0000-000061a2f14f"
       (reference "U1") (unit 1) (value "TAS5825M") (footprint "zoudio_footprints:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias")
