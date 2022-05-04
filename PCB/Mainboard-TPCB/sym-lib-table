@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "zoudio_symbols")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/symbols/symbols.kicad_sym")(options "")(descr "zoudio symbols"))
+)
